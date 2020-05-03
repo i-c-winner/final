@@ -12,36 +12,39 @@
 
 <body class="body">
     <div class="header">
-        <div class="header-menu">
-            <p class="header-menu__logo header-menu__logo_color_white">NewsAnalyzer</p>
-            <menu class="header-menu__links">
-                <li class="header-menu__link">Главная</li>
-                <li class="header-menu__link header-menu__link_activ">О проекте</li>
+        <div class="header-top">
+            <p class="header-top__logo header-top__logo">NewsAnalyzer</p>
+            <menu class="header-top__links">
+                <li class="header-top__link">Главная</li>
+                <li class="header-top__link header-top__link_activ">О проекте</li>
             </menu>
         </div>
-        <h1 class="title title_place_header">Что в мире твориться?</h1>
-        <p class="descripton description_place_header">Введите в поиске любую тему и узнайте, насколько популярной она
-            была в новостях за прошедшую неделю.</p>
-
-        <form name="Search">
-            <input type="input" placeholder="Интересующая новость" class="header__form">
-            <input type="submit" class="buttom buttom_place_header" value="ИСКАТЬ">
+        <div class="header-middle">
+            <h1 class="header-middle__title">Что в мире твориться?</h1>
+            <p class="header-middle_instruction">Введите в поиске любую тему и узнайте, насколько популярной
+                она
+                была в новостях за прошедшую неделю.</p>
+        </div>
+       
+        <form name="Search" class="header-bottom">
+            <input type="input" placeholder="Интересующая новость" class="header-bottom__search">
+            <input type="submit" class="buttom buttom_place_header-bottom" value="ИСКАТЬ">
 
         </form>
 
     </div>
     <section class="main">
-        <div class="main__title">
-            <p class="title title_place_main">Результаты поиска</p>
-            <a href="#" class="description description_place_main">Посмотреть аналитику </a>
-        </div>
+        <div class="main-top">
+            <p class="main-top__title">Результаты поиска</p>
+            <a href="#" class="main-top__subtitle">Посмотреть аналитику </a>
+      </div>
         <div class="cards">
 
-              <!-- Карточка новостей -->
+            <!-- Карточка новостей -->
             <div class="card">
-              
-                <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__img">
-                <p class="card__description card__description_data">
+
+                <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__image">
+                <p class="card__text card__text_date">
                     2 августа, 2019
                 </p>
                 <h2 class="card__text card__text_title">
@@ -51,69 +54,26 @@
                     В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
                     национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
                 </p>
-                <p class="card__description card__description_source">
+                <p class="card__text card__text_source">
                     ЛЕНТА.РУ
                 </p>
 
             </div>
-<!--  Конец карточки -->
-
-   <!-- Карточка новостей -->
-   <div class="card">
-              
-    <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__img">
-    <p class="card__description card__description_data">
-        2 августа, 2019
-    </p>
-    <h2 class="card__text card__text_title">
-        Национальное достояние – парки
-    </h2>
-    <p class="card__text card__text_paragraph">
-        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-        национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-    </p>
-    <p class="card__description card__description_source">
-        ЛЕНТА.РУ
-    </p>
-
-</div>
-<!--  Конец карточки -->
-
-   <!-- Карточка новостей -->
-   <div class="card">
-              
-    <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__img">
-    <p class="card__description card__description_data">
-        2 августа, 2019
-    </p>
-    <h2 class="card__text card__text_title">
-        Национальное достояние – парки
-    </h2>
-    <p class="card__text card__text_paragraph">
-        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-        национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-    </p>
-    <p class="card__description card__description_source">
-        ЛЕНТА.РУ
-    </p>
-
-</div>
-<!--  Конец карточки -->
-
+            <!--  Конец карточки -->
 
         </div>
         <a href="#" class="buttom buttom_place_main">Показать еще</a>
     </section>
     <section class="author">
-        <img class="author__img" <img src="<%=require('../src/pages/index/image/image-03.png').default %>">
-        <div class="text">
-            <h3 class="title title_place_author">Об авторе</h3>
-            <p class="text text_place_author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+        <img class="author__image" <img src="<%=require('../src/pages/index/image/image-03.png').default %>">
+        <div class="author-description">
+            <h3 class="author-description__text author-description__text_title">Об авторе</h3>
+            <p class="author-description__text author-description__text_paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
                 чем
                 вы занимаетесь, какими технологиями разработки владеете.
                 Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
                 потенциальным заказчикам.</p>
-            <p class="text text_place_author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+            <p class="author-description__text author-description__text_paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
                 чем
                 вы занимаетесь, какими технологиями разработки владеете.
                 Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
@@ -121,18 +81,18 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer__wrapper">
+        <div class="footer__wrapper-links">
             <p class="footer__copyright">&#64; Supersite</p>
-            <nav class="footer__menu">
-                <a href="#" class="footer__menu-value">Главная </a>
-                <a href="#" class="footer__menu-value">О проекте</a>
-                <a href="#" class="footer__menu-value">Яндекс.Практикум</a>
+            <nav class="footer__links">
+                <a href="#" class="footer__link">Главная </a>
+                <a href="#" class="footer__link">О проекте</a>
+                <a href="#" class="footer__link">Яндекс.Практикум</a>
             </nav>
         </div>
-        <div class="footer__menu-link">
-            <img class="footer__link footer__link_github" alt="Значок Гитхаба"
+        <div class="footer__icons">
+            <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
                 src="../src/pages/index/image/Vector.png">
-            <img class="footer__link footer__link_facebook" alt="Значок Фейсбук"
+            <img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
                 src="../src/pages/index/image/faceebook.png">
         </div>
     </footer>
