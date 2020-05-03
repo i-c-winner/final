@@ -1,0 +1,5 @@
+@import url('./__search/header-bottom__search.css');
+
+.header-bottom {
+    max-width: 288px;
+}

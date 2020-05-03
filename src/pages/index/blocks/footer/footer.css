@@ -5,3 +5,32 @@
 @import url('./__icons/footer__icons.css');
 @import url('./__icon/footer__icon.css');
 @import url('./__copyright/footer__copyright.css');
+
+
+
+@media screen and (max-width:650px) {
+    .footer {
+    padding: 21px 16px;
+    display: flex;
+    justify-content: space-between;
+     background-color: white;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .footer {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .footer {
+       
+    }
+}
+

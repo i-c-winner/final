@@ -1,14 +1,10 @@
-
-@import url('./__image/card__image.css');
-@import url('./__text/card__text.css');
-
-
+@import url('./__wrapper/author__wrapper.css');
+@import url('./__text/author__text.css');
+@import url('./__image/author__image.css');
 
 @media screen and (max-width:650px) {
-    .card {
-    border-radius: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 7px;
+    .author {
+    padding:32px 24px;
     background-color: white;
      
     }
@@ -16,7 +12,7 @@
 
 
 @media screen and (min-width:651px) and (max-width:1000px) {
-    .card {
+    .author {
       
     }
 }
@@ -25,7 +21,7 @@
 
 
 @media screen and (min-width:1001px) {
-    .card {
+    .author {
        
     }
 }

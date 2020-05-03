@@ -21,13 +21,13 @@
         </div>
         <div class="header-middle">
             <h1 class="header-middle__title">Что в мире твориться?</h1>
-            <p class="header-middle_instruction">Введите в поиске любую тему и узнайте, насколько популярной
+            <p class="header-middle__instruction">Введите в поиске любую тему и узнайте, насколько популярной
                 она
                 была в новостях за прошедшую неделю.</p>
         </div>
        
         <form name="Search" class="header-bottom">
-            <input type="input" placeholder="Интересующая новость" class="header-bottom__search">
+            <input type="input" placeholder="       Интересующая новость" class="header-bottom__search">
             <input type="submit" class="buttom buttom_place_header-bottom" value="ИСКАТЬ">
 
         </form>
@@ -61,19 +61,61 @@
             </div>
             <!--  Конец карточки -->
 
+             <!-- Карточка новостей -->
+             <div class="card">
+
+                <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__image">
+                <p class="card__text card__text_date">
+                    2 августа, 2019
+                </p>
+                <h2 class="card__text card__text_title">
+                    Национальное достояние – парки
+                </h2>
+                <p class="card__text card__text_paragraph">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+                </p>
+                <p class="card__text card__text_source">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+
+             <!-- Карточка новостей -->
+             <div class="card">
+
+                <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__image">
+                <p class="card__text card__text_date">
+                    2 августа, 2019
+                </p>
+                <h2 class="card__text card__text_title">
+                    Национальное достояние – парки
+                </h2>
+                <p class="card__text card__text_paragraph">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+                </p>
+                <p class="card__text card__text_source">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+
         </div>
         <a href="#" class="buttom buttom_place_main">Показать еще</a>
     </section>
     <section class="author">
         <img class="author__image" <img src="<%=require('../src/pages/index/image/image-03.png').default %>">
-        <div class="author-description">
-            <h3 class="author-description__text author-description__text_title">Об авторе</h3>
-            <p class="author-description__text author-description__text_paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+        <div class="author__wrapper">
+            <h3 class="author__text author__text_title">Об авторе</h3>
+            <p class="author__text author__text_paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
                 чем
                 вы занимаетесь, какими технологиями разработки владеете.
                 Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
                 потенциальным заказчикам.</p>
-            <p class="author-description__text author-description__text_paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+            <p class="author__text author__text_paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
                 чем
                 вы занимаетесь, какими технологиями разработки владеете.
                 Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
@@ -90,13 +132,13 @@
             </nav>
         </div>
         <div class="footer__icons">
-            <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
-                src="../src/pages/index/image/Vector.png">
-            <img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
-                src="../src/pages/index/image/faceebook.png">
+            <a href="#"> <img   class="footer__icon footer__icon_github" alt="Значок Гитхаба"
+                src="../src/pages/index/image/Vector.png"></a>
+            <a href="#"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
+                src="../src/pages/index/image/faceebook.png"></a>
         </div>
     </footer>
-
+`
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 

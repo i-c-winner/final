@@ -1,4 +1,8 @@
+
 @import url('./vendor/fonts/fonts.css');
+
+@import url('./pages/index/blocks/author/author.css');
+@import url('./pages/index/blocks/buttom/buttom.css');
 @import url('./pages/index/blocks/main/main.css');
 @import url('./pages/index/blocks/main-top/main-top.css');
 @import url('./pages/index/blocks/header/header.css');

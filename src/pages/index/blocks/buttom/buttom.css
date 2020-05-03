@@ -1,18 +1,22 @@
+@import url('./_place/buttom_place_main.css');
+@import url('./_place/buttom_place_header-bottom.css');
 
 
 @media screen and (max-width:650px) {
-    .header-bottom__search {
+    .buttom
+     {
         width: 100%;
         display: block;
         height: 56px;
         border: none;
         border-radius: 28px;
-    }
+  
+}
 }
 
-
 @media screen and (min-width:651px) and (max-width:1000px) {
-    .header-bottom__search {
+    .buttom
+     {
       width: 100%;
       display: block;
       height: 56px;
@@ -26,10 +30,10 @@
 
 
 @media screen and (min-width:1001px) {
-    .header-bottom__search {
+    .buttom
+     {
        width: 100%;
        display: block;
        height: 56px;
     }
 }
-

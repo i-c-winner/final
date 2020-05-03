@@ -1,11 +1,19 @@
-/* @font-face {
+@font-face {
     font-family: 'Roboto Slab';
     font-style: normal;
-    src: '../src/vendor/fonts/RobotoSlab-Black.ttf' format ("ttf");
-} */
+    src: url("./robotoslab-regular.woff") format("woff");
+}
+
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
-    src: url("./roboto-medium.woff") format ("woff");
+    src: url("./roboto-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    src: url("./roboto-medium.woff") format("woff");
 }

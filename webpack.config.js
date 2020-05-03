@@ -68,7 +68,7 @@ module.exports = {
     plugins: [
       //new ExtractTextPlugin("styles.css"),
         new MiniCssExtractPlugin({
-            filename: 'style.[contenthash].css'
+            filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
             // Означает, что:

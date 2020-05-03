@@ -1,16 +1,15 @@
 
 
 @media screen and (max-width:650px) {
-    .footer__wrapper-links {
-    display: flex;
-    flex-flow: column-reverse;
+    .author__image {
+    width:100%
      
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1000px) {
-    .footer__wrapper-links {
+    .author__image {
       
     }
 }
@@ -19,7 +18,7 @@
 
 
 @media screen and (min-width:1001px) {
-    .footer__wrapper-links {
+    .author__image {
        
     }
 }

@@ -1,0 +1,28 @@
+
+@media screen and (max-width:650px) {
+    .card__text_title {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;           
+        color: #1A1B22;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .card__text_title {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .card__text_title {
+       
+    }
+}
+

@@ -1,0 +1,26 @@
+
+
+@media screen and (max-width:650px) {
+    .footer__links {
+    display: flex;
+    flex-flow: column;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .footer__links {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .footer__links {
+       
+    }
+}
+

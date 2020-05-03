@@ -1,0 +1,26 @@
+@media screen and (max-width:650px) {
+    .footer__link {
+        padding-top: 30px;
+        font-family: 'Source Sans Pro', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 48px;
+        color: #1A1B22;
+    }
+    .footer__link:first-child{
+        padding-top:0px;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .footer__link {}
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .footer__link {}
+}

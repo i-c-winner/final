@@ -1,27 +1,22 @@
-
 @media screen and (max-width:650px) {
-    .header-middle__instruction {       
+    .author__text_paragraph {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 26px;       
-        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1A1B22;
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1000px) {
-    .header-middle__instruction {
-      
-    }
+    .author__text_paragraph {}
 }
 
 
 
 
 @media screen and (min-width:1001px) {
-    .header-middle__instruction {
-       
-    }
+    .author__text_paragraph {}
 }

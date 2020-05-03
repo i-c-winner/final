@@ -1,2 +1,28 @@
 @import url('./_github/footer__icon_github.css');
 @import url('./_facebook/footer__icon_facebook.css');
+
+
+
+@media screen and (max-width:650px) {
+    .footer__icon {
+    margin-left: 27px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .footer__icon {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .footer__icon {
+       
+    }
+}
+
