@@ -1,0 +1,30 @@
+@import url('./__menu-value/footer__menu-value.css');
+@import url('./__wrapper/footer__wrapper.css');
+@import url('./__menu-link/footer__menu-link.css');
+@import url('./__menu/footer__menu.css');
+@import url('./__copyright/footer__copyright.css');
+
+.footer {
+    display: flex;
+    justify-content: space-between;  
+    background-color: white;
+}
+
+@media screen and (max-width:650px) {
+    .footer {
+        padding: 20px 18px 22px 16px;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .footer {
+    padding: 21px 42px 21px 42px;
+
+    }
+}
+
+@media screen and (min-width:1001px) {
+    .footer {
+     padding: 30px 106px 30px 106px;
+    }
+}

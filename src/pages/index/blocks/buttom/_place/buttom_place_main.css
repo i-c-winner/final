@@ -1,0 +1,22 @@
+.buttom_place_main {
+    background-color: #fff;
+    text-align: center;
+    height:  64px;
+    width: 288px;
+    border-radius: 32px;
+    text-decoration-line: none;
+    font-size: 18px;
+    line-height: 24px ;  
+    justify-content: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin:0px auto 0px;   
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #1A1B22;
+
+
+}

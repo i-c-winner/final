@@ -1,0 +1,6 @@
+@import url('./_place/buttom_place_main.css');
+@import url('./_place/buttom_place_header.css');
+
+.buttom {
+   display: block;
+}

@@ -1,0 +1,29 @@
+.footer__menu-value{
+    color: #1a1b22;
+    text-decoration-line:none;
+    width:78px;
+  
+}
+
+@media screen and (max-width:650px){          /* 320*/
+    .footer__menu-value{
+    
+    
+    }
+  } 
+  @media screen and (min-width:651px) and (max-width:1000px){          /* 320*/
+    .footer__menu-value{     
+        margin-left: 25px;
+    }
+    .footer__menu-value:first-child{
+     
+    }
+  } 
+  @media screen and (min-width:1001px){          /* 320*/
+    .footer__menu-value{      
+        margin-left: 40px;
+    }
+    .footer__menu-value:first-child{
+        margin-left: 80px;
+    }
+  } 

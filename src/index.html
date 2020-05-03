@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дипломная работа</title>
     <link rel="shortcut icon" type="image/x-icon" href="#">
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+    <link rel="stylesheet" href="../src/vendor/normalize.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
-<body>
-    
+
+<body class="body">
+    <div class="header">
+        <div class="header-menu">
+            <p class="header-menu__logo header-menu__logo_color_white">NewsAnalyzer</p>
+            <menu class="header-menu__links">
+                <li class="header-menu__link">Главная</li>
+                <li class="header-menu__link header-menu__link_activ">О проекте</li>
+            </menu>
+        </div>
+        <h1 class="title title_place_header">Что в мире твориться?</h1>
+        <p class="descripton description_place_header">Введите в поиске любую тему и узнайте, насколько популярной она
+            была в новостях за прошедшую неделю.</p>
+
+        <form name="Search">
+            <input type="input" placeholder="Интересующая новость" class="header__form">
+            <input type="submit" class="buttom buttom_place_header" value="ИСКАТЬ">
+
+        </form>
+
+    </div>
+    <section class="main">
+        <div class="main__title">
+            <p class="title title_place_main">Результаты поиска</p>
+            <a href="#" class="description description_place_main">Посмотреть аналитику </a>
+        </div>
+        <div class="cards">
+
+              <!-- Карточка новостей -->
+            <div class="card">
+              
+                <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__img">
+                <p class="card__description card__description_data">
+                    2 августа, 2019
+                </p>
+                <h2 class="card__text card__text_title">
+                    Национальное достояние – парки
+                </h2>
+                <p class="card__text card__text_paragraph">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+                </p>
+                <p class="card__description card__description_source">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+<!--  Конец карточки -->
+
+   <!-- Карточка новостей -->
+   <div class="card">
+              
+    <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__img">
+    <p class="card__description card__description_data">
+        2 августа, 2019
+    </p>
+    <h2 class="card__text card__text_title">
+        Национальное достояние – парки
+    </h2>
+    <p class="card__text card__text_paragraph">
+        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+        национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+    </p>
+    <p class="card__description card__description_source">
+        ЛЕНТА.РУ
+    </p>
+
+</div>
+<!--  Конец карточки -->
+
+   <!-- Карточка новостей -->
+   <div class="card">
+              
+    <img src="../src/pages/index/image/image_01.png" alt="Новостное изображение" class="card__img">
+    <p class="card__description card__description_data">
+        2 августа, 2019
+    </p>
+    <h2 class="card__text card__text_title">
+        Национальное достояние – парки
+    </h2>
+    <p class="card__text card__text_paragraph">
+        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+        национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+    </p>
+    <p class="card__description card__description_source">
+        ЛЕНТА.РУ
+    </p>
+
+</div>
+<!--  Конец карточки -->
+
+
+        </div>
+        <a href="#" class="buttom buttom_place_main">Показать еще</a>
+    </section>
+    <section class="author">
+        <img class="author__img" <img src="<%=require('../src/pages/index/image/image-03.png').default %>">
+        <div class="text">
+            <h3 class="title title_place_author">Об авторе</h3>
+            <p class="text text_place_author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+                чем
+                вы занимаетесь, какими технологиями разработки владеете.
+                Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+                потенциальным заказчикам.</p>
+            <p class="text text_place_author">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+                чем
+                вы занимаетесь, какими технологиями разработки владеете.
+                Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+                потенциальным заказчикам.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <p class="footer__copyright">&#64; Supersite</p>
+            <nav class="footer__menu">
+                <a href="#" class="footer__menu-value">Главная </a>
+                <a href="#" class="footer__menu-value">О проекте</a>
+                <a href="#" class="footer__menu-value">Яндекс.Практикум</a>
+            </nav>
+        </div>
+        <div class="footer__menu-link">
+            <img class="footer__link footer__link_github" alt="Значок Гитхаба"
+                src="../src/pages/index/image/Vector.png">
+            <img class="footer__link footer__link_facebook" alt="Значок Фейсбук"
+                src="../src/pages/index/image/faceebook.png">
+        </div>
+    </footer>
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
+
 </html>

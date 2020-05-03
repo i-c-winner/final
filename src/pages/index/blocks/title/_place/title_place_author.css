@@ -1,0 +1,21 @@
+@media screen and (max-width:650px) {
+    .title_place_author {
+    
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .title_place_author {
+     
+        margin-right: 32px;
+        margin-top:61px
+    }
+}
+
+@media screen and (min-width:1001px) {
+    .title_place_author {
+      
+        margin-right: 56px;
+        margin-top:80px
+    }
+}

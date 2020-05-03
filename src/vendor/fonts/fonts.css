@@ -1,0 +1,11 @@
+/* @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    src: '../src/vendor/fonts/RobotoSlab-Black.ttf' format ("ttf");
+} */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    src: url("./Roboto-Black.ttf") format ("ttf");
+}

@@ -1,0 +1,7 @@
+@import url('./__title/main__title.css');
+
+.main {
+    margin-right: calc( (100% - 284px)/2);
+    margin-left: calc( (100% - 284px)/2);
+    padding-bottom: 44px;
+}

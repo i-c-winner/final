@@ -1,0 +1,23 @@
+@media screen and (max-width:650px) {
+    .footer__menu {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .footer__menu {
+        display: flex;
+        justify-content: space-between;
+   
+    }
+}
+
+@media screen and (min-width:1001px) {
+    .footer__menu {
+        display: flex;
+        justify-content: space-between;
+   
+    }
+}

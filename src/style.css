@@ -1,0 +1,26 @@
+
+@import url('./vendor/fonts/fonts.css');
+@import url('./pages/index/blocks/card/__description/card__description.css');
+@import url('./pages/index/blocks/body/body.css');
+@import url('./pages/index/blocks/cards/cards.css');
+@import url('./pages/index/blocks/card/card.css');
+@import url('./pages/index/blocks/footer/__link/footer__link.css');
+@import url('./pages/index/blocks/footer/__menu-link/footer__menu-link.css');
+@import url('./pages/index/blocks/footer/footer.css');
+@import url('./pages/index/blocks/text/text.css');
+@import url('./pages/index/blocks/author/author.css');
+@import url('./pages/index/blocks/main/main.css');
+@import url('./pages/index/blocks/buttom/buttom.css');
+@import url('./pages/index/blocks/descripton/description.css');
+@import url('./pages/index/blocks/title/title_place.css');
+@import url('./pages/index/blocks/header/header.css');
+@import url('./pages/index/blocks/header-menu/header-menu.css');
+
+
+
+.body{
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0px auto;
+
+}

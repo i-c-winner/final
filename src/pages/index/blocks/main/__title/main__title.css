@@ -1,0 +1,11 @@
+.main__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:625px){          /* 320*/
+    .main__title {     
+       display: block;
+      
+    }
+}
