@@ -1,17 +1,15 @@
 
 
 @media screen and (max-width:650px) {
-    .header-top__links {
-    display: flex;
-    width: 148px;
-    justify-content: space-between;
+    .footer__copyright {
+    
      
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1000px) {
-    .header-top__links {
+    .footer__copyright {
       
     }
 }
@@ -20,7 +18,8 @@
 
 
 @media screen and (min-width:1001px) {
-    .header-top__links {
+    .footer__copyright {
        
     }
 }
+
