@@ -7,12 +7,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         main: './src/index.js',
-        about: './src/about/about.js',
-        statistic: './src/statistic/statistic.js',
+        about: './src/about.js',
+        statistic: './src/statistic.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.[chunkhash].js',
+        filename: '[name].[chunkhash].js',
     },
   //   output: {
   //     path: path.resolve(__dirname, 'about'),
@@ -79,13 +79,13 @@ module.exports = {
         new HtmlWebpackPlugin({
           // Означает, что:
           inject: false, // стили НЕ нужно прописывать внутри тегов
-          template: './src/about/about.html', // откуда брать образец для сравнения с текущим видом проекта
+          template: './src/about.html', // откуда брать образец для сравнения с текущим видом проекта
           filename: 'about.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
       }),
       new HtmlWebpackPlugin({
         // Означает, что:
         inject: false, // стили НЕ нужно прописывать внутри тегов
-        template: './src/statistic/statistic.html', // откуда брать образец для сравнения с текущим видом проекта
+        template: './src/statistic.html', // откуда брать образец для сравнения с текущим видом проекта
         filename: 'statistic.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
     }),
         new WebpackMd5Hash()

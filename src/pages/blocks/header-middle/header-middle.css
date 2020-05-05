@@ -1,0 +1,28 @@
+@import url('./__title/header-middle__title.css');
+@import url('./__instruction/header-middle__instruction.css');
+
+
+
+@media screen and (max-width:650px) {
+    .header-middle {
+    padding-top: 18px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .header-middle {
+      padding-top: 18px;
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .header-middle {
+       padding-top: 18px;
+    }
+}
+

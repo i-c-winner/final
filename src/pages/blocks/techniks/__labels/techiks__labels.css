@@ -1,0 +1,8 @@
+.techniks__labels {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding: 0px 20px;
+    max-width: 290px;
+}

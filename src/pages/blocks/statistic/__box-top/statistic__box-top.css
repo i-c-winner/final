@@ -1,0 +1,29 @@
+
+
+@media screen and (max-width:650px) {
+    .statistic__box-top {
+    width: 90%;
+     background-color: #f5f6f7;
+     padding:0px 16px ;
+     display: flex;
+     justify-content: start;
+     box-sizing: content-box;
+     margin: 0px auto;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statistic__box-top {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statistic__box-top {
+       
+    }
+}

@@ -1,0 +1,29 @@
+
+
+@media screen and (max-width:650px) {
+    .card_place_commits {
+    
+     padding:3px 16px 16px;
+     background-color: white;
+     border-radius: 10px;
+     height: 264px;
+     overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .card_place_commits {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .card_place_commits {
+       
+    }
+}
+

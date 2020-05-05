@@ -1,0 +1,30 @@
+@import url('./__title/techniks__title.css');
+@import url('./__labels/techiks__labels.css');
+
+.tecniks {
+    background-color: #f5f6f7;
+}
+
+@media screen and (max-width:650px) {
+    .techniks {
+    padding: 0px 16px 52px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .techniks {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .techniks {
+       
+    }
+}
+

@@ -1,0 +1,27 @@
+
+
+@media screen and (max-width:650px) {
+    .statistic__box  {    
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+
+}
+}
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statistic__box {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statistic__box {
+       
+    }
+}
+

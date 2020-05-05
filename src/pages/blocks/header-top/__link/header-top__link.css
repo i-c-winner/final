@@ -1,0 +1,33 @@
+
+
+
+@media screen and (max-width:650px) {
+    .header-top__link {                
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;        
+        list-style-type: none;
+        }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .header-top__link {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .header-top__link {
+       
+    }
+}
+
+@import url('./_noneactiv/header-top__link_noneactiv.css');
+@import url('./_activ-black/header-top__link_activ-black.css');
+@import url('./_activ-white/header-top__link_activ-white.css');

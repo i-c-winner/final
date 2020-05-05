@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дипломная работа</title>
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body class="body">
+    <div class="header header_background_color">
+        <div class="header-top">
+            <a href="./statistic.html" class="header-top__logo header-top__logo_black">NewsAnalyzer</a>
+            <menu class="header-top__links ">
+                <a href="./index.html" class="header-top__link header-top__link_noneactiv">Главная</li>
+                    <a href="./about.html" class="header-top__link header-top__link_noneactiv">О проекте</a>
+            </menu>
+        </div>
+        <div class="header-middle">
+            <p class="header-middle__title header-middle__title_black">Вы спросили "Путешествие"</p>
+
+            <dl class="statistic-info">
+                <dt class="statistic-info__text">Новостей за неделю</dt>
+                <dd class="statistic-info__text statistic-info__text_bold">23 535</dd>
+                <dt class="statistic-info__text">Упоминание по заголовкам</dt>
+                <dd class="statistic-info__text statistic-info__text_bold">235</dd>
+            </dl>
+        </div>
+    </div>
+
+
+    <!--Карточка статистики  -->
+    <section class="statistic">
+        <p class="statistic__title">Аналитика по дням</p>
+        <div class="statistic__box-top">
+            <p class="statistic__text statistic__text_mouth">aprel</p>
+            <p class="statistic__text statistic__text_value">Кол-во упоминаний</p>
+        </div>
+        <div class="statistic-scale"></div>
+
+        <div class="statistic__box">
+            <p class="statistic__day">19, Fr</p>            
+                <p class="statistic__number statistic__value">12</p>           
+        </div>
+
+        <div class="statistic__box">
+            <p class="statistic__day">19, Fr</p>
+            <p class="statistic__number statistic__value">12</p>
+        </div>
+
+        <div class="statistic__box">
+            <p class="statistic__day">19, Fr</p>
+            <p class="statistic__number statistic__value">12</p>
+        </div>
+
+        <div class="statistic__box">
+            <p class="statistic__day">19, Fr</p>
+            <p class="statistic__number statistic__value">12</p>
+        </div>
+
+        <div class="statistic__box">
+            <p class="statistic__day">19, Fr</p>
+            <p class="statistic__number statistic__value">12</p>
+        </div>
+
+        <div class="statistic__box">
+            <p class="statistic__day">19, Fr</p>
+            <p class="statistic__number statistic__value">12</p>
+        </div>
+
+        <div class="statistic__box">
+            <p class="statistic__day">19, Fr</p>
+            <p class="statistic__number statistic__value">12</p>
+        </div>
+
+
+    </section>
+    <!--Конец карточки статистики  -->
+    <footer class="footer">
+        <div class="footer__wrapper-links">
+            <p class="footer__copyright">&#64; Supersite</p>
+            <nav class="footer__links">
+                <a href="#" class="footer__link">Главная </a>
+                <a href="#" class="footer__link">О проекте</a>
+                <a href="#" class="footer__link">Яндекс.Практикум</a>
+            </nav>
+        </div>
+        <div class="footer__icons">
+            <a href="#"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
+                    src="../src/pages/image/Vector.png"></a>
+            <a href="#"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
+                    src="../src/pages/image/faceebook.png"></a>
+        </div>
+    </footer>
+
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

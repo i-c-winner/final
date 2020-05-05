@@ -1,0 +1,28 @@
+
+
+@media screen and (max-width:650px) {
+    .main {
+    padding: 34px 16px;
+    background-color: #f5f6f7;
+    text-align: center;
+
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .main {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .main {
+       
+    }
+}
+

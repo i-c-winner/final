@@ -1,0 +1,26 @@
+
+
+
+@media screen and (max-width:650px) {
+    .statistic__value {    
+     width: 20%;   
+     background-color: #2f71e5;
+     position: relative;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statistic__value{
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statistic__value{
+       
+    }
+}
+

@@ -1,0 +1,23 @@
+@media screen and (max-width:650px) {
+    .commits__title {
+        width: 150px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+        color: #1A1B22;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .commits__title {}
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .commits__title {}
+}

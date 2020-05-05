@@ -1,0 +1,26 @@
+
+
+@media screen and (max-width:650px) {
+    .author__image {
+    width:100%;
+    max-width:463px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .author__image {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .author__image {
+       
+    }
+}
+

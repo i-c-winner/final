@@ -1,0 +1,32 @@
+@import url('./_white/header-middle__title_white.css');
+@import url('./_black/header-middle__title_black.css');
+
+
+@media screen and (max-width:650px) {
+    .header-middle__title {
+    margin:13px 0px 0px;    
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;   
+  
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .header-middle__title {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .header-middle__title {
+       
+    }
+}
+

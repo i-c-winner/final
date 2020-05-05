@@ -1,0 +1,28 @@
+
+
+@media screen and (max-width:650px) {
+    .card__image_commits {
+    width:48px;
+    height: 48px;
+    border-radius: 24px;
+    margin: 11px 12px 0px 0px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .card__image_commits {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .card__image_commits {
+       
+    }
+}
+

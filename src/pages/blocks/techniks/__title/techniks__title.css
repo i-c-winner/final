@@ -1,0 +1,33 @@
+.techniks__title {    
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+color: #1A1B22;
+margin-bottom: 0px;
+}
+
+@media screen and (max-width:650px) {
+    .techniks__title {
+    padding-bottom: 39px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .techniks__title {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .techniks__title {
+       
+    }
+}
+

@@ -1,0 +1,33 @@
+@import url(./__number/statistic-scale__number.css);
+
+.statistic-scale {
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    margin:0px auto;
+}
+
+
+@media screen and (max-width:650px) {
+    .footer__copyright {
+    
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .footer__copyright {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .footer__copyright {
+       
+    }
+}
+

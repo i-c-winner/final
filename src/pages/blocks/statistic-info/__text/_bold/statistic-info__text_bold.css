@@ -1,0 +1,33 @@
+.statistic-info__text_bold {
+    display: inline;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;    
+    color: #1A1B22;
+    margin-left: 3px;
+}
+
+
+
+@media screen and (max-width:650px) {
+    .statictic-info__text_bold {
+        font-size: 18px;
+        line-height: 24px;     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statictic-info__text_bold {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statictic-info__text_bold {
+       
+    }
+}

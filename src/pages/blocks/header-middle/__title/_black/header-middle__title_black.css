@@ -1,0 +1,28 @@
+.header-middle__title_black { 
+    color: #000;
+  }
+
+  
+@media screen and (max-width:650px) {
+  .header-middle__title.header-middle__title_black {
+   margin-top: 0px;
+
+  }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+  .header-middle__title_black {
+    
+  }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+  .header-middle__title_black {
+     
+  }
+}
+

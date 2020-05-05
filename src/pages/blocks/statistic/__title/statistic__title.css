@@ -1,0 +1,31 @@
+
+
+
+@media screen and (max-width:650px) {
+    .statistic__title {    
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;      
+        color: #1A1B22;
+        padding: 0px 16px 3px;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statistic__title{
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statistic__title{
+       
+    }
+}
+

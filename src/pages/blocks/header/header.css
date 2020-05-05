@@ -1,0 +1,26 @@
+@import url('./_backgrond/header_background_img.css');
+@import url('./_backgrond/header_background_color.css');
+
+
+@media screen and (max-width:650px) {
+    .header {
+    padding:3px 16px 32px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .header {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .header {
+       
+    }
+}

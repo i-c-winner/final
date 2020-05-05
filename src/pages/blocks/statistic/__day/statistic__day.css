@@ -1,0 +1,24 @@
+
+
+@media screen and (max-width:650px) {
+    .statistic__day {    
+   width: 104px;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statistic__day{
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statistic__day{
+       
+    }
+}
+

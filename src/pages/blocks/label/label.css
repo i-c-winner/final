@@ -1,0 +1,7 @@
+@import url('./__title/label__title.css');
+@import url('./__jmage/label__image.css');
+
+.label {
+    width: 100px;
+    text-align: center;
+}

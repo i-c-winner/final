@@ -1,0 +1,25 @@
+
+
+
+@media screen and (max-width:650px) {
+    .header-top__link_noneactiv {                
+     color: #B6BCBF;
+     text-decoration: none;
+        }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .header-top__link_noneactiv {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .header-top__link_noneactiv {
+       
+    }
+}

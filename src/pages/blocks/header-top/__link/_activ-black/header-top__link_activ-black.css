@@ -1,0 +1,25 @@
+
+@media screen and (max-width:650px) {
+    .header-top__link_activ-black {
+    border-bottom:3px solid black;
+    color:black;
+    height: 34px;
+    text-decoration: none;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .header-top__link_activ-black {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .header-top__link_activ-black {
+    }
+    }

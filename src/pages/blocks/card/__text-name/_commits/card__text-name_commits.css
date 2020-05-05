@@ -1,0 +1,23 @@
+@media screen and (max-width:650px) {
+    .card__text-name_commits {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1A1B22;
+        margin: 12px 0px 0px;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .card__text-name_commits {}
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .card__text-name_commits {}
+}

@@ -1,0 +1,36 @@
+.statistic__number {
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    margin:0px;
+    
+}
+
+
+
+@media screen and (max-width:650px) {
+    .statistic__number {
+    padding: 7px 0px 0px 7px;     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statistic__number {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statistic__number {
+       
+    }
+}
+

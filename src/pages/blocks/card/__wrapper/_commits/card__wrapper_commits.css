@@ -1,0 +1,17 @@
+@media screen and (max-width:650px) {
+    .card__wrapper_commits {
+      display: inline;
+      }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .card__wrapper_commits {}
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .card__wrapper_commits {}
+}

@@ -1,17 +1,27 @@
 
 @import url('./vendor/fonts/fonts.css');
 
-@import url('./pages/index/blocks/author/author.css');
-@import url('./pages/index/blocks/buttom/buttom.css');
-@import url('./pages/index/blocks/main/main.css');
-@import url('./pages/index/blocks/main-top/main-top.css');
-@import url('./pages/index/blocks/header/header.css');
-@import url('./pages/index/blocks/header-top/header-top.css');
-@import url('./pages/index/blocks/header-middle/header-middle.css');
-@import url('./pages/index/blocks/header-bottom/header-bottom.css');
-@import url('./pages/index/blocks/footer/footer.css');
-@import url('./pages/index/blocks/cards/cards.css');
-@import url('./pages/index/blocks/card/card.css');
+
+
+@import url('./pages/blocks/statistic-scale/statistic-scale.css');
+@import url('./pages/blocks/statistic/statistic.css');
+@import url('./pages/blocks/statistic-info/statistic-info.css');
+@import url('./pages/blocks/card/__wrapper/card__wrapper.css');
+@import url('./pages/blocks/commits/commits.css');
+@import url('./pages/blocks/label/label.css');
+@import url('./pages/blocks/techniks/techniks.css');
+@import url('./pages/blocks/label/label.css');
+@import url('./pages/blocks/author/author.css');
+@import url('./pages/blocks/buttom/buttom.css');
+@import url('./pages/blocks/main/main.css');
+@import url('./pages/blocks/main-top/main-top.css');
+@import url('./pages/blocks/header/header.css');
+@import url('./pages/blocks/header-top/header-top.css');
+@import url('./pages/blocks/header-middle/header-middle.css');
+@import url('./pages/blocks/header-bottom/header-bottom.css');
+@import url('./pages/blocks/footer/footer.css');
+@import url('./pages/blocks/cards/cards.css');
+@import url('./pages/blocks/card/card.css');
 
 
 .body{

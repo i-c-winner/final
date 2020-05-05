@@ -1,0 +1,30 @@
+@import url('./__text/statistic-info__text.css');
+
+.statistic-info {
+max-width: 288px;
+}
+
+
+
+@media screen and (max-width:650px) {
+    .statistic-info {
+    
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .statistic-info {
+      
+    }
+}
+
+
+
+
+@media screen and (min-width:1001px) {
+    .statistic-info {
+       
+    }
+}
