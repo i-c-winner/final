@@ -3,7 +3,10 @@
 
 
 
-@import url('./pages/blocks/statistic-scale/statistic-scale.css');
+@import url('./pages/blocks/statistic-flags/statistic-flags.css');
+@import url('./pages/blocks/header-middle-menu/header-middle-menu.css');
+@import url('./pages/blocks/top-line/top-line.css');
+@import url('./pages/blocks/author-box/author-box.css');
 @import url('./pages/blocks/statistic/statistic.css');
 @import url('./pages/blocks/statistic-info/statistic-info.css');
 @import url('./pages/blocks/card/__wrapper/card__wrapper.css');

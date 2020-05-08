@@ -5,13 +5,13 @@
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
+@media screen and (min-width:651px) and (max-width:1100px) {
     .card__wrapper_commits {}
 }
 
 
 
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1101px) {
     .card__wrapper_commits {}
 }

@@ -1,0 +1,25 @@
+@media screen and (max-width:650px) {
+    .commits__top-box {
+      
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .commits__top-box {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 30px;
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .commits__top-box {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 78px;
+    }
+}

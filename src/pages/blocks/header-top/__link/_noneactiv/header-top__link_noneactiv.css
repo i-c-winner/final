@@ -9,17 +9,19 @@
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
+@media screen and (min-width:651px) and (max-width:1100px) {
     .header-top__link_noneactiv {
-      
+        color: #B6BCBF;
+        text-decoration: none;
     }
 }
 
 
 
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1101px) {
     .header-top__link_noneactiv {
-       
+        color: #B6BCBF;
+        text-decoration: none;
     }
 }

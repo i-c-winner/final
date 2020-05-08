@@ -5,3 +5,25 @@
     width: 100px;
     text-align: center;
 }
+@media screen and (max-width:650px) {
+    .label {
+ 
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .label {
+       
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .label {
+   
+   
+      }
+}

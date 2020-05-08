@@ -14,23 +14,44 @@
 
 @media screen and (max-width:650px) {
     .statistic__number {
-    padding: 7px 0px 0px 7px;     
+        color: white;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        position: absolute;
+        margin:0px;    
     }
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
+@media screen and (min-width:651px) and (max-width:1100px) {
     .statistic__number {
-      
+        color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    margin:0px;
     }
 }
 
 
 
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1101px) {
     .statistic__number {
-       
+        color: white;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        position: absolute;
+        margin:0px;
     }
 }
 

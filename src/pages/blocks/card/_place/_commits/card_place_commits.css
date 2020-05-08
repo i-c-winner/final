@@ -1,4 +1,4 @@
-
+ 
 
 @media screen and (max-width:650px) {
     .card_place_commits {
@@ -8,22 +8,47 @@
      border-radius: 10px;
      height: 264px;
      overflow: hidden;
+      width: 288px;
     }
+  .nonedisplay {
+      display: none;
+  }
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
-    .card_place_commits {
+@media screen and (max-width:650px) {
       
+  #card-out {
+      display: none;
+  }
+}
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .card_place_commits {
+        padding: 20px 16px 16px 26px;
+        background-color: white;
+        border-radius: 10px;
+        height: 242px;
+        overflow: hidden;
+        width: 336px;
+        box-sizing: border-box;
+        margin-left: 17px;
     }
 }
 
 
 
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1101px) {
     .card_place_commits {
-       
+        padding: 20px 16px 16px 26px;
+        background-color: white;
+        border-radius: 10px;
+        height: 282px;
+        overflow: hidden;
+        width: 336px;
+        box-sizing: border-box;
+        margin-left: 17px;
     }
 }
 

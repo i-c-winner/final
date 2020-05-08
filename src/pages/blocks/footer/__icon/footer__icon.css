@@ -11,18 +11,24 @@
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
+@media screen and (min-width:651px) and (max-width:1100px) {
     .footer__icon {
-      
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 27px;
+        height: 27px;
     }
 }
 
 
 
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1101px) {
     .footer__icon {
-       
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 27px;
+        height: 27px;
     }
 }
 

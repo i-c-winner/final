@@ -1,0 +1,10 @@
+.author-box {
+    display:flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:651px) {
+    .author-box {
+      flex-flow: column;
+    }
+}

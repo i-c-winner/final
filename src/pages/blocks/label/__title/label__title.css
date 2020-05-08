@@ -1,3 +1,28 @@
 .label__title {
     margin-top: 0px;
 }
+
+@media screen and (max-width:650px) {
+    .label__title {
+  
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .label__title {
+   
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .label__title {
+   margin-top:48px;
+   margin-bottom: 26px;
+   
+      }
+}

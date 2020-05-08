@@ -7,17 +7,39 @@
         font-size: 30px;
         line-height: 40px;
         color: #1A1B22;
+        padding-top: 30px;
+        margin-top: 0px;
     }
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
-    .commits__title {}
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .commits__title {
+        width: 310px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+        color: #1A1B22;
+        padding: 40px 0px 0px 17px;
+        margin-top: 0px;
+    }
 }
 
 
 
 
-@media screen and (min-width:1001px) {
-    .commits__title {}
+@media screen and (min-width:1101px) {
+    .commits__title {
+        width: 600px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 40px;
+        color: #1A1B22;
+        margin: 0px 0px 0px 75px;  
+    
+    }
 }

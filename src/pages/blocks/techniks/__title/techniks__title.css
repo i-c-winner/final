@@ -11,23 +11,29 @@ margin-bottom: 0px;
 @media screen and (max-width:650px) {
     .techniks__title {
     padding-bottom: 39px;
+   
      
     }
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
+@media screen and (min-width:651px) and (max-width:1100px) {
     .techniks__title {
-      
+      width: 150px;
+      padding-left: 39px;
+      line-height: 35px;
+      padding-top: 30px;
+      margin-top: 0px;
     }
 }
 
 
 
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1101px) {
     .techniks__title {
-       
-    }
+        font-size: 40px; 
+        width: 312px;
+          }
 }
 

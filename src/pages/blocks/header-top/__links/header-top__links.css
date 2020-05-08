@@ -11,17 +11,26 @@
 }
 
 
-@media screen and (min-width:651px) and (max-width:1000px) {
+@media screen and (min-width:651px) and (max-width:1100px) {
     .header-top__links {
-      
+        display: flex;
+        width: 190px;
+        justify-content: space-between;
+        padding-left: 34px;
+        margin-top: 0px;
     }
 }
 
 
 
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1101px) {
     .header-top__links {
-       
+        display: flex;
+        width: 190px;
+        justify-content: space-between;
+        padding-left: 34px;
+        margin-top: 0px;
+        margin-right: 69px;
     }
 }
