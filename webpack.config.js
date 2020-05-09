@@ -12,7 +12,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'scripts/[name].[chunkhash].js',
+        filename: '[name].[chunkhash].js',
     },
   //   output: {
   //     path: path.resolve(__dirname, 'about'),
@@ -65,25 +65,25 @@ module.exports = {
     plugins: [
       //new ExtractTextPlugin("styles.css"),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash].css'
+            filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
             // Означает, что:
             inject: false, // стили НЕ нужно прописывать внутри тегов
             template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
-            filename: 'html/index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+            filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
         }),
         new HtmlWebpackPlugin({
           // Означает, что:
           inject: false, // стили НЕ нужно прописывать внутри тегов
           template: './src/about.html', // откуда брать образец для сравнения с текущим видом проекта
-          filename: 'html/about.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+          filename: 'about.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
       }),
       new HtmlWebpackPlugin({
         // Означает, что:
         inject: false, // стили НЕ нужно прописывать внутри тегов
         template: './src/statistic.html', // откуда брать образец для сравнения с текущим видом проекта
-        filename: 'html/statistic.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+        filename: 'statistic.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
     }),
         new WebpackMd5Hash()
 
