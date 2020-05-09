@@ -3,7 +3,8 @@
 @media screen and (max-width:650px) {
     .statistic__box {
         width: 90%;
-        margin: 0px auto;
+        margin: 0px auto -6px;
+        font-size: 17px;
         display: flex;
         align-items: center;
 

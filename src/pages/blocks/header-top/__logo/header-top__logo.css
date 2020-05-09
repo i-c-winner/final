@@ -11,6 +11,8 @@
         line-height: 24px;
         text-decoration: none;
         margin-top: 16px;
+        letter-spacing: -.3px;
+        
     }
 }
 
@@ -22,7 +24,7 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 24px;
-     
+        text-decoration: none;
     }
 }
 
@@ -36,5 +38,6 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 24px;
+        text-decoration: none;
     }
 }

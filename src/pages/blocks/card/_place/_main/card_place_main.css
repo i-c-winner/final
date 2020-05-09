@@ -10,7 +10,7 @@ flex-flow: column;
     .card_place_main {
     border-radius: 10px;
     padding-bottom: 20px;
-    margin:0px auto;
+    margin:0px auto 11px;
     background-color: white;
     width: 288px;
     height: 430px;

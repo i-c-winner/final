@@ -1,6 +1,8 @@
 @media screen and (max-width:650px) {
     .card__text-title_main {
-    margin: 20px 16px 8px;
+        margin: 20px 16px 8px;
+        line-height: 1;
+        letter-spacing: 1.05px;
      
     }
 }

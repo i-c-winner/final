@@ -1,13 +1,15 @@
-
+.header-bottom__search:focus{
+    box-shadow: 5px 5px 5px #fff inset;
+}
 
 @media screen and (max-width:650px) {
     .header-bottom__search {
-        width: calc(100% - 43px);
+        width: calc(100% - 18px);
         display: block;
         height: 56px;
         border: none;
         border-radius: 28px;
-        padding-left:43px;
+        padding-left:18px;
        
     }
 }

@@ -5,15 +5,18 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;  
+    color: #FFFFFF;
+}
+
+.buttom.buttom_place_header:active {
+background-color: #2A65CC;
 }
 
 @media screen and (max-width:650px) {
     .buttom_place_header {
         background-color: #2F71E5;
-        margin-top: 30px;
         width: 100%;
-        margin-top: 19px;
+        margin-top: 14px;
     }
 }
 
@@ -46,3 +49,4 @@
 
     }
 }
+

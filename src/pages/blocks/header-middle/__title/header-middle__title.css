@@ -1,15 +1,17 @@
+@import url('./_author-page/header-middle__title_author-page.css');
 @import url('./_white/header-middle__title_white.css');
 @import url('./_black/header-middle__title_black.css');
 
 
 @media screen and (max-width:650px) {
     .header-middle__title {
-        margin: 13px 0px 0px;
+        margin: 15px 0px 0px;
+        margin-top: 13px;
         font-family: Roboto Slab;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
-        line-height: 37px;
+        font-size: 37px;
+        line-height: 39px;
 
     }
 }
@@ -21,7 +23,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 37px;
-        line-height: 40px;     
+        line-height: 40px;
         width: 220px;
         margin-bottom: 0px;
         margin-top: 16px;
@@ -37,7 +39,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 60px;
-        line-height: 64px;     
+        line-height: 64px;
         width: 364px;
         margin-bottom: 0px;
         margin-top: 51px;

@@ -7,25 +7,23 @@
 @import url('./__copyright/footer__copyright.css');
 
 
-
 @media screen and (max-width:650px) {
     .footer {
-    padding: 21px 16px;
-    display: flex;
-    justify-content: space-between;
-     background-color: white;
-     
+        padding: 25px 16px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .footer {
-        padding: 0px 45px 0px 0px;
+        padding: 23px 26px 0px 22px;
         display: flex;
         justify-content: space-between;
-         background-color: white;
-        margin-top: 23px; 
+        background-color: white;
     }
 }
 
@@ -35,10 +33,9 @@
 @media screen and (min-width:1101px) {
     .footer {
         padding: 21px 16px;
-    display: flex;
-    justify-content: space-between;
-     background-color: white;
-  
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+
     }
 }
-

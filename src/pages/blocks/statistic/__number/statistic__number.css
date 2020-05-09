@@ -3,10 +3,11 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 11px;
+    line-height: 26px;
     position: absolute;
-    margin:0px;
+    margin: 0px;
+    padding-left: 7px;
     
 }
 

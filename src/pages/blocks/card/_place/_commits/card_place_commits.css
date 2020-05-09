@@ -8,7 +8,8 @@
      border-radius: 10px;
      height: 264px;
      overflow: hidden;
-      width: 288px;
+    height: 233px;
+    width: 252px;    
     }
   .nonedisplay {
       display: none;

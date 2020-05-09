@@ -4,7 +4,7 @@
 @media screen and (max-width:650px) {
     .statistic-flags {
     
-     
+     display: none;
     }
 }
 
@@ -30,7 +30,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 5px 118px -11px -98px;
+        margin: 14px 118px -11px -98px;
     }
 }
 

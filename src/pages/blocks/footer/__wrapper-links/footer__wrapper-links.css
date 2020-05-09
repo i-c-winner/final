@@ -7,9 +7,15 @@
      
     }
 }
+@media screen and (min-width:651px) and (max-width:750px) {
+    .footer__wrapper-links {
+        display: flex;
+       
+        margin-top: 0px; 
+    }
+}
 
-
-@media screen and (min-width:651px) and (max-width:1100px) {
+@media screen and (min-width:751px) and (max-width:1100px) {
     .footer__wrapper-links {
         display: flex;
        
@@ -25,6 +31,7 @@
         display: flex;     
         justify-content: start;  
         width: 100%;
+        margin-right: 19px;
     }
 }
 

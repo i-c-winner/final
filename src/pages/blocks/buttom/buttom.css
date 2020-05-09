@@ -3,6 +3,13 @@
 @import url('./_place/buttom_place_header.css');
 
 
+.buttom:hover {
+cursor: initial;
+}
+.buttom:active {
+cursor: pointer;
+}
+
 @media screen and (max-width:650px) {
     .buttom
      {
