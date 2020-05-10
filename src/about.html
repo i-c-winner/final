@@ -8,7 +8,6 @@
     <meta name="description" content="Учебный проект по курсу Frontend-разработчика
      от компании Яндекс. Страница с информацией об авторе и используемых технологиях.">
     <meta name="author" content="Дмитрий Белоусов" lang="ru">
-    <title>Дипломная работа</title>
     <link rel="shortcut icon" type="image/x-icon" href="<%=require
     ('../src/pages/image/favicon.svg').default%>">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
@@ -19,10 +18,10 @@
     <div class="header header_background_color">
         <div class="header-top">
             <a href="./statistic.html" class="header-top__logo header-top__logo_black">NewsAnalyzer</a>
-            <menu class="header-top__links ">
-                <a href="./index.html" class="header-top__link header-top__link_noneactiv">Главная</li>
-                    <a href="./about.html" class="header-top__link header-top__link_activ-black">О проекте</a>
-            </menu>
+            <nav class="header-top__links ">
+                <a href="./index.html" class="header-top__link header-top__link_noneactiv">Главная</a>
+                <a href="./about.html" class="header-top__link header-top__link_activ-black">О проекте</a>
+            </nav>
         </div>
         <div class="header-middle">
             <p class="header-middle__title header-middle__title_author-page">Клиентам</p>
@@ -107,7 +106,7 @@
         </div>
         <div class="commits__box">
             <div class="card card_place_commits">
-                <time class="card__text-date card__text-date_commits">
+                <time datetime="2019-08-02" class="card__text-date card__text-date_commits">
                     2 августа, 2019
                 </time>
 
@@ -133,8 +132,8 @@
 
             </div>
 
-            <div id="card-out" class=" card card_place_commits">
-                <time class="card__text-date card__text-date_commits">
+            <div class="card-out card card_place_commits">
+                <time datetime="2019-08-02" class="card__text-date card__text-date_commits">
                     2 августа, 2019
                 </time>
 
@@ -175,10 +174,11 @@
             </nav>
         </div>
         <div class="footer__icons">
-            <a href="www.github.com"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
-                    src="<%= require('../src/pages/image/Vector.png').default %>"></a>
-            <a href="www.facebook.com"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
-                    src="<%= require('../src/pages/image/faceebook.png').default %>"></a>
+            <a target="_blank" href="https://github.com/"><img class="footer__icon footer__icon_github"
+                    alt="Значок Гитхаба" src="<%=require('../src/pages/image/Vector.png').default %>"></a>
+            <a target="_blank" href="https://facebook.com"><img class="footer__icon footer__icon_facebook"
+                    alt="Значок Фейсбук" src="<%=require('../src/pages/image/faceebook.png').default %>">
+            </a>
         </div>
     </footer>
 

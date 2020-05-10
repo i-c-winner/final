@@ -8,7 +8,7 @@
     <meta name="description" content="Учебный проект по курсу Frontend-разработчика
      от компании Яндекс. Главная страница с API запросом и полученными результатами.">
     <meta name="author" content="Дмитрий Белоусов" lang="ru">
-    <title>Дипломная работа</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="<%=require('../src/pages/image/favicon.svg').default %>">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
@@ -18,10 +18,10 @@
     <div class="header header_background_img">
         <div class="header-top">
             <a href="./statistic.html" class="header-top__logo header-top__logo_white">NewsAnalyzer</a>
-            <menu class="header-top__links">
-                <a href="./index.html" class="header-top__link header-top__link_activ-white">Главная</li>
-                    <a href="./about.html" class="header-top__link header-top__link_noneactiv">О проекте</a>
-            </menu>
+            <nav class="header-top__links">
+                <a href="./index.html" class="header-top__link header-top__link_activ-white">Главная</a>
+                <a href="./about.html" class="header-top__link header-top__link_noneactiv">О проекте</a>
+            </nav>
         </div>
 
         <div class="header-middle">
@@ -33,7 +33,7 @@
         </div>
 
         <form name="Search" class="header-bottom">
-            <input type="input" placeholder="Что ищем?" class="header-bottom__search">
+            <input type="text" placeholder="Что ищем?" class="header-bottom__search">
             <input type="submit" class="buttom buttom_place_header" value="Искать">
 
         </form>
@@ -108,7 +108,7 @@
             <!--  Конец карточки -->
 
             <!-- Карточка новостей -->
-            <div id="card-small" class="card card_place_main">
+            <div class=" card card_place_main">
                 <div class="main__text-box">
 
                     <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
@@ -134,7 +134,7 @@
             <!--  Конец карточки -->
 
             <!-- Карточка новостей -->
-            <div id="card" class="card card_place_main">
+            <div class="none-card card card_place_main">
                 <div class="main__text-box">
 
                     <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
@@ -160,7 +160,7 @@
             <!--  Конец карточки -->
 
             <!-- Карточка новостей -->
-            <div id="card" class="card card_place_main">
+            <div class="none-card card card_place_main">
                 <div class="main__text-box">
 
                     <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
@@ -186,7 +186,7 @@
             <!--  Конец карточки -->
 
             <!-- Карточка новостей -->
-            <div id="card" class="card card_place_main">
+            <div class="none-card card card_place_main">
                 <div class="main__text-box">
 
                     <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
@@ -215,8 +215,7 @@
     </section>
     <section class="author">
         <div class="author-box">
-            <img class="author__image" <img src="<%=require('../src/pages/image/image-03.png').default %>"
-                alt="Фото автора">
+            <img class="author__image" src="<%=require('../src/pages/image/image-03.png').default %>" alt="Фото автора">
             <div class="author__wrapper">
                 <h3 class="author__text author__text_title">Об авторе</h3>
                 <p class="author__text author__text_paragraph">Это блок с описанием автора проекта.
@@ -227,6 +226,7 @@
                     чему вы тут научились, и чем можете помочь
                     потенциальным заказчикам.</p>
             </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__wrapper-links">
@@ -239,10 +239,10 @@
             </nav>
         </div>
         <div class="footer__icons">
-            <a href="www.github.com"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
-                    src="<%=require('../src/pages/image/Vector.png').default %>"></a>
-            <a href="www.facebook.com"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
-                    src="<%=require('../src/pages/image/faceebook.png').default %>">
+            <a target="_blank" href="https://github.com/"><img class="footer__icon footer__icon_github"
+                    alt="Значок Гитхаба" src="<%=require('../src/pages/image/Vector.png').default %>"></a>
+            <a target="_blank" href="https://facebook.com"><img class="footer__icon footer__icon_facebook"
+                    alt="Значок Фейсбук" src="<%=require('../src/pages/image/faceebook.png').default %>">
             </a>
         </div>
     </footer>

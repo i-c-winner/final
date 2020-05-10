@@ -8,7 +8,6 @@
     <meta name="description" content="Учебный проект по курсу Frontend-разработчика
      от компании Яндекс. Страница с результами обработки API запроса.">
     <meta name="author" content="Дмитрий Белоусов" lang="ru">
-    <title>Дипломная работа</title>
     <link rel="shortcut icon" type="image/x-icon" href="../src/pages/image/favicon.svg">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
@@ -24,7 +23,7 @@
             </menu>
         </div>
         <div class="header-middle">
-            <div id="menu" class="header-middle-menu"><a class="header-middle-menu__item" href="./about.html">Главная<p
+            <div class="menu header-middle-menu"><a class="header-middle-menu__item" href="./index.html">Главная<p
                         id="menu" class="header-middle-menu__statistic">/Аналитика</p></a> </div>
             <p class="header-middle__title header-middle__title_black">Вы спросили &laquo;Путешествия&raquo;</p>
 
@@ -108,10 +107,11 @@
             </nav>
         </div>
         <div class="footer__icons">
-            <a href="www.github.com"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
-                    src="<%=require('../src/pages/image/Vector.png').default%>"></a>
-            <a href="www.facebook.com"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
-                    src="<%=require('../src/pages/image/faceebook.png').default%>"></a>
+            <a target="_blank" href="https://github.com/"><img class="footer__icon footer__icon_github"
+                    alt="Значок Гитхаба" src="<%=require('../src/pages/image/Vector.png').default %>"></a>
+            <a target="_blank" href="https://facebook.com"><img class="footer__icon footer__icon_facebook"
+                    alt="Значок Фейсбук" src="<%=require('../src/pages/image/faceebook.png').default %>">
+            </a>
         </div>
     </footer>
 
