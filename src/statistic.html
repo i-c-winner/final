@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Учебный проект по курсу Frontend-разработчика
      от компании Яндекс. Страница с результами обработки API запроса.">
-     <meta name="author" content="Дмитрий Белоусов" lang="ru">
+    <meta name="author" content="Дмитрий Белоусов" lang="ru">
     <title>Дипломная работа</title>
     <link rel="shortcut icon" type="image/x-icon" href="../src/pages/image/favicon.svg">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
@@ -24,8 +24,8 @@
             </menu>
         </div>
         <div class="header-middle">
-            <div id="menu" class="header-middle-menu"><a class="header-middle-menu__item" href="#">Главная<p id="menu"
-                        class="header-middle-menu__statistic">/Аналитика</p></a> </div>
+            <div id="menu" class="header-middle-menu"><a class="header-middle-menu__item" href="./about.html">Главная<p
+                        id="menu" class="header-middle-menu__statistic">/Аналитика</p></a> </div>
             <p class="header-middle__title header-middle__title_black">Вы спросили &laquo;Путешествия&raquo;</p>
 
             <dl class="statistic-info">
@@ -54,12 +54,12 @@
             <div class="statistic-flags__flag">100</div>
         </div>
 
-        <div  class="statistic__box">
+        <div class="statistic__box">
             <p class="statistic__day">19, Пн</p>
             <p class="statistic__number statistic__value">12</p>
         </div>
 
-        <div  class="statistic__box">
+        <div class="statistic__box">
             <p class="statistic__day">20, Вт</p>
             <p class="statistic__number statistic__value">12</p>
         </div>
@@ -69,22 +69,22 @@
             <p class="statistic__number statistic__value">12</p>
         </div>
 
-        <div  class="statistic__box">
+        <div class="statistic__box">
             <p class="statistic__day">22, Чт</p>
             <p class="statistic__number statistic__value">12</p>
         </div>
 
-        <div  class="statistic__box">
+        <div class="statistic__box">
             <p class="statistic__day">23, Пт</p>
             <p class="statistic__number statistic__value">12</p>
         </div>
 
-        <div  class="statistic__box">
+        <div class="statistic__box">
             <p class="statistic__day">24, Сб</p>
             <p class="statistic__number statistic__value">12</p>
         </div>
 
-        <div  class="statistic__box statistic__box_last">
+        <div class="statistic__box statistic__box_last">
             <p class="statistic__day">25, Вс</p>
             <p class="statistic__number statistic__value">12</p>
         </div>
@@ -102,16 +102,16 @@
         <div class="footer__wrapper-links">
             <p class="footer__copyright">&#64; 2019 Supersite</p>
             <nav class="footer__links">
-                <a href="#" class="footer__link">Главная </a>
-                <a href="#" class="footer__link">О проекте</a>
-                <a href="#" class="footer__link">Яндекс.Практикум</a>
+                <a href="./index.html" class="footer__link">Главная </a>
+                <a href="./about.html" class="footer__link">О проекте</a>
+                <a href="https://praktikum.yandex.ru/web/" class="footer__link">Яндекс.Практикум</a>
             </nav>
         </div>
         <div class="footer__icons">
-            <a href="#"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
-                    src="../src/pages/image/Vector.png"></a>
-            <a href="#"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
-                    src="../src/pages/image/faceebook.png"></a>
+            <a href="www.github.com"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
+                    src="<%=require('../src/pages/image/Vector.png').default%>"></a>
+            <a href="www.facebook.com"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
+                    src="<%=require('../src/pages/image/faceebook.png').default%>"></a>
         </div>
     </footer>
 

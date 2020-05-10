@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Учебный проект по курсу Frontend-разработчика
      от компании Яндекс. Страница с информацией об авторе и используемых технологиях.">
-     <meta name="author" content="Дмитрий Белоусов" lang="ru">
+    <meta name="author" content="Дмитрий Белоусов" lang="ru">
     <title>Дипломная работа</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../src/pages/image/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="<%=require
+    ('../src/pages/image/favicon.svg').default%>">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 
@@ -25,7 +26,8 @@
         </div>
         <div class="header-middle">
             <p class="header-middle__title header-middle__title_author-page">Клиентам</p>
-            <p class="header-middle__instruction header-middle__instruction_author-page">Этот сайт — дипломный проект студента
+            <p class="header-middle__instruction header-middle__instruction_author-page">Этот сайт — дипломный проект
+                студента
                 Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
             <p class="header-middle__instruction header-middle__instruction_author-page">
                 Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того,
@@ -52,28 +54,29 @@
 
             <div class="label">
                 <p class="label__title">HTML</p>
-                <img alt="эмблема HTML" src="../src/pages/image/html.png">
+                <img alt="эмблема HTML" src="<%=require('../src/pages/image/html.png').default%>">
             </div>
 
             <div class="label">
                 <p class="label__title">CSS</p>
-                <img alt="эмблема CSS" src="../src/pages/image/css.png">
+                <img alt="эмблема CSS" src="<%= require('../src/pages/image/css.png').default %>">
             </div>
 
             <div class="label">
                 <p class="label__title">JavaScript</p>
-                <img alt="эмблема java script" src="../src/pages/image/jsmod.png">
+                <img alt="эмблема java script" src="<%= require('../src/pages/image/jsmod.png').default %>">
             </div>
 
             <div class="label">
                 <p class="label__title">Webpack</p>
-                <img alt="эмблема webpack" src="../src/pages/image/webpack.png">
+                <img alt="эмблема webpack" src="<%= require('../src/pages/image/webpack.png').default %>">
             </div>
         </div>
     </section>
     <section class="author">
         <div class="author-box">
-            <img class="author__image" <img src="<%=require('../src/pages/image/image-03.png').default %>">
+            <img class="author__image" src="<%= require('../src/pages/image/image-03.png').default %>"
+                alt="Фото автора">
             <div class="author__wrapper">
                 <h3 class="author__text author__text_title">Об авторе</h3>
                 <p class="author__text author__text_paragraph">Это блок с описанием автора проекта. Здесь следует
@@ -97,8 +100,9 @@
                 из GitHub
             </p>
             <div class="commits__buttom-box">
-                <a href="#" id="bottom-top" class="buttom buttom_place_github">Открыть в GitHub </a>
-                <img id="strelka" class="commits__strelka" src="../src/pages/image/ipadmini_strelka.svg" alt="ссылка на комиты"  >
+                <a href="www.github.com" id="bottom-top" class="buttom buttom_place_github">Открыть в GitHub </a>
+                <img id="strelka" class="commits__strelka"
+                    src="<%= require('../src/pages/image/ipadmini_strelka.svg').default %>" alt="ссылка на комиты">
             </div>
         </div>
         <div class="commits__box">
@@ -108,7 +112,7 @@
                 </time>
 
                 <div class="card__avatar-box">
-                    <img src="../src/pages/image/image-01.png" alt="аватар на Гитхабе"
+                    <img src="<%=require('../src/pages/image/image-01.png').default %>" alt="аватар на Гитхабе"
                         class="card__image card__image_commits">
 
 
@@ -135,7 +139,7 @@
                 </time>
 
                 <div class="card__avatar-box">
-                    <img src="../src/pages/image/image-01.png" alt="аватар на Гитхабе"
+                    <img src="<%=require('../src/pages/image/image-01.png').default %>" alt="аватар на Гитхабе"
                         class="card__image card__image_commits">
 
 
@@ -155,7 +159,7 @@
 
 
             </div>
-            <a href="#" id="buttom-down" class="buttom buttom_place_github">Открыть в GitHub </a>
+            <a href="www.github.com" id="buttom-down" class="buttom buttom_place_github">Открыть в GitHub </a>
         </div>
 
     </section>
@@ -164,16 +168,17 @@
         <div class="footer__wrapper-links">
             <p class="footer__copyright">&#64; 2019 Supersite</p>
             <nav class="footer__links">
-                <a href="#" class="footer__link">Главная </a>
-                <a href="#" class="footer__link">О проекте</a>
-                <a href="#" class="footer__link">Яндекс.Практикум</a>
+                <a href="./index.html" class="footer__link">Главная </a>
+                <a href="./about.js" class="footer__link">О проекте</a>
+                <a href="https://praktikum.yandex.ru/profile/frontend-developer/"
+                    class="footer__link">Яндекс.Практикум</a>
             </nav>
         </div>
         <div class="footer__icons">
-            <a href="#"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
-                    src="../src/pages/image/Vector.png"></a>
-            <a href="#"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
-                    src="../src/pages/image/faceebook.png"></a>
+            <a href="www.github.com"> <img class="footer__icon footer__icon_github" alt="Значок Гитхаба"
+                    src="<%= require('../src/pages/image/Vector.png').default %>"></a>
+            <a href="www.facebook.com"><img class="footer__icon footer__icon_facebook" alt="Значок Фейсбук"
+                    src="<%= require('../src/pages/image/faceebook.png').default %>"></a>
         </div>
     </footer>
 

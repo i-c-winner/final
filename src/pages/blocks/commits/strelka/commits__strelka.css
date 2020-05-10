@@ -1,16 +1,16 @@
+.commits__strelka {}
 
 @media screen and (max-width:650px) {
-    .commits__strelka {
-  
-     
-    }
+    .commits__strelka {}
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .commits__strelka {
-    margin-right: 0px;
-    margin-top: 58px;
+        margin-right: 0px;
+        margin-top: 89px;
+        width: 10px;
+        height: 18px;
     }
 }
 
@@ -19,7 +19,9 @@
 
 @media screen and (min-width:1101px) {
     .commits__strelka {
-  margin-right: 101px;
-  margin-bottom: 20px;
+        margin-right: 101px;
+        margin-bottom: 20px;
+        width: 10px;
+        height: 18px;
     }
 }
