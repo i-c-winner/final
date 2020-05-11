@@ -4,7 +4,7 @@
         background-color: #fff;
         margin: 0px auto 34px;
         text-decoration: none;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -40,7 +40,7 @@
         padding-top: 40px;
         text-align: end;
         display: block;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -68,7 +68,7 @@
         border-radius: 28px;    
         padding-top: 8px;
         display: block;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;

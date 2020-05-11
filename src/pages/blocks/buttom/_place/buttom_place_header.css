@@ -1,6 +1,6 @@
 .buttom_place_header {
 
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -8,9 +8,15 @@
     color: #FFFFFF;
 }
 
-.buttom.buttom_place_header:active {
-background-color: #2A65CC;
+.buttom.buttom_place_header:hover {
+    background-color: #347eff;
 }
+
+.buttom.buttom_place_header:active {
+    background-color: #2A65CC;
+}
+
+
 
 @media screen and (max-width:650px) {
     .buttom_place_header {
@@ -49,4 +55,3 @@ background-color: #2A65CC;
 
     }
 }
-

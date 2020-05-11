@@ -1,6 +1,6 @@
 @media screen and (max-width:650px) {
     .header-top__link {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -13,7 +13,7 @@
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .header-top__link {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -30,7 +30,7 @@
 
 @media screen and (min-width:1101px) {
     .header-top__link {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
