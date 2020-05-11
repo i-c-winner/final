@@ -424,7 +424,7 @@
 
 @media screen and (min-width:1101px) {
     .preloader__error-title {      
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 26px;
@@ -437,7 +437,7 @@
 }
 
 .preloader__error-subtitle {
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -582,7 +582,7 @@
         margin: -7px 0px 0px -119px;
         text-decoration: none;
         color: black;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -677,7 +677,7 @@
 }
 .statistic__number {
     color: white;
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
@@ -693,7 +693,7 @@
 @media screen and (max-width:650px) {
     .statistic__number {
         color: white;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -707,7 +707,7 @@
 @media screen and (min-width:651px) and (max-width:1100px) {
     .statistic__number {
         color: white;
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -723,7 +723,7 @@
 @media screen and (min-width:1101px) {
     .statistic__number {
         color: white;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -907,41 +907,23 @@
 
 
 @media screen and (max-width:650px) {
-    .statistic__text {    
-     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.4px;
-text-transform: uppercase;
-color: #B6BCBF;
+    .statistic__text {
+        font-family: Roboto, 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: #B6BCBF;
     }
 }
-
-
-@media screen and (min-width:651px) and (max-width:1100px) {
-    .statistic__text{
-      
-    }
-}
-
-
-
-
-@media screen and (min-width:1101px) {
-    .statistic__text{
-       
-    }
-}
-
-
 
 
 
 @media screen and (max-width:650px) {
     .statistic__title {    
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 22px;
@@ -954,7 +936,7 @@ color: #B6BCBF;
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .statistic__title{
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 22px;
@@ -972,7 +954,7 @@ color: #B6BCBF;
 
 @media screen and (min-width:1101px) {
     .statistic__title{
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 25px;
@@ -1022,9 +1004,9 @@ color: #B6BCBF;
 
 .statistic-info__text_bold {
     display: inline;
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
-    font-weight: bold;    
+    font-weight: bold;
     color: #1A1B22;
     margin-left: 3px;
 }
@@ -1034,28 +1016,12 @@ color: #B6BCBF;
 @media screen and (max-width:650px) {
     .statictic-info__text_bold {
         font-size: 18px;
-        line-height: 24px;     
-    }
-}
-
-
-@media screen and (min-width:651px) and (max-width:1100px) {
-    .statictic-info__text_bold {
-      
-    }
-}
-
-
-
-
-@media screen and (min-width:1101px) {
-    .statictic-info__text_bold {
-       
+        line-height: 24px;
     }
 }
 .statistic-info__text {
     display: inline;
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
     color: #1A1B22;
     display: inline;
@@ -1238,7 +1204,7 @@ text-align: right;
 @media screen and (max-width:650px) {
     .commits__title {
         width: 150px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
@@ -1253,7 +1219,7 @@ text-align: right;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .commits__title {
         width: 310px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
@@ -1270,7 +1236,7 @@ text-align: right;
 @media screen and (min-width:1101px) {
     .commits__title {
         width: 600px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 40px;
@@ -1308,7 +1274,7 @@ text-align: right;
 
 
 .techniks__title {    
-font-family: Roboto Slab;
+font-family: 'Roboto Slab', 'Sans Serif', Arial;
 font-style: normal;
 font-weight: normal;
 font-size: 30px;
@@ -1500,7 +1466,7 @@ margin-bottom: 0px;
 @media screen and (max-width:650px) {
     .author__text_title {
         margin: 24px 0px 16px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
@@ -1514,7 +1480,7 @@ margin-bottom: 0px;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .author__text_title {
         margin: 24px 0px 9px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
@@ -1530,7 +1496,7 @@ margin-bottom: 0px;
 @media screen and (min-width:1101px) {
     .author__text_title {
         margin: 47px 0px 28px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 42px;
@@ -1541,7 +1507,7 @@ margin-bottom: 0px;
 }
 @media screen and (max-width:650px) {
     .author__text_paragraph {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -1555,7 +1521,7 @@ margin-bottom: 0px;
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .author__text_paragraph {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -1573,7 +1539,7 @@ margin-bottom: 0px;
 
 @media screen and (min-width:1101px) {
     .author__text_paragraph {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -1645,7 +1611,7 @@ margin-bottom: 0px;
         background-color: #fff;
         margin: 0px auto 34px;
         text-decoration: none;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -1681,7 +1647,7 @@ margin-bottom: 0px;
         padding-top: 40px;
         text-align: end;
         display: block;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -1709,7 +1675,7 @@ margin-bottom: 0px;
         border-radius: 28px;    
         padding-top: 8px;
         display: block;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -1730,53 +1696,57 @@ margin-bottom: 0px;
         background-color: #fff;
         margin: 12px auto 34px;
         text-decoration: none;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
-        color: #1A1B22;     
+        color: #1A1B22;
         width: 288px;
-        
+
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .buttom_place_main.buttom {
-    
+
         line-height: 56px;
         background-color: #fff;
         margin: 0px auto 34px;
         text-decoration: none;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
-        color: #1A1B22;     
+        color: #1A1B22;
         width: 192px;
-}
+    }
 }
 
 @media screen and (min-width:1101px) {
     .buttom_place_main.buttom {
-      
+
         line-height: 56px;
         background-color: #fff;
         margin: 0px auto 34px;
         text-decoration: none;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
-        color: #1A1B22;     
+        color: #1A1B22;
         width: 293px;
         text-align: center;
-   
+
     }
+}
+
+.buttom_place_main:hover {
+    background-color: #e8e8e9;
 }
 .buttom_place_header {
 
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1784,9 +1754,15 @@ margin-bottom: 0px;
     color: #FFFFFF;
 }
 
-.buttom.buttom_place_header:active {
-background-color: #2A65CC;
+.buttom.buttom_place_header:hover {
+    background-color: #347eff;
 }
+
+.buttom.buttom_place_header:active {
+    background-color: #2A65CC;
+}
+
+
 
 @media screen and (max-width:650px) {
     .buttom_place_header {
@@ -1825,53 +1801,45 @@ background-color: #2A65CC;
 
     }
 }
-
-
 .buttom:hover {
-cursor: initial;
+  cursor: pointer;
 }
-.buttom:active {
-cursor: pointer;
-}
+
 
 @media screen and (max-width:650px) {
-    .buttom
-     {
-       
-        display: block;
-        height: 56px;
-        border: none;
-        border-radius: 28px;
-  
-}
+  .buttom {
+
+    display: block;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+
+  }
 }
 
 @media screen and (min-width:651px) and (max-width:1100px) {
-    .buttom
-     {
-      width: 100%;
-      display: block;
-      height: 56px;
-      border: none;
-      border-radius: 28px;
-      padding-left: 25px;
-    }
+  .buttom {
+    width: 100%;
+    display: block;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+    padding-left: 25px;
+  }
 }
 
 
 
 
 @media screen and (min-width:1101px) {
-    .buttom
-     {
-        width: 100%;
-      display: block;
-      height: 56px;
-      border: none;
-      border-radius: 28px;
-    }
+  .buttom {
+    width: 100%;
+    display: block;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+  }
 }
-
 @media screen and (max-width:650px) {
     .main {
         padding: 34px 16px 10px;
@@ -1903,7 +1871,7 @@ cursor: pointer;
 @media screen and (max-width:650px) {
     .main-top__title {
         margin: 0px 0px 16px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
@@ -1917,7 +1885,7 @@ cursor: pointer;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .main-top__title {
         margin: 0px 0px 16px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
@@ -1935,7 +1903,7 @@ cursor: pointer;
 @media screen and (min-width:1101px) {
     .main-top__title {
         margin: 0px 0px 16px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 43px;
@@ -1949,7 +1917,7 @@ cursor: pointer;
 }
 @media screen and (max-width:650px) {
     .main-top__subtitle {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -1964,7 +1932,7 @@ cursor: pointer;
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .main-top__subtitle {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -1984,7 +1952,7 @@ cursor: pointer;
 
 @media screen and (min-width:1101px) {
     .main-top__subtitle {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -2124,7 +2092,7 @@ cursor: pointer;
 }
 @media screen and (max-width:650px) {
     .header-top__logo {
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -2139,7 +2107,7 @@ cursor: pointer;
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .header-top__logo {
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -2153,7 +2121,7 @@ cursor: pointer;
 
 @media screen and (min-width:1101px) {
     .header-top__logo {
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -2291,7 +2259,7 @@ cursor: pointer;
 
 @media screen and (max-width:650px) {
     .header-top__link {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -2304,7 +2272,7 @@ cursor: pointer;
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .header-top__link {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -2321,7 +2289,7 @@ cursor: pointer;
 
 @media screen and (min-width:1101px) {
     .header-top__link {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -2362,41 +2330,41 @@ cursor: pointer;
    
       }
 }
-.header-middle__title_author-page { 
-    color: #000;
-  }
+.header-middle__title_author-page {
+  color: #000;
+}
 
-  
+
 @media screen and (max-width:650px) {
   .header-middle__title.header-middle__title_author-page {
-   margin-top: 3px;
-   color: #000;
-   width: 400px;
-   font-size: 30px;
-   
+    margin-top: 3px;
+    color: #000;
+    width: 200px;
+    font-size: 30px;
+
 
   }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
-  .header-middle__title_author-page.header-middle__title  {
- margin-left: -121px;
-     width: 700px;
-     margin-top: 5px;
-     letter-spacing: -2.8px;
-     font-size: 34px;
-  
+  .header-middle__title_author-page.header-middle__title {
+    margin-left: -121px;
+    width: 400px;
+    margin-top: 5px;
+    letter-spacing: -2.8px;
+    font-size: 34px;
+
   }
 }
 
 @media screen and (min-width:1101px) {
-  .header-middle__title_author-page.header-middle__title  { 
-     width: 700px;
-     margin-top: 42px;
-     letter-spacing: -2.8px;
-     font-size: 40px;
-     letter-spacing: 1.1px;
+  .header-middle__title_author-page.header-middle__title {
+    width: 700px;
+    margin-top: 42px;
+    letter-spacing: -2.8px;
+    font-size: 40px;
+    letter-spacing: 1.1px;
   }
 }
 .header-middle__title_white { 
@@ -2424,29 +2392,29 @@ cursor: pointer;
         padding-left: 312px;
     }
 }
-.header-middle__title_black { 
-    color: #000;
-  }
+.header-middle__title_black {
+  color: #000;
+}
 
-  
+
 @media screen and (max-width:650px) {
   .header-middle__title.header-middle__title_black {
-   margin-top: 0px;
-   color: #000;
-   width: 400px;
-   font-size: 30px;
-   line-height: 34px;
+    margin-top: 0px;
+    color: #000;
+    width: 200px;
+    font-size: 30px;
+    line-height: 34px;
 
   }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
-  .header-middle__title_black.header-middle__title  {
- margin-left: -121px;
-     width: 700px;
-     margin-top: 63px;
-     letter-spacing: -2.8px;
+  .header-middle__title_black.header-middle__title {
+    margin-left: -121px;
+    width: 500px;
+    margin-top: 63px;
+    letter-spacing: -2.8px;
   }
 }
 
@@ -2456,19 +2424,17 @@ cursor: pointer;
 @media screen and (min-width:1101px) {
   .header-middle__title_black.header-middle__title {
     font-size: 40px;
-     width: 700px;
-     margin-top: 43px;
-     letter-spacing: 1.2px;
-     
+    width: 700px;
+    margin-top: 43px;
+    letter-spacing: 1.2px;
+
   }
 }
-
-
 @media screen and (max-width:650px) {
     .header-middle__title {
         margin: 15px 0px 0px;
         margin-top: 13px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 37px;
@@ -2480,7 +2446,7 @@ cursor: pointer;
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .header-middle__title {
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 37px;
@@ -2496,7 +2462,7 @@ cursor: pointer;
 
 @media screen and (min-width:1101px) {
     .header-middle__title {
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 60px;
@@ -2590,7 +2556,7 @@ cursor: pointer;
   
 @media screen and (max-width:650px) {
     .header-middle__instruction {       
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -2605,7 +2571,7 @@ cursor: pointer;
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .header-middle__instruction {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -2620,7 +2586,7 @@ cursor: pointer;
 
 @media screen and (min-width:1101px) {
     .header-middle__instruction {
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -2659,6 +2625,7 @@ cursor: pointer;
 .header-bottom__search:focus {
     box-shadow: 5px 5px 5px #000 inset;
 }
+
 
 @media screen and (max-width:650px) {
     .header-bottom__search {
@@ -3130,7 +3097,7 @@ cursor: pointer;
 }
 @media screen and (max-width:650px) {
     .card__text-name_commits {
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -3154,7 +3121,7 @@ cursor: pointer;
 
 @media screen and (min-width:1101px) {
     .card__text-name_commits {
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 27px;
@@ -3394,7 +3361,7 @@ flex-flow: column;
 @media screen and (max-width:650px) {
     .card__text-source_main {
         margin: 5px 16px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -3410,7 +3377,7 @@ flex-flow: column;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .card__text-source_main {
         margin: 5px 16px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -3427,7 +3394,7 @@ flex-flow: column;
 @media screen and (min-width:1101px) {
     .card__text-source_main {
         margin: 5px 16px;
-        font-family: Roboto Slab;
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -3455,7 +3422,7 @@ flex-flow: column;
 @media screen and (max-width:650px) {
     .card__text-paragraph_main {
         margin: 0px 16px;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -3468,7 +3435,7 @@ flex-flow: column;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .card__text-paragraph_main {
         margin: 0px 16px;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -3483,7 +3450,7 @@ flex-flow: column;
 @media screen and (min-width:1101px) {
     .card__text-paragraph_main {
         margin: 0px 16px;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -3492,7 +3459,7 @@ flex-flow: column;
     }
 }
 .card__text-paragraph_commits {
-    font-family: Roboto;
+    font-family: Roboto, 'Sans Serif', Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -3509,18 +3476,6 @@ flex-flow: column;
 }
 
 
-@media screen and (min-width:651px) and (max-width:1100px) {
-    .card__text-paragraph_commits {}
-}
-
-
-
-
-@media screen and (min-width:1101px) {
-    .card__text-paragraph_commits {}
-}
-
-
 
 @media screen and (max-width:650px) {
     .card__text-date_main {
@@ -3566,7 +3521,7 @@ flex-flow: column;
 @media screen and (max-width:650px) {
     .card__text-date_commits {
         display: block;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -3579,7 +3534,7 @@ flex-flow: column;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .card__text-date_commits {
         display: block;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -3594,7 +3549,7 @@ flex-flow: column;
 @media screen and (min-width:1101px) {
     .card__text-date_commits {
         display: block;
-        font-family: Roboto;
+        font-family: Roboto, 'Sans Serif', Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
