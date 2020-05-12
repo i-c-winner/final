@@ -1,0 +1,41 @@
+@media screen and (max-width:650px) {
+    .header-middle-menu__item {
+        display: inline-block;
+
+
+    }
+}
+
+@media screen and (max-width:650px) {
+    .menu {
+        display: none;
+
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .header-middle-menu__item {
+        display: inline-block;
+        margin: -7px 0px 0px -119px;
+        text-decoration: none;
+        color: black;
+        font-family: Roboto, 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1A1B22;
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .header-middle-menu__item {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+
+    }
+}

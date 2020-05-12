@@ -1,0 +1,14 @@
+
+@media screen and (min-width:1101px) {
+    .preloader__error-title {      
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;       
+        color: #1A1B22;
+        margin-top: 25px;
+        letter-spacing: .8px;
+      
+    }
+}

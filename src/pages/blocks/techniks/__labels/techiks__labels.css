@@ -1,0 +1,38 @@
+.techniks__labels {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding: 0px 20px;
+    max-width: 290px;
+    height: 379px;
+}
+
+
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .techniks__labels {
+        width: initial;
+        padding-right: 63px;
+        padding-left: 50px;
+        margin: 40px 0px 0px;
+        background-color: #f5f6f7;
+        max-width: initial;
+        height: initial;
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .techniks__labels {
+        max-width: initial;
+        width: 592px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1px;
+        height: initial;
+    }
+}

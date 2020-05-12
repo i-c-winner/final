@@ -1,0 +1,51 @@
+@import url('./__avatar-box/card__avatar-box.css');
+@import url('./__text-name/card__text-name.css');
+@import url('./__text-mail/card__text-mail.css');
+@import url('./_place/_commits/card_place_commits.css');
+@import url('./_place/_main/card_place_main.css');
+@import url('./__image/card__image.css');
+@import url('./__text-title/card__text-title.css');
+@import url('./__text-source/card__text_source.css');
+@import url('./__text-paragraph/card__text-paragraph.css');
+@import url('./__text-date/card__text-date.css');
+
+
+@media screen and (max-width:650px) {
+    .card {
+        overflow: hidden;
+    }
+}
+
+
+
+@media screen and (max-width:650px) {
+    .none-card {
+        overflow: hidden;
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .card {
+        margin-right: 5px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .none-card {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:1101px) {
+    .card {
+        margin-right: 0px;
+        overflow: hidden;
+        width: 397px;
+    }
+}

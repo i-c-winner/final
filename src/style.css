@@ -1,0 +1,39 @@
+
+@import url('./vendor/fonts/fonts.css');
+
+
+
+ @import url('./vendor/normalize.css'); 
+/* @import url('./pages/blocks/down-line/down-line.css'); */
+@import url('./pages/blocks/middle-line/middle-line.css');
+@import url('./pages/blocks/preloader/preloader.css');
+@import url('./pages/blocks/statistic-flags/statistic-flags.css');
+@import url('./pages/blocks/header-middle-menu/header-middle-menu.css');
+@import url('./pages/blocks/top-line/top-line.css');
+@import url('./pages/blocks/author-box/author-box.css');
+@import url('./pages/blocks/statistic/statistic.css');
+@import url('./pages/blocks/statistic-info/statistic-info.css');
+@import url('./pages/blocks/card/__wrapper/card__wrapper.css');
+@import url('./pages/blocks/commits/commits.css');
+@import url('./pages/blocks/label/label.css');
+@import url('./pages/blocks/techniks/techniks.css');
+@import url('./pages/blocks/label/label.css');
+@import url('./pages/blocks/author/author.css');
+@import url('./pages/blocks/buttom/buttom.css');
+@import url('./pages/blocks/main/main.css');
+@import url('./pages/blocks/main-top/main-top.css');
+@import url('./pages/blocks/header/header.css');
+@import url('./pages/blocks/header-top/header-top.css');
+@import url('./pages/blocks/header-middle/header-middle.css');
+@import url('./pages/blocks/header-bottom/header-bottom.css');
+@import url('./pages/blocks/footer/footer.css');
+@import url('./pages/blocks/cards/cards.css');
+@import url('./pages/blocks/card/card.css');
+
+
+.body{
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0px auto;
+
+}

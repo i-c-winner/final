@@ -1,0 +1,54 @@
+@media screen and (max-width:650px) {
+    .buttom_place_main {
+        line-height: 56px;
+        background-color: #fff;
+        margin: 12px auto 34px;
+        text-decoration: none;
+        font-family: Roboto, 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #1A1B22;
+        width: 288px;
+
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .buttom_place_main.buttom {
+
+        line-height: 56px;
+        background-color: #fff;
+        margin: 0px auto 34px;
+        text-decoration: none;
+        font-family: Roboto, 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #1A1B22;
+        width: 192px;
+    }
+}
+
+@media screen and (min-width:1101px) {
+    .buttom_place_main.buttom {
+
+        line-height: 56px;
+        background-color: #fff;
+        margin: 0px auto 34px;
+        text-decoration: none;
+        font-family: Roboto, 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #1A1B22;
+        width: 293px;
+        text-align: center;
+
+    }
+}
+
+.buttom_place_main:hover {
+    background-color: #e8e8e9;
+}

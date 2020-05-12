@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Дипломная работа курса Frontend разработчик от компанни Яндекс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебный проект по курсу Frontend-разработчика
+     от компании Яндекс. Страница с информацией об авторе и используемых технологиях.">
+    <meta name="author" content="Дмитрий Белоусов" lang="ru">
+    <link rel="shortcut icon" type="image/x-icon" href="<%=require
+    ('../src/pages/image/favicon.svg').default%>">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body class="body">
+    <div class="top-line top-line_color_black"></div>
+    <div class="header header_background_color">
+        <div class="header-top">
+            <a href="./index.html" class="header-top__logo header-top__logo_black">NewsAnalyzer</a>
+            <nav class="header-top__links ">
+                <a href="./index.html" class="header-top__link header-top__link_noneactiv">Главная</a>
+                <a href="./about.html" class="header-top__link header-top__link_activ-black">О проекте</a>
+            </nav>
+        </div>
+        <div class="header-middle">
+            <p class="header-middle__title header-middle__title_author-page">Клиентам</p>
+            <p class="header-middle__instruction header-middle__instruction_author-page">Этот сайт — дипломный проект
+                студента
+                Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+            <p class="header-middle__instruction header-middle__instruction_author-page">
+                Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того,
+                добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим
+                методологиям. Также сайт проще и дешевле поддерживать.</p>
+            <p class="header-middle__instruction header-middle__instruction_author-page">
+                Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать,
+                пока от сервера приходит ответ. Это повышает удобство использования сервиса. </p>
+            <p class="header-middle__instruction header-middle__instruction_author-page">
+                При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке
+                сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах.
+                Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А
+                значит, потенциальная аудитория возрастает. </p>
+            <p class="header-middle__instruction header-middle__instruction_author-page">
+                Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем
+                обратиться к этому студенту.</p>
+        </div>
+    </div>
+
+    <section class="techniks">
+        <h3 class="techniks__title">Используемые технологии</h3>
+        <div class="techniks__labels">
+
+
+            <div class="label">
+                <p class="label__title">HTML</p>
+                <img alt="эмблема HTML" src="<%=require('../src/pages/image/html.png').default%>">
+            </div>
+
+            <div class="label">
+                <p class="label__title">CSS</p>
+                <img alt="эмблема CSS" src="<%= require('../src/pages/image/css.png').default %>">
+            </div>
+
+            <div class="label">
+                <p class="label__title">JavaScript</p>
+                <img alt="эмблема java script" src="<%= require('../src/pages/image/jsmod.png').default %>">
+            </div>
+
+            <div class="label">
+                <p class="label__title">Webpack</p>
+                <img alt="эмблема webpack" src="<%= require('../src/pages/image/webpack.png').default %>">
+            </div>
+        </div>
+    </section>
+    <section class="author">
+        <div class="author-box">
+            <img class="author__image" src="<%= require('../src/pages/image/image-03.png').default %>"
+                alt="Фото автора">
+            <div class="author__wrapper">
+                <h3 class="author__text author__text_title">Об авторе</h3>
+                <p class="author__text author__text_paragraph">Это блок с описанием автора проекта. Здесь следует
+                    указать,
+                    как вас зовут,
+                    чем
+                    вы занимаетесь, какими технологиями разработки владеете.
+                    Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+                    потенциальным заказчикам.</p>
+                <p class="author__text author__text_paragraph"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- блок с коммитами Гитхаб -->
+    <section class="commits">
+        <div class="commits__top-box">
+            <p class="commits__title">
+                История коммитов
+                из GitHub
+            </p>
+            <div class="commits__buttom-box">
+                <a href="www.github.com" id="bottom-top" class="buttom buttom_place_github">Открыть в GitHub </a>
+                <img id="strelka" class="commits__strelka"
+                    src="<%= require('../src/pages/image/ipadmini_strelka.svg').default %>" alt="ссылка на комиты">
+            </div>
+        </div>
+        <div class="commits__box">
+            <div class="card card_place_commits">
+                <time datetime="2019-08-02" class="card__text-date card__text-date_commits">
+                    2 августа, 2019
+                </time>
+
+                <div class="card__avatar-box">
+                    <img src="<%=require('../src/pages/image/image-01.png').default %>" alt="аватар на Гитхабе"
+                        class="card__image card__image_commits">
+
+
+                    <div class="card__wrapper card__wrapper_commits">
+                        <p class="card__text-name card__text-name_commits">
+                            Иван Иванович
+                        </p>
+                        <p class="card__text-mail card__text-mail_commits">
+                            mail@email.com
+                        </p>
+                    </div>
+                </div>
+                <p class="card__text-paragraph card__text-paragraph_commits">
+                    Emmet (formerly Zen Coding)
+                    is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+                </p>
+
+
+            </div>
+
+            <div class="card-out card card_place_commits">
+                <time datetime="2019-08-02" class="card__text-date card__text-date_commits">
+                    2 августа, 2019
+                </time>
+
+                <div class="card__avatar-box">
+                    <img src="<%=require('../src/pages/image/image-01.png').default %>" alt="аватар на Гитхабе"
+                        class="card__image card__image_commits">
+
+
+                    <div class="card__wrapper card__wrapper_commits">
+                        <p class="card__text-name card__text-name_commits">
+                            Иван Иванович
+                        </p>
+                        <p class="card__text-mail card__text-mail_commits">
+                            mail@email.com
+                        </p>
+                    </div>
+                </div>
+                <p class="card__text-paragraph card__text-paragraph_commits">
+                    Emmet (formerly Zen Coding)
+                    is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+                </p>
+
+
+            </div>
+            <a href="www.github.com" id="buttom-down" class="buttom buttom_place_github">Открыть в GitHub </a>
+        </div>
+
+    </section>
+    <!--Конец блока с коомитами Гитхаб  -->
+    <footer class="footer">
+        <div class="footer__wrapper-links">
+            <p class="footer__copyright">&#64; 2019 Supersite</p>
+            <nav class="footer__links">
+                <a href="./index.html" class="footer__link">Главная </a>
+                <a href="./about.js" class="footer__link">О проекте</a>
+                <a target="_blank" href="https://praktikum.yandex.ru/profile/frontend-developer/"
+                    class="footer__link">Яндекс.Практикум</a>
+            </nav>
+        </div>
+        <div class="footer__icons">
+            <a target="_blank" href="https://github.com/"><img class="footer__icon footer__icon_github"
+                    alt="Значок Гитхаба" src="<%=require('../src/pages/image/Vector.png').default %>"></a>
+            <a target="_blank" href="https://facebook.com"><img class="footer__icon footer__icon_facebook"
+                    alt="Значок Фейсбук" src="<%=require('../src/pages/image/faceebook.png').default %>">
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

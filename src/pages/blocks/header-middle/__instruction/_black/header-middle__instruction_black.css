@@ -1,0 +1,21 @@
+
+    .header-middle__instruction_black { 
+        color: #000;
+      }
+      @media screen and (min-width:651px) and (max-width:1100px) {
+        .header-middle__instruction_black.header-middle__instruction {
+           margin-bottom: 25px; 
+           width: 100%;
+           margin-left: -119px;
+        }
+    }
+    
+    @media screen and (min-width:1101px){
+      .header-middle__instruction_black.header-middle__instruction {
+        margin-bottom: 25px; 
+        width: 823px;
+        margin-left: 0px;
+        margin-top: 16px;
+      }
+  }
+  

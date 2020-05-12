@@ -1,0 +1,16 @@
+@import url('./_value/statistic__text_value.css');
+@import url('./_mouth/statistic__text_mouth.css');
+
+
+@media screen and (max-width:650px) {
+    .statistic__text {
+        font-family: Roboto, 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: #B6BCBF;
+    }
+}
