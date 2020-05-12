@@ -2,14 +2,14 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WebpackMd5Hash = require('webpack-md5-hash');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const isDev = process.env.NODE_ENV==='development';
+const isDev = process.env.NODE_ENV === 'development';
 //const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
     main: './src/index.js',
-    about: './src/about.js',
-    statistic: './src/statistic.js',
+    about: './src/about/about.js',
+    statistic: './src/statistic/statistic.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -42,15 +42,15 @@ module.exports = {
       },
       {
         test: /\.css$/, // применять это правило только к CSS-файлам
-        use: [isDev ? 'style-loader': 
-        { loader: MiniCssExtractPlugin.loader, 
-          options: {
-             publicPath: '../'
-            } 
+        use: [isDev ? 'style-loader' : {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../'
+            }
           },
-         'css-loader', 'postcss-loader',            
-           ],
-         
+          'css-loader', 'postcss-loader',
+        ],
+
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
@@ -62,7 +62,7 @@ module.exports = {
           'file-loader?name=./images/[name].[ext]',
           {
             loader: 'image-webpack-loader',
-            
+
           },
         ],
       },
