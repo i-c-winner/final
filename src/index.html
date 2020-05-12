@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Дипломная работа курса Frontend разработчик от компанни Яндекс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебный проект по курсу Frontend-разработчика
+     от компании Яндекс. Главная страница с API запросом и полученными результатами.">
+    <meta name="author" content="Дмитрий Белоусов" lang="ru">
+
+    <link rel="shortcut icon" type="image/x-icon" href="<%=require('../src/pages/image/favicon.svg').default %>">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body class="body">
+    <div class="top-line"></div>
+    <div class="header header_background_img">
+        <div class="header-top">
+            <a href="./index.html" class="header-top__logo header-top__logo_white">NewsAnalyzer</a>
+            <nav class="header-top__links">
+                <a href="./index.html" class="header-top__link header-top__link_activ-white">Главная</a>
+                <a href="./about.html" class="header-top__link header-top__link_noneactiv">О проекте</a>
+            </nav>
+        </div>
+
+        <div class="header-middle">
+            <h1 class="header-middle__title header-middle__title_white ">Что в мире творится?</h1>
+            <p class="header-middle__instruction header-middle__instruction_white">Введите в поиске любую тему и
+                узнайте, насколько популярной
+                она
+                была в новостях за прошедшую неделю.</p>
+        </div>
+
+        <form name="Search" class="header-bottom">
+            <input type="text" required minlength="2" maxlength="20" name="user" placeholder="Что ищем?"
+                class="header-bottom__search">
+            <input type="submit" class="buttom buttom_place_header" value="Искать">
+
+        </form>
+
+    </div>
+    <div class="preloader">
+        <img class="preloader__image" alt="изображение ошибки"
+            src="<%=require('../src/pages/image/face.svg').default%>">
+        <div class=" preloader__error-title">Ни чего не найдено</div>
+        <div class="preloader__error-subtitle">К сожалению по вашему запросу
+            ничего не найдено.</div>
+
+    </div>
+    <section class="main">
+        <div class="main-top">
+            <p class="main-top__title">Результаты поиска</p>
+            <a href="./statistic.html" class="main-top__subtitle">Посмотреть аналитику
+                <img src="<%=require('./pages/image/ipadmini_strelka.svg').default %>" alt="изображение ссылки"></a>
+        </div>
+        <div class="cards">
+
+            <!-- Карточка новостей -->
+            <div class="card card_place_main">
+                <div class="main__text-box">
+
+                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
+                        class="card__image card__image_main">
+                    <p class="card__text-date card__text-date_main">
+                        2 августа, 2019
+                    </p>
+                    <h2 class="card__text-title card__text-title_main">
+                        Национальное достояние – парки
+                    </h2>
+                    <p class="card__text-paragraph card__text-paragraph_main">
+                        В 2016 году Америка отмечала важный юбилей: сто лет
+                        назад здесь начала складываться система
+                        национальных парков – охраняемых территорий, где и
+                        сегодня каждый может приобщиться к природе.
+                    </p>
+                </div>
+                <p class="card__text-source card__text-source_main">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+
+            <!-- Карточка новостей -->
+            <div id="card-small" class="card card_place_main">
+                <div class="main__text-box">
+
+                    <img src="<%=require('../src/pages/image/image_01.png').
+                default %>" alt="Новостное изображение" class="card__image card__image_main">
+                    <p class="card__text-date card__text-date_main">
+                        2 августа, 2019
+                    </p>
+                    <h2 class="card__text-title card__text-title_main">
+                        Национальное достояние – парки
+                    </h2>
+                    <p class="card__text-paragraph card__text-paragraph_main">
+                        В 2016 году Америка отмечала важный юбилей: сто лет назад
+                        здесь начала складываться система
+                        национальных парков – охраняемых территорий, где и сегодня
+                        каждый может приобщиться к природе.
+                    </p>
+                </div>
+                <p class="card__text-source card__text-source_main">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+
+            <!-- Карточка новостей -->
+            <div class=" card card_place_main">
+                <div class="main__text-box">
+
+                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
+                        class="card__image card__image_main">
+                    <p class="card__text-date card__text-date_main">
+                        2 августа, 2019
+                    </p>
+                    <h2 class="card__text-title card__text-title_main">
+                        Национальное достояние – парки
+                    </h2>
+                    <p class="card__text-paragraph card__text-paragraph_main">
+                        В 2016 году Америка отмечала важный юбилей: сто лет назад
+                        здесь начала складываться система
+                        национальных парков – охраняемых территорий, где и сегодня
+                        каждый может приобщиться к природе.
+                    </p>
+                </div>
+                <p class="card__text-source card__text-source_main">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+
+            <!-- Карточка новостей -->
+            <div class="none-card card card_place_main">
+                <div class="main__text-box">
+
+                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
+                        class="card__image card__image_main">
+                    <p class="card__text-date card__text-date_main">
+                        2 августа, 2019
+                    </p>
+                    <h2 class="card__text-title card__text-title_main">
+                        Национальное достояние – парки
+                    </h2>
+                    <p class="card__text-paragraph card__text-paragraph_main">
+                        В 2016 году Америка отмечала важный юбилей: сто лет назад
+                        здесь начала складываться система
+                        национальных парков – охраняемых территорий, где и сегодня
+                        каждый может приобщиться к природе.
+                    </p>
+                </div>
+                <p class="card__text-source card__text-source_main">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+
+            <!-- Карточка новостей -->
+            <div class="none-card card card_place_main">
+                <div class="main__text-box">
+
+                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
+                        class="card__image card__image_main">
+                    <p class="card__text-date card__text-date_main">
+                        2 августа, 2019
+                    </p>
+                    <h2 class="card__text-title card__text-title_main">
+                        Национальное достояние – парки
+                    </h2>
+                    <p class="card__text-paragraph card__text-paragraph_main">
+                        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                        начала складываться система
+                        национальных парков – охраняемых территорий, где и сегодня каждый
+                        может приобщиться к природе.
+                    </p>
+                </div>
+                <p class="card__text-source card__text-source_main">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+
+            <!-- Карточка новостей -->
+            <div class="none-card card card_place_main">
+                <div class="main__text-box">
+
+                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
+                        class="card__image card__image_main">
+                    <p class="card__text-date card__text-date_main">
+                        2 августа, 2019
+                    </p>
+                    <h2 class="card__text-title card__text-title_main">
+                        Национальное достояние – парки
+                    </h2>
+                    <p class="card__text-paragraph card__text-paragraph_main">
+                        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                        начала складываться система
+                        национальных парков – охраняемых территорий, где и сегодня каждый
+                        может приобщиться к природе.
+                    </p>
+                </div>
+                <p class="card__text-source card__text-source_main">
+                    ЛЕНТА.РУ
+                </p>
+
+            </div>
+            <!--  Конец карточки -->
+        </div>
+        <a href="#" class="buttom buttom_place_main">Показать еще</a>
+    </section>
+    <section class="author">
+        <div class="author-box">
+            <img class="author__image" src="<%=require('../src/pages/image/image-03.png').default %>" alt="Фото автора">
+            <div class="author__wrapper">
+                <h3 class="author__text author__text_title">Об авторе</h3>
+                <p class="author__text author__text_paragraph">Это блок с описанием автора проекта.
+                    Здесь следует указать, как вас зовут,
+                    чем
+                    вы занимаетесь, какими технологиями разработки владеете.
+                    Также можно рассказать о процессе обучения в Практикуме,
+                    чему вы тут научились, и чем можете помочь
+                    потенциальным заказчикам.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper-links">
+            <p class="footer__copyright">&#64; 2019 Supersite</p>
+            <nav class="footer__links">
+                <a href="./index.html" class="footer__link">Главная </a>
+                <a href="./about.html" class="footer__link">О проекте</a>
+                <a target="_blank" href="https://praktikum.yandex.ru/profile/frontend-developer/"
+                    class="footer__link">Яндекс.Практикум</a>
+            </nav>
+        </div>
+        <div class="footer__icons">
+            <a target="_blank" href="https://github.com/"><img class="footer__icon footer__icon_github"
+                    alt="Значок Гитхаба" src="<%=require('../src/pages/image/Vector.png').default %>"></a>
+            <a target="_blank" href="https://facebook.com"><img class="footer__icon footer__icon_facebook"
+                    alt="Значок Фейсбук" src="<%=require('../src/pages/image/faceebook.png').default %>">
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

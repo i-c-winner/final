@@ -1,0 +1,31 @@
+
+
+@media screen and (max-width:650px) {
+    .card__image_main {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    margin-bottom: 9px;
+     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .card__image_main {
+        border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    margin-bottom: 0px;
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .card__image_main {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}
+

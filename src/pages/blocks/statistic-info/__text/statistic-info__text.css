@@ -1,0 +1,26 @@
+@import url('./_bold/statistic-info__text_bold.css');
+
+.statistic-info__text {
+    display: inline;
+    font-family: Roboto, 'Sans Serif', Arial;
+    font-style: normal;
+    color: #1A1B22;
+    display: inline;
+}
+
+
+
+@media screen and (max-width:650px) {
+    .statistic-info__text {
+        font-size: 18px;
+        line-height: 27px;     
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .statistic-info__text {
+        font-size: 18px;
+        line-height: 24px;   
+    }
+}

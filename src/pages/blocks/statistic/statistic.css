@@ -1,0 +1,43 @@
+@import url('./__number/statistic__number.css');
+@import url('./__day/statistic__day.css');
+@import url('./__value/statistic__value.css');
+@import url('./__box-top/statistic__box-top.css');
+@import url('./__box/statistic__box.css');
+@import url('./__question/statistic__question.css');
+@import url('./__text/statistic__text.css');
+@import url('./__title/statistic__title.css');
+
+.statistic {
+    background-color: #f5f6f7; 
+}
+
+
+
+@media screen and (max-width:650px) {
+    .statistic {
+    padding-bottom: 21px;
+    padding-top: 28px;
+     
+    }
+    
+}
+
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .statistic {
+      padding-top: 32px;
+      padding-bottom: 47px;
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .statistic {
+        padding-top: 32px;
+        padding-bottom: 84px;
+    }
+}
+

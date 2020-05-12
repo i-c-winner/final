@@ -1,0 +1,35 @@
+@media screen and (max-width:650px) {
+    .card__text-name_commits {
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1A1B22;
+        margin: 12px 0px 0px;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1100px) {
+    .card__text-name_commits {
+        margin-top: 19px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+@media screen and (min-width:1101px) {
+    .card__text-name_commits {
+        font-family: 'Roboto Slab', 'Sans Serif', Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 30px;
+        color: #1A1B22;
+        margin:22px 0px 0px;
+    }
+}

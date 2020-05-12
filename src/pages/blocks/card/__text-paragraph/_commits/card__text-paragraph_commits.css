@@ -1,0 +1,16 @@
+.card__text-paragraph_commits {
+    font-family: Roboto, 'Sans Serif', Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+}
+
+
+@media screen and (max-width:650px) {
+    .card__text-paragraph_commits {
+        width: 250px;
+
+    }
+}
