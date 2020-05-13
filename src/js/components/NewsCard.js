@@ -1,4 +1,4 @@
-class NewsCard {
+export default class NewsCard {
 
 
     create(data) {
@@ -22,5 +22,6 @@ class NewsCard {
                 </p>
 
             </div>`
+        return template;
     }
-}
+};
