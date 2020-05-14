@@ -1,29 +1,35 @@
 import "./style.css";
-import NewsCard from './js/components/NewsCard.js'
+
 
 // переменные формы
 import {
-    inputForma
+    INPUT_FORMA,
+    todayYear,
+    today
 } from './js/constans/constans.js';
 import {
-    buttomPlaceHeader
+    BUTTOM_PLACE_HEADER
 } from './js/constans/constans.js';
 
 //переменные API
 import {
-    pathNews
+    PATH_NEWS
 } from './js/constans/constans.js';
 import {
-    pathgit
+    PATH_GIT
 } from './js/constans/constans.js';
-import NewsApi from './js/modules/NewsApi.js';
-const newsApi = new NewsApi();
-console.log(newsApi.getNews)
+import NewsApi from './js/modules/NEWSApi.js';
+export const newsApi = new NewsApi();
 import search from './js/utils/utils.js'
 import SearchInput from './js/components/SearchInput.js';
-const searchInput = new SearchInput();
-console.log(newsApi.getNews(pathNews)
-    .then((res) => {
-        console.log(res)
-    })
-)
+export const searchInput = new SearchInput();
+
+//формирование запроса и работа с ним
+
+
+
+//отправка запроса и запись в локальное хранилище
+import requestForStorage from './js/utils/utils.js'
+
+
+requestForStorage(INPUT_FORMA);

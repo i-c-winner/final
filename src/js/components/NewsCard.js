@@ -1,4 +1,4 @@
-export default class NewsCard {
+export default class NEWSCard {
 
 
     create(data) {
