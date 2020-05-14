@@ -1,10 +1,8 @@
-//import NewsCard from '../components/NewsCard.js'
+//переменныые форм
+export const inputForma = document.forms.Search; //форма поиска
+export const news = inputForma.news; //поле ввода
+export const buttomPlaceHeader = document.querySelector('.buttom_place_header') //кнопка Искать
 
-
-export const creatNewsCard = {
-    url: "https://media.istockphoto.com/vectors/male-programmer-working-at-computer-in-office-vector-id1210132190",
-    title: "Заголовок",
-    date: "2 апреля",
-    text: "блалалл",
-    source: "РИА новости",
-};
+//переменные для NewsApi
+export const pathGit = '';
+export const pathNews = 'http://newsapi.org/v2/top-headlines?country=ru&apiKey=68de62cc45bb4e77a24cd68e991d1c38&country=ru&from=2020-05-07&to=2020-05-14&pageSize=100'

@@ -1,20 +1,21 @@
-// export default class NewsApi {
-//     constructor(data) {
-//         this.path = data;
-//     }
+export default class NewsApi {
 
 
+    getNews(path) {
+        console.log(path)
+        return fetch(path)
+            .then(function (response) {
+                if (response.ok) {
+                    console.log(55)
+                    return response.json();
+                } else {
+                    return Promise.reject(err)
+                }
+            })
+            .catch((err) => {
+                console.log(565)
+                return Promise.reject(err)
+            })
+    }
 
-//     creat() {
-//         return fetch(this.path)
-//             .then(res => {
-//                 console.log(res.json)
-//                 return res.json()
-
-//             })
-//             .then((data) => {
-//                 return data
-//                 console.log(data)
-//             })
-//     }
-// }
+}
