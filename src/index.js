@@ -18,15 +18,12 @@ export let NUMBER_POSITION = 0;
 import {
     INPUT_FORMA,
 } from './js/constans/constans.js';
-import {
-    BUTTOM_PLACE_HEADER
-} from './js/constans/constans.js';
+
 
 //переменные API
 import {
     PATH_NEWS,
     PATH_GIT,
-    INPUT_FORMA_MARKER,
 } from './js/constans/constans.js';
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
@@ -44,11 +41,6 @@ import NewsCardList from "./js/components/NewsCardList";
 export const newsCardList = new NewsCardList(document.querySelector('.cards'));
 export const cardsContainer = document.querySelector('.cards');
 export const newsCard = new NewsCard();
-import {
-    requestForStorage,
-    moreShow
-} from './js/utils/utils.js'
-
 
 INPUT_FORMA.addEventListener('submit', function () {
     localStorage.clear();
@@ -63,29 +55,8 @@ INPUT_FORMA.addEventListener('submit', function () {
             })
     }
 })
-
-
-/**
- * Функция обработки кнопки еще.
- * @param{buttom} что слуашаем
- * @param {localStorageParam} значение поля ввода
- * @param{number} позиция в массиве новостей из Локал стораж * 
- * @return {void} 
- */
-
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
-    console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')), 'nomer')
     newsCardList.pushCard(INPUT_FORMA.news.value, JSON.parse(localStorage.getItem('NUMBER_POSITION')));
 
 
 })
-
-
-
-
-
-
-// console.log(NUMBER_POSITION, 'номер в хранилище')
-
-// requestForStorage(INPUT_FORMA, document.querySelector('.cards'));
-// moreShow(document.querySelector('.buttom_place_main'), INPUT_FORMA.news.value);

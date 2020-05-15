@@ -1,11 +1,3 @@
-import {
-    weekDate
-} from "../constans/constans";
-
-import {
-    INPUT_FORMA_MARKER
-} from '../constans/constans.js'
-
 export default class NewsApi {
 
 

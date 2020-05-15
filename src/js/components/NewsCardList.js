@@ -4,7 +4,6 @@ import {
 } from '../../index.js';
 import {
     INPUT_FORMA,
-    NUMBER_POSITION,
 } from '../constans/constans.js'
 
 export default class NewsCardList {
