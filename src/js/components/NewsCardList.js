@@ -21,4 +21,10 @@ export default class NewsCardList {
 
     }
 
+    renderCard(parent, child) {
+        child.forEach(element => {
+            parent.removeChild(element)
+        });
+    }
+
 }
