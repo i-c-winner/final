@@ -1,38 +1,35 @@
 import "../style.css";
+const SWIPER = require('swiper');
 
-import {
-    SWIPER
-} from '../js/utils/swiper/swiper.js'
+// var mySwiper = new Swiper('.swiper-container', {
+//     speed: 400,
+//     spaceBetween: 100
+// });
 
-const MYSWIPER = new Swiper(('.swiper-container'), {
+var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    // direction: 'vertical',
-    // loop: true,
+    init: true,
+    direction: 'horizontal',
+    loop: true,
+    width: 350,
 
     // If we need pagination
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
+    pagination: {
+        el: '.swiper-pagination',
+
+    },
+
 
     // Navigation arrows
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
+    navigation: {
+        nextEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-next',
+    },
 
     // And if we need scrollbar
     // scrollbar: {
     //     el: '.swiper-scrollbar',
     // },
-    on: {
-        init: function () {
-            console.log('swiper initialized');
-        },
-    },
-
 })
-console.log(SWIPER)
-console.log(MYSWIPER)
 
-
-MYSWIPER.slideNext(1000, true)
+console.log(mySwiper)

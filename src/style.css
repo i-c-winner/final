@@ -4,6 +4,7 @@
 
 @import url('./vendor/normalize.css');
 
+@import url('./vendor/swiper-navigation/swiper.css');
 @import url('../node_modules/swiper/css/swiper.css');
 @import url('./pages/blocks/middle-line/middle-line.css');
 @import url('./pages/blocks/preloader/preloader.css');
