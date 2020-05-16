@@ -43,6 +43,7 @@ export const cardsContainer = document.querySelector('.cards');
 export const newsCard = new NewsCard();
 
 INPUT_FORMA.addEventListener('submit', function () {
+    document.querySelector('.preloader').classList.add('preloader_state_enabled');
     localStorage.clear();
     event.preventDefault();
     if (searchInput.validation(INPUT_FORMA.news)) {
@@ -52,7 +53,14 @@ INPUT_FORMA.addEventListener('submit', function () {
             .then((res) => {
                 localStorage.setItem(INPUT_FORMA.news.value, JSON.stringify(res));
                 newsCardList.pushCard(INPUT_FORMA.news.value, 0);
+
             })
+            .catch((res) => {
+                console.log(res);
+                document.querySelector('.preloader').classList.remove('preloader_state_enabled');
+            })
+
+
     }
 })
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
