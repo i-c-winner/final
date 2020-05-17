@@ -26,6 +26,7 @@ export default class NEWSCard {
                 </p>
 
             </div>`
+
         return template;
     }
 };
