@@ -27,7 +27,6 @@ import {
 } from './js/constans/constans.js';
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
-import search from './js/utils/utils.js'
 import SearchInput from './js/components/SearchInput.js';
 export const searchInput = new SearchInput();
 
@@ -41,7 +40,6 @@ import NewsCardList from "./js/components/NewsCardList";
 export const newsCardList = new NewsCardList(document.querySelector('.cards'));
 export const cardsContainer = document.querySelector('.cards');
 export const newsCard = new NewsCard();
-
 INPUT_FORMA.addEventListener('submit', function () {
     document.querySelector('.preloader').classList.add('preloader_state_enabled');
     localStorage.clear();
