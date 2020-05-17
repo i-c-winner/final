@@ -7,7 +7,7 @@ import GitHubApi from '../js/modules/GitHubApi.js';
 const GITHUBAPI = new GitHubApi(GIT_PATH)
 export const COMMITCARD = new CommitCard();
 import CommitCardList from '../js/components/CommitCardList.js';
-const COMMITCARDLIST = new CommitCardList(document.querySelector('.commits__box'))
+const COMMITCARDLIST = new CommitCardList(document.querySelector('.swiper-wrapper'))
 
 GITHUBAPI.getGitInfo()
     .then((res) => {
@@ -41,9 +41,9 @@ var mySwiper = new Swiper('.swiper-container', {
     },
 
     // And if we need scrollbar
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 })
 
 console.log(mySwiper)
