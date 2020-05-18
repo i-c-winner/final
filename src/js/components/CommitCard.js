@@ -8,11 +8,6 @@ export default class CommitCard {
         const email = element.commit.author.email;
         const photo = element.author.avatar_url;
         const text = element.commit.message;
-        console.log(photo)
-        console.log(text)
-        console.log(email)
-        console.log(date)
-        console.log(name)
         const template = `
 
   <div class = "card card_place_commits">

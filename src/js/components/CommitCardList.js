@@ -9,10 +9,7 @@ export default class CommitCardList {
 
     pushCard(array) {
         array.forEach(element => {
-            console.log(this.container, 'news')
-            console.log(COMMITCARD.createCard(element))
             this.container.insertAdjacentHTML("beforeEnd", COMMITCARD.createCard(element))
-
         });
 
     }

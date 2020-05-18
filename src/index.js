@@ -50,6 +50,7 @@ INPUT_FORMA.addEventListener('submit', function () {
                 nodayMonth, yearToday, weekDay, weekMonth, weekYear)
             .then((res) => {
                 localStorage.setItem(INPUT_FORMA.news.value, JSON.stringify(res));
+                localStorage.setItem('NewsName', INPUT_FORMA.news.value)
                 newsCardList.pushCard(INPUT_FORMA.news.value, 0);
 
             })
