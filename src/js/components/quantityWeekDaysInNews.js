@@ -11,7 +11,6 @@ export default function quantityWeekDaysInNews(news, day, statisticpage) {
     news.forEach(element => {
         if (statisticpage.getWeekDayFromDate(day) == statisticpage.getWeekDayFromDate(new Date(element.publishedAt))) {
             marker = marker + 1
-            console.log(78)
         }
 
     })

@@ -1,18 +1,15 @@
-
-
-
 @media screen and (max-width:650px) {
-    .statistic__value {    
-     width: 20%;   
-     background-color: #2f71e5;
-     position: relative;
-     height: 25px;
+    .statistic__value {
+
+        background-color: #2f71e5;
+        position: relative;
+        height: 25px;
     }
 }
 
 @media screen and (min-width:651px) and (max-width:1100px) {
-    .statistic__value{
-        width: 20%;   
+    .statistic__value {
+
         background-color: #2f71e5;
         position: relative;
         height: 25px;
@@ -23,11 +20,10 @@
 
 
 @media screen and (min-width:1101px) {
-    .statistic__value{
-        width: 20%;   
+    .statistic__value {
+
         background-color: #2f71e5;
         position: relative;
         height: 25px;
     }
 }
-
