@@ -104,9 +104,8 @@
                     src="<%= require('../src/pages/image/ipadmini_strelka.svg').default %>" alt="ссылка на комиты">
             </div>
         </div>
-        <div class="commits__box swiper-container">
-            <div class="swiper-wrapper">
-            </div>
+        <div class="commits__box main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
@@ -139,7 +138,7 @@
         </div>
     </footer>
 
-    <script src="../node_modules/swiper/js/swiper.js"></script>
+    <script src="../src/vendor/carousel/flickity.pkgd.js"></script>
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 

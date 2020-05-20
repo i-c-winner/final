@@ -10,7 +10,7 @@ export default class CommitCard {
         const text = element.commit.message;
         const template = `
 
-  <div class = "card card_place_commits">
+  <div class = "card card_place_commits carousel-cell">
       <time datetime =${date}
   class = "card__text-date card__text-date_commits">
       </time>
@@ -23,8 +23,7 @@ export default class CommitCard {
 
       <div class = "card__wrapper card__wrapper_commits" >
       <p class = "card__text-name card__text-name_commits" >
-     ${name} <
-      /p> <p class = "card__text-mail card__text-mail_commits" >
+     ${name} </p> <p class = "card__text-mail card__text-mail_commits" >
      ${email} </p> </div> </div> <p class = "card__text-paragraph card__text-paragraph_commits" >
       ${text} </p>
 

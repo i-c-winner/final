@@ -19,18 +19,19 @@ import {
 
 
 } from '../js/constans/constans.js';
+document.querySelector('.header-middle__title_value').replaceWith(localStorage.getItem("NewsName"));
 
 let GLOBAL_COUNT = null;
 let COUNT = null;
 import {
     getInfoForLoad
 } from '../js/utils/statistic/getInfoForLoad.js';
-//import getInfoForLoad from '../js/utils/statistic/getInfoForLoad.js';
+
 import StatisticCardList from '../js/components/StatisticCardList.js';
 
 
 import StatisticCard from '../js/components/StatisticCard.js'
-//const STATISTIC_CARD= new StatisticCard()
+
 import separatorAndCount from '../js/utils/statistic/separatorAndCount.js'
 
 //Получаем массивы значений из новостей
@@ -44,7 +45,6 @@ TEMPORARY_NEWS.forEach(element => {
 
 NEWS_DATE.forEach(element => {
     NEWS_WEEK_DAYS_NUMBER.push(new Date(element).getDay())
-    //console.log(NEWS_WEEK_DAYS_NUMBER)
 });
 
 //Возвращаем массив дней недели- (Пн там или Ср)
@@ -68,14 +68,27 @@ for (let i = 0; i <= 99; i++) {
         description: NEWS_DESCRIPTION[i]
     }
     GLOBAL_OBJECT.push(marker)
-    // console.log(GLOBAL_OBJECT)
+
 
 }
 
+
+let GLOBAL_COUNT_IN_DESCRIPTION = 0;
+let COUNT_IN_DESCRIPTION = 0;
+let GLOBAL_COUNT_IN_TITLE = 0;
+let COUNT_IN_TITLE = 0;
 GLOBAL_OBJECT.forEach(element => {
-    GLOBAL_COUNT = GLOBAL_COUNT + separatorAndCount(element.title, SEARCH) +
-        separatorAndCount(element.description, SEARCH);
+    COUNT_IN_DESCRIPTION = separatorAndCount(element.description, SEARCH);
+    COUNT_IN_TITLE = separatorAndCount(element.title, SEARCH);
+
+    GLOBAL_COUNT = GLOBAL_COUNT + COUNT_IN_TITLE +
+        COUNT_IN_DESCRIPTION;
+
+    GLOBAL_COUNT_IN_DESCRIPTION = GLOBAL_COUNT_IN_DESCRIPTION + COUNT_IN_DESCRIPTION;
+    GLOBAL_COUNT_IN_TITLE = GLOBAL_COUNT_IN_TITLE + COUNT_IN_TITLE;
 });
+
+
 const STATISTIC_CARD = new StatisticCard(getInfoForLoad(DAY_LAST_WEEK.twodayago, GLOBAL_OBJECT))
 const STATISTIC_CARD_LIST = new StatisticCardList(document.querySelector('.statistic-container'),
     GLOBAL_COUNT)
@@ -115,13 +128,5 @@ for (let element in DAY_LAST_WEEK) {
 
 };
 
-
-
-
-
-
-
-
-//console.log(GLOBAL_COUNT)
-//console.log(STATISTIC_CARD.newsInDescription(SEARCH))
-//console.log(STATISTIC_CARD.newsInTitle(SEARCH))
+document.querySelector('.statistic-info__intitle').replaceWith(GLOBAL_COUNT_IN_TITLE);
+document.querySelector('.statistic-info__intext').replaceWith(GLOBAL_COUNT_IN_DESCRIPTION);

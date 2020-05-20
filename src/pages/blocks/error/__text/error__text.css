@@ -1,0 +1,10 @@
+@import url('./_disabled/error__text_disabled.css');
+
+.error__text {
+    background-color: white;
+    opacity: .5;
+    color: red;
+    border-radius: 14px;
+    line-height: 28px;
+    text-align: center;
+}

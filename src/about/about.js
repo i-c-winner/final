@@ -7,41 +7,25 @@ import GitHubApi from '../js/modules/GitHubApi.js';
 const GITHUBAPI = new GitHubApi(GIT_PATH)
 export const COMMITCARD = new CommitCard();
 import CommitCardList from '../js/components/CommitCardList.js';
-const COMMITCARDLIST = new CommitCardList(document.querySelector('.swiper-wrapper'))
+const COMMITCARDLIST = new CommitCardList(document.querySelector('.main-carousel'))
 
 GITHUBAPI.getGitInfo()
     .then((res) => {
         COMMITCARDLIST.pushCard(res)
     });
-const SWIPER = require('swiper');
 
-// var mySwiper = new Swiper('.swiper-container', {
-//     speed: 400,
-//     spaceBetween: 100
-// });
-
-var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    init: true,
-    direction: 'horizontal',
-    loop: true,
-    width: 350,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-
-    },
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity(elem, {
+    // options
+    cellAlign: 'left',
+    contain: true,
 
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-prev',
-        prevEl: '.swiper-button-next',
-    },
 
-    // And if we need scrollbar
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
-})
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity('.main-carousel', {
+    // options
+});

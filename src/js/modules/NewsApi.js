@@ -10,10 +10,12 @@ export default class NewsApi {
                 if (response.ok) {
                     return response.json();
                 } else {
+                    console.log('OKfgh')
                     return Promise.reject(err)
                 }
             })
             .catch((err) => {
+
                 return Promise.reject(err)
             })
     }

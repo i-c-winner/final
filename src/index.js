@@ -67,3 +67,18 @@ document.querySelector('.buttom_place_main').addEventListener('click', function 
 
 
 })
+
+INPUT_FORMA.addEventListener('input', function (event) {
+    console.log()
+    if (INPUT_FORMA.news.value.length > 3) {
+        console.log('OK')
+        document.querySelector('.buttom_place_header').classList.remove('buttom_state_activ');
+        document.querySelector('.error__text').classList.add('error__text_disabled');
+    }
+    if (INPUT_FORMA.news.value.length < 4) {
+
+        console.log('OK')
+        document.querySelector('.error__text').classList.remove('error__text_disabled');
+    }
+
+})

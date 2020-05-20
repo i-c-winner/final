@@ -15,4 +15,15 @@ export default class SearchInput {
         return marker;
 
     }
+
+    inputValidation(field) {
+        let marker = null;
+        if ((!field.validity.tooShort)) {
+            marker = true;
+        } else {
+            marker = false;
+        }
+        return marker;
+
+    }
 }
