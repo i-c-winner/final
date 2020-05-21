@@ -104,17 +104,7 @@
                     src="<%= require('../src/pages/image/ipadmini_strelka.svg').default %>" alt="ссылка на комиты">
             </div>
         </div>
-        <div class="commits__box main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-
+        <div class="commits__box main-carousel">
         </div>
         <a href="www.github.com" id="buttom-down" class="buttom buttom_place_github">Открыть в GitHub </a>
     </section>
@@ -137,8 +127,6 @@
             </a>
         </div>
     </footer>
-
-    <script src="../src/vendor/carousel/flickity.pkgd.js"></script>
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 

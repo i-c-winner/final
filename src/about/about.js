@@ -1,4 +1,6 @@
 import "../style.css";
+
+import Flickity from 'flickity'
 import CommitCard from '../js/components/CommitCard.js'
 import {
     GIT_PATH
@@ -7,25 +9,30 @@ import GitHubApi from '../js/modules/GitHubApi.js';
 const GITHUBAPI = new GitHubApi(GIT_PATH)
 export const COMMITCARD = new CommitCard();
 import CommitCardList from '../js/components/CommitCardList.js';
-const COMMITCARDLIST = new CommitCardList(document.querySelector('.main-carousel'))
+let arrayWithCommit = [];
+let cellElems = [];
+const COMMITCARDLIST = new CommitCardList()
+
 
 GITHUBAPI.getGitInfo()
     .then((res) => {
-        COMMITCARDLIST.pushCard(res)
+        res.forEach(element => {
+            arrayWithCommit.push(COMMITCARD.commitsObject(element));
+        })
+    })
+    .then(() => {
+        arrayWithCommit.forEach((elem) => {
+            let cell = document.createElement('div');
+            COMMITCARDLIST.pushCard(cell, elem);
+            cellElems.push(cell);
+        })
+    })
+    .then(function () {
+        flkty.append(cellElems)
     });
 
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
-    // options
-    cellAlign: 'left',
-    contain: true,
 
-
-
-});
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity('.main-carousel', {
-    // options
+const flkty = new Flickity('.main-carousel', {
+    initialIndex: 4,
+    cellAlign: 'left'
 });

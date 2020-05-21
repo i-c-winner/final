@@ -37,17 +37,19 @@
                 placeholder="Что ищем?" class="header-bottom__search">
             <p class="error__text">Введите не меннее 4-х символов</p>
             <input type="submit" class="buttom buttom_place_header" value="Искать">
-
-
         </form>
-
     </div>
+    <div class="circle-preloader "></div>
     <div class="preloader preloader_state_enabled">
         <img class="preloader__image" alt="изображение ошибки"
             src="<%=require('../src/pages/image/face.svg').default%>">
         <div class=" preloader__error-title">Ни чего не найдено</div>
-        <div class="preloader__error-subtitle">К сожалению по вашему запросу
+        <div class=" preloader__error-subtitle">К сожалению по вашему запросу
             ничего не найдено.</div>
+        <div class="preloader__error preloader_error-network">&laquo; Во время запроса
+            произошла ошибка. Возможно, проблема с соединением
+            или сервер недоступен.
+            Подождите немного и попробуйте ещё раз &raquo;</div>
 
     </div>
     <section class="main">

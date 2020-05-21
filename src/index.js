@@ -49,18 +49,26 @@ INPUT_FORMA.addEventListener('submit', function () {
         newsApi.getNews(PATH_NEWS, INPUT_FORMA.news.value, todayDay,
                 nodayMonth, yearToday, weekDay, weekMonth, weekYear)
             .then((res) => {
+                document.querySelector('.body').classList.remove('body_preloader');
+                document.querySelector('.body').classList.remove('preloader_error-network')
+                document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 localStorage.setItem(INPUT_FORMA.news.value, JSON.stringify(res));
                 localStorage.setItem('NewsName', INPUT_FORMA.news.value)
                 newsCardList.pushCard(INPUT_FORMA.news.value, 0);
 
             })
             .catch((res) => {
-                console.log(res);
                 document.querySelector('.preloader').classList.remove('preloader_state_enabled');
+                document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
+                document.querySelector('.body').classList.remove('body_preloader');
+                document.querySelector('.preloader__error').classList.remove('preloader_error-network');
             })
 
 
     }
+    document.querySelector('.body').classList.add('body_preloader');
+    document.querySelector('.circle-preloader').classList.add('circle-preloader_state_disabled');
+
 })
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
     newsCardList.pushCard(INPUT_FORMA.news.value, JSON.parse(localStorage.getItem('NUMBER_POSITION')));

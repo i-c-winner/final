@@ -3,11 +3,11 @@ export default class CommitCard {
 
     createCard(element) {
 
-        const date = element.commit.author.date;
-        const name = element.author.login;
-        const email = element.commit.author.email;
-        const photo = element.author.avatar_url;
-        const text = element.commit.message;
+        const date = element.date;
+        const name = element.name;
+        const email = element.email;
+        const photo = element.photo
+        const text = element.text;
         const template = `
 
   <div class = "card card_place_commits carousel-cell">
@@ -31,5 +31,15 @@ export default class CommitCard {
       </div>
  `
         return template
+    }
+
+    commitsObject(element) {
+        return {
+            date: element.commit.author.date,
+            name: element.author.login,
+            email: element.commit.author.email,
+            photo: element.author.avatar_url,
+            text: element.commit.message
+        }
     }
 }
