@@ -24,7 +24,6 @@ import {
 import {
     PATH_NEWS,
     PATH_GIT,
-    URL_ARRAY,
     URL_NUMBER
 } from './js/constans/constans.js';
 import NewsApi from './js/modules/NEWSApi.js';
@@ -96,6 +95,6 @@ INPUT_FORMA.addEventListener('input', function (event) {
 
 })
 document.querySelector('.cards').addEventListener("click", (event) => {
-    console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
-    window.open('')
+    console.log(JSON.parse(localStorage.getItem(localStorage.getItem('NewsName'))))
+
 })
