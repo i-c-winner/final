@@ -24,6 +24,8 @@ import {
 import {
     PATH_NEWS,
     PATH_GIT,
+    URL_ARRAY,
+    URL_NUMBER
 } from './js/constans/constans.js';
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
@@ -45,7 +47,9 @@ INPUT_FORMA.addEventListener('submit', function () {
     localStorage.clear();
     event.preventDefault();
     if (searchInput.validation(INPUT_FORMA.news)) {
-        newsCardList.renderCard(document.querySelector('.cards'), document.querySelectorAll('.card'))
+        //обнуляем страницу
+        newsCardList.renderCard(document.querySelector('.cards'),
+            document.querySelectorAll('.card'));
         newsApi.getNews(PATH_NEWS, INPUT_FORMA.news.value, todayDay,
                 nodayMonth, yearToday, weekDay, weekMonth, weekYear)
             .then((res) => {
@@ -54,6 +58,7 @@ INPUT_FORMA.addEventListener('submit', function () {
                 document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 localStorage.setItem(INPUT_FORMA.news.value, JSON.stringify(res));
                 localStorage.setItem('NewsName', INPUT_FORMA.news.value)
+                i
                 newsCardList.pushCard(INPUT_FORMA.news.value, 0);
 
             })
@@ -89,4 +94,8 @@ INPUT_FORMA.addEventListener('input', function (event) {
         document.querySelector('.error__text').classList.remove('error__text_disabled');
     }
 
+})
+document.querySelector('.cards').addEventListener("click", (event) => {
+    console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
+    window.open('')
 })

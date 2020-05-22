@@ -1,5 +1,7 @@
 import {
-    INPUT_FORMA
+    INPUT_FORMA,
+    URL_ARRAY,
+    URL_NUMBER
 } from '../constans/constans.js'
 
 export default class NEWSCard {
@@ -26,6 +28,8 @@ export default class NEWSCard {
                 </p>
 
             </div>`
+
+        URL_NUMBER++;
 
         return template;
     }
