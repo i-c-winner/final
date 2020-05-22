@@ -10,14 +10,14 @@
     <meta name="author" content="Дмитрий Белоусов" lang="ru">
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.svg">
-    <link rel="stylesheet" href="css/main.3e53c89bdee5b75e1787.css">
+    <link rel="stylesheet" href="css/main.c1071347570b57fc6958.css">
 </head>
 
 <body class="body">
     <div class="top-line"></div>
     <div class="header header_background_img">
         <div class="header-top">
-            <a href="./index.html" class="header-top__logo header-top__logo_white">NewsAnalyzer</a>
+            <a href="./index.html" class="header-top__logo header-top__logo_white">NEWSAnalyzer</a>
             <nav class="header-top__links">
                 <a href="./index.html" class="header-top__link header-top__link_activ-white">Главная</a>
                 <a href="./about.html" class="header-top__link header-top__link_noneactiv">О проекте</a>
@@ -32,15 +32,15 @@
                 была в новостях за прошедшую неделю.</p>
         </div>
 
-        <form name="Search" class="header-bottom">
-            <input type="text" required minlength="2" maxlength="20" name="user" placeholder="Что ищем?"
+        <form name="Search" class="header-bottom" novalidate>
+            <input type="text" required minlength="2" maxlength="20" name="news" placeholder="Что ищем?"
                 class="header-bottom__search">
             <input type="submit" class="buttom buttom_place_header" value="Искать">
 
         </form>
 
     </div>
-    <div class="preloader">
+    <div class="preloader preloader_state_enabled">
         <img class="preloader__image" alt="изображение ошибки"
             src="./images/face.svg">
         <div class=" preloader__error-title">Ни чего не найдено</div>
@@ -211,7 +211,7 @@
             </div>
             <!--  Конец карточки -->
         </div>
-        <a href="#" class="buttom buttom_place_main">Показать еще</a>
+        <p class="buttom buttom_place_main">Показать еще</p>
     </section>
     <section class="author">
         <div class="author-box">
@@ -248,7 +248,8 @@
     </footer>
 
 
-    <script src="scripts/main.1e273b2fb2a2abf0be12.js"></script>
+    <script src="scripts/main.6037000cf12ae95c6f65.js"></script>
+
 </body>
 
 </html>
