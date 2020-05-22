@@ -1,0 +1,14 @@
+.preloader__error {
+    font-family: 'Roboto Slab',
+        'Sans Serif',
+        Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 25px;
+    letter-spacing: .8px;
+    color: white;
+    background-color: red;
+    padding: 10px 0px;
+}

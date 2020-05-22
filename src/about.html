@@ -17,7 +17,7 @@
     <div class="top-line top-line_color_black"></div>
     <div class="header header_background_color">
         <div class="header-top">
-            <a href="./index.html" class="header-top__logo header-top__logo_black">NewsAnalyzer</a>
+            <a href="./index.html" class="header-top__logo header-top__logo_black">NEWSAnalyzer</a>
             <nav class="header-top__links ">
                 <a href="./index.html" class="header-top__link header-top__link_noneactiv">Главная</a>
                 <a href="./about.html" class="header-top__link header-top__link_activ-black">О проекте</a>
@@ -104,63 +104,9 @@
                     src="<%= require('../src/pages/image/ipadmini_strelka.svg').default %>" alt="ссылка на комиты">
             </div>
         </div>
-        <div class="commits__box">
-            <div class="card card_place_commits">
-                <time datetime="2019-08-02" class="card__text-date card__text-date_commits">
-                    2 августа, 2019
-                </time>
-
-                <div class="card__avatar-box">
-                    <img src="<%=require('../src/pages/image/image-01.png').default %>" alt="аватар на Гитхабе"
-                        class="card__image card__image_commits">
-
-
-                    <div class="card__wrapper card__wrapper_commits">
-                        <p class="card__text-name card__text-name_commits">
-                            Иван Иванович
-                        </p>
-                        <p class="card__text-mail card__text-mail_commits">
-                            mail@email.com
-                        </p>
-                    </div>
-                </div>
-                <p class="card__text-paragraph card__text-paragraph_commits">
-                    Emmet (formerly Zen Coding)
-                    is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-                </p>
-
-
-            </div>
-
-            <div class="card-out card card_place_commits">
-                <time datetime="2019-08-02" class="card__text-date card__text-date_commits">
-                    2 августа, 2019
-                </time>
-
-                <div class="card__avatar-box">
-                    <img src="<%=require('../src/pages/image/image-01.png').default %>" alt="аватар на Гитхабе"
-                        class="card__image card__image_commits">
-
-
-                    <div class="card__wrapper card__wrapper_commits">
-                        <p class="card__text-name card__text-name_commits">
-                            Иван Иванович
-                        </p>
-                        <p class="card__text-mail card__text-mail_commits">
-                            mail@email.com
-                        </p>
-                    </div>
-                </div>
-                <p class="card__text-paragraph card__text-paragraph_commits">
-                    Emmet (formerly Zen Coding)
-                    is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-                </p>
-
-
-            </div>
-            <a href="www.github.com" id="buttom-down" class="buttom buttom_place_github">Открыть в GitHub </a>
+        <div class="commits__box main-carousel">
         </div>
-
+        <a href="www.github.com" id="buttom-down" class="buttom buttom_place_github">Открыть в GitHub </a>
     </section>
     <!--Конец блока с коомитами Гитхаб  -->
     <footer class="footer">
@@ -181,8 +127,6 @@
             </a>
         </div>
     </footer>
-
-
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 

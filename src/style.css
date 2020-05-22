@@ -1,10 +1,12 @@
-
 @import url('./vendor/fonts/fonts.css');
 
 
 
- @import url('./vendor/normalize.css'); 
-/* @import url('./pages/blocks/down-line/down-line.css'); */
+@import url('./vendor/normalize.css');
+
+@import url('../node_modules/flickity/dist/flickity.css');
+@import url('./pages/blocks/circle-preloader/circle-prteloader.css');
+@import url('./pages/blocks/error/__text/error__text.css');
 @import url('./pages/blocks/middle-line/middle-line.css');
 @import url('./pages/blocks/preloader/preloader.css');
 @import url('./pages/blocks/statistic-flags/statistic-flags.css');
@@ -31,7 +33,7 @@
 @import url('./pages/blocks/card/card.css');
 
 
-.body{
+.body {
     min-width: 320px;
     max-width: 1440px;
     margin: 0px auto;

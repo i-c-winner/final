@@ -1,20 +1,18 @@
-.header_background_img{
+.header_background_img {
     background-image: url('../../../../pages/image/georgia-de-lotz--UsJoNxLaNo-unsplash.png');
     background-position: center;
 }
 
 @media screen and (max-width:650px) {
     .header_background_img.header {
- 
-     padding-bottom: 32px;
+
+        padding-bottom: 32px;
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
-    .header_background_img.header {
-  
-    }
+    .header_background_img.header {}
 }
 
 
@@ -22,6 +20,7 @@
 
 @media screen and (min-width:1101px) {
     .header_background_img.header {
-       
+        background-size: cover;
+        height: 525px;
     }
 }

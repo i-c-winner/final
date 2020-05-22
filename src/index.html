@@ -17,7 +17,7 @@
     <div class="top-line"></div>
     <div class="header header_background_img">
         <div class="header-top">
-            <a href="./index.html" class="header-top__logo header-top__logo_white">NewsAnalyzer</a>
+            <a href="./index.html" class="header-top__logo header-top__logo_white">NEWSAnalyzer</a>
             <nav class="header-top__links">
                 <a href="./index.html" class="header-top__link header-top__link_activ-white">Главная</a>
                 <a href="./about.html" class="header-top__link header-top__link_noneactiv">О проекте</a>
@@ -32,20 +32,24 @@
                 была в новостях за прошедшую неделю.</p>
         </div>
 
-        <form name="Search" class="header-bottom">
-            <input type="text" required minlength="2" maxlength="20" name="user" placeholder="Что ищем?"
-                class="header-bottom__search">
+        <form name="Search" class="header-bottom" novalidate>
+            <input type="text" autocomplete="off" required minlength="5" maxlength="20" name="news"
+                placeholder="Что ищем?" class="header-bottom__search">
+            <p class="error__text">Введите не меннее 4-х символов</p>
             <input type="submit" class="buttom buttom_place_header" value="Искать">
-
         </form>
-
     </div>
-    <div class="preloader">
+    <div class="circle-preloader "></div>
+    <div class="preloader preloader_state_enabled">
         <img class="preloader__image" alt="изображение ошибки"
             src="<%=require('../src/pages/image/face.svg').default%>">
         <div class=" preloader__error-title">Ни чего не найдено</div>
-        <div class="preloader__error-subtitle">К сожалению по вашему запросу
+        <div class=" preloader__error-subtitle">К сожалению по вашему запросу
             ничего не найдено.</div>
+        <div class="preloader__error preloader_error-network">&laquo; Во время запроса
+            произошла ошибка. Возможно, проблема с соединением
+            или сервер недоступен.
+            Подождите немного и попробуйте ещё раз &raquo;</div>
 
     </div>
     <section class="main">
@@ -55,13 +59,10 @@
                 <img src="<%=require('./pages/image/ipadmini_strelka.svg').default %>" alt="изображение ссылки"></a>
         </div>
         <div class="cards">
-
-            <!-- Карточка новостей -->
             <div class="card card_place_main">
                 <div class="main__text-box">
 
-                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
-                        class="card__image card__image_main">
+                    <img src="./images/image_01.png" alt="Новостное изображение" class="card__image card__image_main">
                     <p class="card__text-date card__text-date_main">
                         2 августа, 2019
                     </p>
@@ -80,14 +81,11 @@
                 </p>
 
             </div>
-            <!--  Конец карточки -->
 
-            <!-- Карточка новостей -->
-            <div id="card-small" class="card card_place_main">
+            <div class="card card_place_main">
                 <div class="main__text-box">
 
-                    <img src="<%=require('../src/pages/image/image_01.png').
-                default %>" alt="Новостное изображение" class="card__image card__image_main">
+                    <img src="./images/image_01.png" alt="Новостное изображение" class="card__image card__image_main">
                     <p class="card__text-date card__text-date_main">
                         2 августа, 2019
                     </p>
@@ -95,10 +93,10 @@
                         Национальное достояние – парки
                     </h2>
                     <p class="card__text-paragraph card__text-paragraph_main">
-                        В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь начала складываться система
-                        национальных парков – охраняемых территорий, где и сегодня
-                        каждый может приобщиться к природе.
+                        В 2016 году Америка отмечала важный юбилей: сто лет
+                        назад здесь начала складываться система
+                        национальных парков – охраняемых территорий, где и
+                        сегодня каждый может приобщиться к природе.
                     </p>
                 </div>
                 <p class="card__text-source card__text-source_main">
@@ -106,25 +104,28 @@
                 </p>
 
             </div>
-            <!--  Конец карточки -->
-
-            <!-- Карточка новостей -->
-            <div class=" card card_place_main">
+            <div class="card card_place_main">
                 <div class="main__text-box">
 
-                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
-                        class="card__image card__image_main">
+                    <img src="./images/image_01.png" alt="Новостное изображение" class="card__image card__image_main">
                     <p class="card__text-date card__text-date_main">
                         2 августа, 2019
                     </p>
                     <h2 class="card__text-title card__text-title_main">
-                        Национальное достояние – парки
+                        Национальное достояние – паркиНациональное достояние – парки
+                        Наци
+
                     </h2>
                     <p class="card__text-paragraph card__text-paragraph_main">
-                        В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь начала складываться система
-                        национальных парков – охраняемых территорий, где и сегодня
-                        каждый может приобщиться к природе.
+                        В 2016 году Америка отмечала важный юбилей: сто лет
+                        назад здесь начала складываться система
+                        национальных парков – охраняемых территорий, где и
+                        сегодня каждый может приобщиться к природе.
+                        Национальное достояние – парки
+                        Национальное достояние – парки
+                        Национальное достояние – парки
+                        Национальное достояние – парки
+
                     </p>
                 </div>
                 <p class="card__text-source card__text-source_main">
@@ -132,87 +133,9 @@
                 </p>
 
             </div>
-            <!--  Конец карточки -->
 
-            <!-- Карточка новостей -->
-            <div class="none-card card card_place_main">
-                <div class="main__text-box">
-
-                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
-                        class="card__image card__image_main">
-                    <p class="card__text-date card__text-date_main">
-                        2 августа, 2019
-                    </p>
-                    <h2 class="card__text-title card__text-title_main">
-                        Национальное достояние – парки
-                    </h2>
-                    <p class="card__text-paragraph card__text-paragraph_main">
-                        В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь начала складываться система
-                        национальных парков – охраняемых территорий, где и сегодня
-                        каждый может приобщиться к природе.
-                    </p>
-                </div>
-                <p class="card__text-source card__text-source_main">
-                    ЛЕНТА.РУ
-                </p>
-
-            </div>
-            <!--  Конец карточки -->
-
-            <!-- Карточка новостей -->
-            <div class="none-card card card_place_main">
-                <div class="main__text-box">
-
-                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
-                        class="card__image card__image_main">
-                    <p class="card__text-date card__text-date_main">
-                        2 августа, 2019
-                    </p>
-                    <h2 class="card__text-title card__text-title_main">
-                        Национальное достояние – парки
-                    </h2>
-                    <p class="card__text-paragraph card__text-paragraph_main">
-                        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                        начала складываться система
-                        национальных парков – охраняемых территорий, где и сегодня каждый
-                        может приобщиться к природе.
-                    </p>
-                </div>
-                <p class="card__text-source card__text-source_main">
-                    ЛЕНТА.РУ
-                </p>
-
-            </div>
-            <!--  Конец карточки -->
-
-            <!-- Карточка новостей -->
-            <div class="none-card card card_place_main">
-                <div class="main__text-box">
-
-                    <img src="<%=require('../src/pages/image/image_01.png').default %>" alt="Новостное изображение"
-                        class="card__image card__image_main">
-                    <p class="card__text-date card__text-date_main">
-                        2 августа, 2019
-                    </p>
-                    <h2 class="card__text-title card__text-title_main">
-                        Национальное достояние – парки
-                    </h2>
-                    <p class="card__text-paragraph card__text-paragraph_main">
-                        В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                        начала складываться система
-                        национальных парков – охраняемых территорий, где и сегодня каждый
-                        может приобщиться к природе.
-                    </p>
-                </div>
-                <p class="card__text-source card__text-source_main">
-                    ЛЕНТА.РУ
-                </p>
-
-            </div>
-            <!--  Конец карточки -->
         </div>
-        <a href="#" class="buttom buttom_place_main">Показать еще</a>
+        <p class="buttom buttom_place_main">Показать еще</p>
     </section>
     <section class="author">
         <div class="author-box">
@@ -250,6 +173,7 @@
 
 
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
 </body>
 
 </html>

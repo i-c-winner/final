@@ -1,34 +1,36 @@
+@import url('./__error/preloader__error.css');
+@import url('./_error-network/preloader_error-network.css');
+@import url('./_state/_enabled/preloader_state_enabled.css');
 @import url('./__face/preloader__face.css');
 @import url('./__error-title/preloader__error-title.css');
 @import url('./__error-subtitle/preloader__error-subtitle.css');
 
 
-@media screen and (max-width:650px) {
-    .preloader {
+/* @media screen and (max-width:650px) {
+  .preloader {
     display: none;
-     
-    }
+
+  }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
-    .preloader {
-      display: none;
-    }
+  .preloader {
+    display: none;
+  }
+}
+ */
+
+
+
+/* @media screen and (min-width:1101px) { */
+.preloader {
+  background-color: #f5f6f7;
+  display: flex;
+  flex-flow: column;
+  padding-top: 82px;
+  text-align: center;
+
 }
 
-
-
-
-@media screen and (min-width:1101px) {
-    .preloader {
-      background-color: #f5f6f7; 
-      display: flex;
-      flex-flow: column;
-      height: 293px;
-      padding-top: 82px;
-      text-align: center;
-
-    }
-}
-
+/* } */

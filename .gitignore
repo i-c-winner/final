@@ -1,6 +1,11 @@
 node_modules
 <<<<<<< HEAD
 dist
+<<<<<<< HEAD
 =======
 dist
 >>>>>>> level-1
+=======
+note
+launch.json
+>>>>>>> javascript
