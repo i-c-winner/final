@@ -377,7 +377,9 @@ https://flickity.metafizzy.co
   position: relative;
 }
 
-.flickity-enabled:focus { outline: none; }
+.flickity-enabled:focus {
+  outline: none;
+}
 
 .flickity-viewport {
   overflow: hidden;
@@ -396,9 +398,9 @@ https://flickity.metafizzy.co
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport {
@@ -413,6 +415,11 @@ https://flickity.metafizzy.co
 }
 
 /* ---- flickity-button ---- */
+@media screen and (max-width:650px) {
+  .flickity-button {
+    display: none;
+  }
+}
 
 .flickity-button {
   position: absolute;
@@ -457,13 +464,20 @@ https://flickity.metafizzy.co
   transform: translateY(-50%);
 }
 
-.flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
   right: 10px;
 }
+
 .flickity-rtl .flickity-prev-next-button.next {
   right: auto;
   left: 10px;
@@ -490,7 +504,9 @@ https://flickity.metafizzy.co
   line-height: 1;
 }
 
-.flickity-rtl .flickity-page-dots { direction: rtl; }
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
 
 .flickity-page-dots .dot {
   display: inline-block;
@@ -507,6 +523,63 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
+
+@media screen and (max-width:650px) {
+  .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    display: none;
+  }
+}
+.body_preloader {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.circle-preloader_state_disabled {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #444;
+    border-bottom-color: #888;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error__text_disabled {
+    display: none;
+}
+.error__text {
+    background-color: white;
+    opacity: .5;
+    color: red;
+    border-radius: 14px;
+    line-height: 28px;
+    text-align: center;
+}
 @media screen and (max-width:650px) {
     .middle-line {
         width: 100%;
@@ -554,6 +627,24 @@ https://flickity.metafizzy.co
     }
 }
 
+.preloader__error {
+    font-family: 'Roboto Slab',
+        'Sans Serif',
+        Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 25px;
+    letter-spacing: .8px;
+    color: white;
+    background-color: red;
+    padding: 10px 0px;
+}
+.preloader_error-network {
+    display: none;
+
+}
 .preloader_state_enabled.preloader {
     display: none;
 }
@@ -588,7 +679,7 @@ https://flickity.metafizzy.co
     margin: 18px auto;
     width: 310px;
 }
-@media screen and (max-width:650px) {
+/* @media screen and (max-width:650px) {
   .preloader {
     display: none;
 
@@ -601,21 +692,21 @@ https://flickity.metafizzy.co
     display: none;
   }
 }
+ */
 
 
 
+/* @media screen and (min-width:1101px) { */
+.preloader {
+  background-color: #f5f6f7;
+  display: flex;
+  flex-flow: column;
+  padding-top: 82px;
+  text-align: center;
 
-@media screen and (min-width:1101px) {
-  .preloader {
-    background-color: #f5f6f7;
-    display: flex;
-    flex-flow: column;
-    height: 293px;
-    padding-top: 82px;
-    text-align: center;
-
-  }
 }
+
+/* } */
 
 @media screen and (max-width:650px) {
     .statistic-flags__flag {
@@ -1178,25 +1269,21 @@ https://flickity.metafizzy.co
     }
 }
 .statistic-info {
-max-width: 288px;
+    max-width: 258px;
 }
 
 
 
 @media screen and (max-width:650px) {
-    .statistic-info {
-    
-     
-    }
+    .statistic-info {}
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .statistic-info {
-      
+
         font-size: 19px;
         margin-left: -119px;
-        max-width: 300px;
         margin-bottom: 0px;
     }
 }
@@ -1208,7 +1295,6 @@ max-width: 288px;
     .statistic-info {
         font-size: 19px;
         margin-left: 0px;
-        max-width: 300px;
         margin-bottom: 0px;
     }
 }
@@ -1311,31 +1397,6 @@ text-align: right;
     }
 }
 @media screen and (max-width:650px) {
-    .commits__box {
-     padding-bottom: 1px;
-    }
-}
-
-
-@media screen and (min-width:651px) and (max-width:1100px) {
-    .commits__box {
-       display: flex;
-       justify-content: start;
-       
-    }
-}
-
-
-
-
-@media screen and (min-width:1101px) {
-    .commits__box {
-        display: flex;
-        justify-content: start;
-        margin: 46px 0px 0px 66px;
-    }
-}
-@media screen and (max-width:650px) {
     .commits__title {
         width: 150px;
         font-family: 'Roboto Slab', 'Sans Serif', Arial;
@@ -1380,11 +1441,15 @@ text-align: right;
     
     }
 }
+/* @import url('./__box/commits__box.css'); */
+
+
+
 @media screen and (max-width:650px) {
     .commits {
-    padding: 0px 16px;
-    background-color: #f5f6f7;
-     
+        padding: 0px 16px;
+        background-color: #f5f6f7;
+
     }
 }
 
@@ -1392,7 +1457,7 @@ text-align: right;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .commits {
         padding: 0px 16px 70px;
-    background-color: #f5f6f7;
+        background-color: #f5f6f7;
     }
 }
 
@@ -1402,11 +1467,9 @@ text-align: right;
 @media screen and (min-width:1101px) {
     .commits {
         padding: 0px 16px 133px;
-    background-color: #f5f6f7; 
+        background-color: #f5f6f7;
     }
 }
-
-
 .techniks__title {    
 font-family: 'Roboto Slab', 'Sans Serif', Arial;
 font-style: normal;
@@ -2124,23 +2187,21 @@ margin-bottom: 0px;
         justify-content: space-between;
     }
 }
-.header_background_img{
+.header_background_img {
     background-image: url(.././images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
     background-position: center;
 }
 
 @media screen and (max-width:650px) {
     .header_background_img.header {
- 
-     padding-bottom: 32px;
+
+        padding-bottom: 32px;
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
-    .header_background_img.header {
-  
-    }
+    .header_background_img.header {}
 }
 
 
@@ -2148,7 +2209,8 @@ margin-bottom: 0px;
 
 @media screen and (min-width:1101px) {
     .header_background_img.header {
-       
+        background-size: cover;
+        height: 525px;
     }
 }
 @media screen and (max-width:650px) {
@@ -3275,7 +3337,8 @@ margin-bottom: 0px;
          height: 264px;
          overflow: hidden;
          height: 233px;
-         min-width: 252px;
+         max-width: 252px;
+         margin-left: 10px;
      }
 
      .nonedisplay {
@@ -3298,7 +3361,7 @@ margin-bottom: 0px;
          border-radius: 10px;
          height: 242px;
          overflow: hidden;
-         min-width: 336px;
+         max-width: 336px;
          box-sizing: border-box;
          margin-left: 17px;
      }
@@ -3314,7 +3377,7 @@ margin-bottom: 0px;
          border-radius: 10px;
          height: 282px;
          overflow: hidden;
-         min-width: 336px;
+         max-width: 336px;
          box-sizing: border-box;
          margin-left: 17px;
      }
@@ -3402,14 +3465,12 @@ flex-flow: column;
 }
 
 
-
-
 @media screen and (max-width:650px) {
     .card__image_main {
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    margin-bottom: 9px;
-     
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        margin-bottom: 9px;
+
     }
 }
 
@@ -3417,8 +3478,9 @@ flex-flow: column;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .card__image_main {
         border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    margin-bottom: 0px;
+        width: 100%;
+        margin-bottom: 0px;
+
     }
 }
 
@@ -3433,14 +3495,21 @@ flex-flow: column;
     }
 }
 
-
-
 @media screen and (max-width:650px) {
     .card__text-title_main {
         margin: 20px 16px 8px;
         line-height: 1;
         letter-spacing: 1.05px;
-     
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        box-orient: vertical;
+
     }
 }
 
@@ -3449,6 +3518,15 @@ flex-flow: column;
     .card__text-title_main {
         margin: 14px 16px 8px;
         line-height: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        box-orient: vertical;
     }
 }
 
@@ -3458,9 +3536,17 @@ flex-flow: column;
 @media screen and (min-width:1101px) {
     .card__text-title_main {
         margin: 20px 16px 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        box-orient: vertical;
     }
 }
-
 
 @media screen and (max-width:650px) {
     .card__text-title_commits {
@@ -3545,7 +3631,16 @@ flex-flow: column;
 .card__text-paragraph_main {
     height: 71px;
     overflow: hidden;
-  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+
 }
 
 
@@ -3559,6 +3654,15 @@ flex-flow: column;
         font-size: 16px;
         line-height: 22px;
         color: #1A1B22;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-clamp: 3;
+        box-orient: vertical;
     }
 }
 
@@ -3572,7 +3676,16 @@ flex-flow: column;
         font-size: 16px;
         line-height: 22px;
         color: #1A1B22;
-        }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-clamp: 3;
+        box-orient: vertical;
+    }
 }
 
 
