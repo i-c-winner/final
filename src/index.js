@@ -24,7 +24,6 @@ import {
 import {
     PATH_NEWS,
     PATH_GIT,
-    URL_ARRAY,
     URL_NUMBER
 } from './js/constans/constans.js';
 import NewsApi from './js/modules/NEWSApi.js';
