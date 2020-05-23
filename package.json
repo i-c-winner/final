@@ -45,7 +45,6 @@
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "core-js": "3.4.1",
-    "flickity": "^2.2.1",
-    "swiper": "^5.4.0"
+    "flickity": "2.2.1"
   }
 }

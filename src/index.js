@@ -95,13 +95,13 @@ INPUT_FORMA.addEventListener('input', function (event) {
     }
 
 })
-document.querySelector('.cards').addEventListener("click", (event) => {
-    console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
-    URL_ARRAY.forEach(element => {
-        if (element.index === this.classList.contains(URL_INDEX)) {
-            window.open(element.index)
+// document.querySelector('.cards').addEventListener("click", (event) => {
+//     console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
+//     URL_ARRAY.forEach(element => {
+//         if (element.index === this.classList.contains(URL_INDEX)) {
+//             window.open(element.index)
 
-        }
+//         }
 
-    });
-})
+//     });
+// })

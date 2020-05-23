@@ -23,10 +23,10 @@ export default class NewsCardList {
     }
 
     renderCard(parent, child) {
-        child.forEach(element => {
-            URL_ARRAY = [];
-            parent.removeChild(element)
-        });
+        // child.forEach(element => {
+        //     URL_ARRAY = [];
+        //     parent.removeChild(element)
+        // });
     }
 
 

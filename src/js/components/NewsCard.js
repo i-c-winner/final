@@ -8,7 +8,7 @@ export default class NEWSCard {
 
 
     create(data) {
-        const template = ` <div class=" card card_place_main ${URL_INDEX}">
+        const template = ` <div class=" card card_place_main " <!--id="${URL_INDEX}-->">
                 <div class="main__text-box">
 
                     <img src="${data.urlToImage}" alt="Новостное изображение"
@@ -28,11 +28,11 @@ export default class NEWSCard {
                 </p>
 
             </div>`
-        URL_ARRAY.push({
-            URL_INDEX: data.source.url,
-            "index": URL_INDEX
-        });
-        URL_INDEX++;
-        return template;
+        // URL_ARRAY.push({
+        //     URL_INDEX: data.source.url,
+        //     "index": URL_INDEX
+        // });
+        // URL_INDEX++;
+        // return template;
     }
 };
