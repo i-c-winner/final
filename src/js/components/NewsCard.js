@@ -1,14 +1,15 @@
 import {
     INPUT_FORMA,
     URL_ARRAY,
-    URL_NUMBER
+    URL_NUMBER,
+    urlIndex,
 } from '../constans/constans.js'
 
 export default class NEWSCard {
 
 
-    create(data) {
-        const template = ` <div class=" card card_place_main">
+    create(data, position) {
+        const template = ` <div class=" card card_place_main index${position}">
                 <div class="main__text-box">
 
                     <img src="${data.urlToImage}" alt="Новостное изображение"
@@ -28,8 +29,11 @@ export default class NEWSCard {
                 </p>
 
             </div>`
-
-        URL_NUMBER++;
+        URL_ARRAY.push({
+            title: data.title,
+            url: data.url,
+            index: position,
+        });
 
         return template;
     }

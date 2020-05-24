@@ -110,12 +110,12 @@ for (let element in DAY_LAST_WEEK) {
                 separatorAndCount(element.description, SEARCH);
         } catch {
             COUNT = COUNT;
-            console.log()
+
         }
     });
 
 
-    console.log(COUNT, GLOBAL_COUNT)
+
     try {
         let a = marker[3];
 

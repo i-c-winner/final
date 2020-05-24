@@ -25,9 +25,11 @@ import {
     PATH_NEWS,
     PATH_GIT,
     URL_ARRAY,
-    URL_NUMBER,
-    NEWS_COUNT
+    NEWS_COUNT,
+
 } from './js/constans/constans.js';
+
+console.log(URL_ARRAY);
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
 import SearchInput from './js/components/SearchInput.js';
@@ -58,8 +60,7 @@ INPUT_FORMA.addEventListener('submit', function () {
                 document.querySelector('.body').classList.remove('preloader_error-network')
                 document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 localStorage.setItem(INPUT_FORMA.news.value, JSON.stringify(res));
-                localStorage.setItem('NewsName', INPUT_FORMA.news.value)
-                i
+                localStorage.setItem('NewsName', INPUT_FORMA.news.value);
                 newsCardList.pushCard(INPUT_FORMA.news.value, 0);
 
             })
@@ -79,31 +80,31 @@ INPUT_FORMA.addEventListener('submit', function () {
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
     newsCardList.pushCard(INPUT_FORMA.news.value,
         JSON.parse(localStorage.getItem('NUMBER_POSITION')));
-    if (NEWS_COUNT > (JSON.parse(localStorage.getitem(localStorage.getItem('NewsName'))).length)) {
-        document.querySelector('.buttom_place_main').classList
-            .add(buttom_state_disabled);
-        NEWS_COUNT = 0;
-    } else {
-        NEWS_COUNT++;
-    }
+
 
 })
-
 INPUT_FORMA.addEventListener('input', function (event) {
-    console.log()
     if (INPUT_FORMA.news.value.length > 3) {
-        console.log('OK')
+
         document.querySelector('.buttom_place_header').classList.remove('buttom_state_activ');
         document.querySelector('.error__text').classList.add('error__text_disabled');
     }
     if (INPUT_FORMA.news.value.length < 4) {
 
-        console.log('OK')
+
         document.querySelector('.error__text').classList.remove('error__text_disabled');
     }
 
 })
 document.querySelector('.cards').addEventListener("click", (event) => {
-    console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
-    window.open('')
+    URL_ARRAY.forEach(element => {
+        const marker = 'index' + element['index'];
+        let a = element['url'];
+        console.log(a);
+        console.log(typeof (a))
+        console.log(document.querySelector('.' + marker))
+        if ((document.querySelector('.' + marker)).contains(event.target)) {
+            window.open(element['url']);
+        }
+    });
 })
