@@ -25,7 +25,8 @@ export default class NewsCardList {
     renderCard(parent, child) {
         child.forEach(element => {
             URL_NUMBER = 0;
-            parent.removeChild(element)
+            parent.removeChild(element);
+            document.querySelector('.buttom_place_main').classList.remove('buttom_state_disabled');
         });
     }
 

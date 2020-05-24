@@ -40,3 +40,4 @@ export const NEWS_WEEK_DAYS = [];
 export const GLOBAL_OBJECT = [];
 export const OBJECT_FOR_LOAD = [];
 export let URL_NUMBER = 0;
+export let NEWS_COUNT = 0;

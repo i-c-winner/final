@@ -25,14 +25,15 @@ import {
     PATH_NEWS,
     PATH_GIT,
     URL_ARRAY,
-    URL_NUMBER
+    URL_NUMBER,
+    NEWS_COUNT
 } from './js/constans/constans.js';
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
 import SearchInput from './js/components/SearchInput.js';
 export const searchInput = new SearchInput();
 
-//отправка запроса и запись в локальное хранилище
+
 localStorage.setItem('NUMBER_POSITION', JSON.parse(0))
 
 
@@ -76,8 +77,15 @@ INPUT_FORMA.addEventListener('submit', function () {
 
 })
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
-    newsCardList.pushCard(INPUT_FORMA.news.value, JSON.parse(localStorage.getItem('NUMBER_POSITION')));
-
+    newsCardList.pushCard(INPUT_FORMA.news.value,
+        JSON.parse(localStorage.getItem('NUMBER_POSITION')));
+    if (NEWS_COUNT > (JSON.parse(localStorage.getitem(localStorage.getItem('NewsName'))).length)) {
+        document.querySelector('.buttom_place_main').classList
+            .add(buttom_state_disabled);
+        NEWS_COUNT = 0;
+    } else {
+        NEWS_COUNT++;
+    }
 
 })
 
