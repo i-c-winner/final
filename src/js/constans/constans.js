@@ -3,7 +3,7 @@ export const INPUT_FORMA = document.forms.Search; //форма поиска
 //переменные для NEWSApi
 export const GIT_PATH = 'https://api.github.com/repos/i-c-winner/final/commits';
 export const PATH_NEWS =
-    'https://newsapi.org/v2/everything?language=ru&apiKey=68de62cc45bb4e77a24cd68e991d1c38&pageSize=100&q='
+    'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?language=ru&apiKey=68de62cc45bb4e77a24cd68e991d1c38&pageSize=100&q='
 
 export let DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 export const NEWS = JSON.parse(localStorage.getItem(localStorage.getItem('NewsName')));
@@ -31,7 +31,7 @@ export {
     SEARCH_IN_TEXT
 };
 
-export const NEWS_DATE = [];
+export let NEWS_DATE = [];
 export const NEWS_TITLE = [];
 export const NEWS_NAME = [];
 export const NEWS_DESCRIPTION = [];
@@ -39,5 +39,4 @@ export const NEWS_WEEK_DAYS_NUMBER = [];
 export const NEWS_WEEK_DAYS = [];
 export const GLOBAL_OBJECT = [];
 export const OBJECT_FOR_LOAD = [];
-export let URL_ARRAY = [];
 export let URL_INDEX = 0;

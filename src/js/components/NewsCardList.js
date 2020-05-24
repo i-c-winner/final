@@ -1,10 +1,10 @@
 import {
     newsCardList,
     newsCard,
+    URL_ARRAY
 } from '../../index.js';
 import {
     INPUT_FORMA,
-    URL_ARRAY,
 } from '../constans/constans.js'
 
 export default class NewsCardList {
@@ -23,10 +23,12 @@ export default class NewsCardList {
     }
 
     renderCard(parent, child) {
-        // child.forEach(element => {
-        //     URL_ARRAY = [];
-        //     parent.removeChild(element)
-        // });
+
+        let URL_ARRAY = [];
+        child.forEach(element => {
+
+            parent.removeChild(element)
+        });
     }
 
 

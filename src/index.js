@@ -24,8 +24,10 @@ import {
 import {
     PATH_NEWS,
     PATH_GIT,
-    URL_NUMBER
+    URL_NUMBER,
+    URL_INDEX,
 } from './js/constans/constans.js';
+export const URL_ARRAY = [];
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
 import SearchInput from './js/components/SearchInput.js';
@@ -57,11 +59,11 @@ INPUT_FORMA.addEventListener('submit', function () {
                 document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 localStorage.setItem(INPUT_FORMA.news.value, JSON.stringify(res));
                 localStorage.setItem('NewsName', INPUT_FORMA.news.value)
-                i
                 newsCardList.pushCard(INPUT_FORMA.news.value, 0);
 
             })
             .catch((res) => {
+                console.log(res)
                 document.querySelector('.preloader').classList.remove('preloader_state_enabled');
                 document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 document.querySelector('.body').classList.remove('body_preloader');
@@ -94,13 +96,13 @@ INPUT_FORMA.addEventListener('input', function (event) {
     }
 
 })
-// document.querySelector('.cards').addEventListener("click", (event) => {
-//     console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
-//     URL_ARRAY.forEach(element => {
-//         if (element.index === this.classList.contains(URL_INDEX)) {
-//             window.open(element.index)
+document.querySelector('.cards').addEventListener("click", (event) => {
+    console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
+    URL_ARRAY.forEach(element => {
+        if (element.index === this.classList.contains(URL_INDEX)) {
+            window.open(element.index)
 
-//         }
+        }
 
-//     });
-// })
+    });
+})
