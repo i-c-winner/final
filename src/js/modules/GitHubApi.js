@@ -9,13 +9,10 @@ export default class GitHubApi {
                     return response.json();
                 } else {
                     console.log(response)
-                    // console.log(response, 'ошибка')
                     return Promise.reject(err)
                 }
             })
             .catch((err) => {
-                console.log('privet')
-                console.log(err, 'obi')
                 return Promise.reject(err)
             })
     }

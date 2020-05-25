@@ -32,10 +32,16 @@ export default class NewsCardList {
         child.forEach(element => {
             parent.removeChild(element);
             document.querySelector('.buttom_place_main').classList.remove('buttom_state_disabled');
+
         });
 
     }
 
+    startPushCard(localStorageParam, position) {
+        this.container.insertAdjacentHTML("beforeEnd",
+            newsCard.startCreate(localStorageParam, position))
+
+    }
 
 
 }

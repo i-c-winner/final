@@ -123,3 +123,9 @@ document.querySelector('.cards').addEventListener("click", (event) => {
         }
     });
 })
+console.log(URL_ARRAY)
+JSON.parse(localStorage.getItem("NewsArray")).forEach(element => {
+    let temporaryArray = JSON.parse(localStorage.getItem(
+        localStorage.getItem('NewsName'))).articles[element['index']];
+    newsCardList.startPushCard(temporaryArray, element['index']);
+});
