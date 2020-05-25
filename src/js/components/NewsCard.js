@@ -34,7 +34,7 @@ export default class NEWSCard {
             url: data.url,
             index: position,
         });
-
+        localStorage.setItem('NewsArray', JSON.stringify(URL_ARRAY));
         return template;
     }
 };

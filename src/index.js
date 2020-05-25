@@ -12,6 +12,7 @@ export let weekYear = weekDate.getFullYear();
 export let weekDay = weekDate.getDate();
 export let weekMonth = weekDate.getMonth() + 1;
 export let NUMBER_POSITION = 0;
+//export const URL_ARRAY = [];
 
 
 // переменные формы
@@ -29,14 +30,16 @@ import {
 
 } from './js/constans/constans.js';
 
-console.log(URL_ARRAY);
+
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
 import SearchInput from './js/components/SearchInput.js';
 export const searchInput = new SearchInput();
 
 
-localStorage.setItem('NUMBER_POSITION', JSON.parse(0))
+localStorage.setItem('NUMBER_POSITION', JSON.parse(0));
+
+
 
 
 //формирование карточек новостей
@@ -45,14 +48,27 @@ import NewsCardList from "./js/components/NewsCardList";
 export const newsCardList = new NewsCardList(document.querySelector('.cards'));
 export const cardsContainer = document.querySelector('.cards');
 export const newsCard = new NewsCard();
+
+
+
+
+
+document.querySelector('.buttom_place_main').classList.remove('buttom_state.disabled')
 INPUT_FORMA.addEventListener('submit', function () {
     document.querySelector('.preloader').classList.add('preloader_state_enabled');
-    localStorage.clear();
+
+
     event.preventDefault();
     if (searchInput.validation(INPUT_FORMA.news)) {
         //обнуляем страницу
+        localStorage.clear();
+        URL_ARRAY.length = 0;
+        document.querySelector('.body').classList.add('body_preloader');
+        document.querySelector('.circle-preloader').classList.add('circle-preloader_state_disabled');
         newsCardList.renderCard(document.querySelector('.cards'),
             document.querySelectorAll('.card'));
+
+
         newsApi.getNews(PATH_NEWS, INPUT_FORMA.news.value, todayDay,
                 nodayMonth, yearToday, weekDay, weekMonth, weekYear)
             .then((res) => {
@@ -65,23 +81,25 @@ INPUT_FORMA.addEventListener('submit', function () {
 
             })
             .catch((res) => {
+                console.log(res)
                 document.querySelector('.preloader').classList.remove('preloader_state_enabled');
-                document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
-                document.querySelector('.body').classList.remove('body_preloader');
-                document.querySelector('.preloader__error').classList.remove('preloader_error-network');
+                // document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
+                // document.querySelector('.body').classList.remove('body_preloader');
+                // document.querySelector('.preloader__error').classList.remove('preloader_error-network');
             })
 
 
     }
-    document.querySelector('.body').classList.add('body_preloader');
-    document.querySelector('.circle-preloader').classList.add('circle-preloader_state_disabled');
+
 
 })
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
     newsCardList.pushCard(INPUT_FORMA.news.value,
         JSON.parse(localStorage.getItem('NUMBER_POSITION')));
-
-
+    if (((JSON.parse(localStorage.getItem('NewsArray'))).length + 3) >=
+        (JSON.parse(localStorage.getItem(localStorage.getItem('NewsName')))).articles.length) {
+        document.querySelector('.buttom_place_main').classList.add('buttom_state_disabled')
+    }
 })
 INPUT_FORMA.addEventListener('input', function (event) {
     if (INPUT_FORMA.news.value.length > 3) {
@@ -100,9 +118,6 @@ document.querySelector('.cards').addEventListener("click", (event) => {
     URL_ARRAY.forEach(element => {
         const marker = 'index' + element['index'];
         let a = element['url'];
-        console.log(a);
-        console.log(typeof (a))
-        console.log(document.querySelector('.' + marker))
         if ((document.querySelector('.' + marker)).contains(event.target)) {
             window.open(element['url']);
         }

@@ -6,6 +6,7 @@ export default function separatorAndCount(string, word) {
     try {
         marker = string.split(" ")
     } catch {
+
         marker = [];
     }
     marker.forEach(element => {
