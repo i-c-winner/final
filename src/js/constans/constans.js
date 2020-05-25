@@ -39,4 +39,8 @@ export const NEWS_WEEK_DAYS_NUMBER = [];
 export const NEWS_WEEK_DAYS = [];
 export const GLOBAL_OBJECT = [];
 export const OBJECT_FOR_LOAD = [];
+<<<<<<< HEAD
 export let URL_INDEX = 0;
+=======
+export const URL_ARRAY = [];
+>>>>>>> javascript

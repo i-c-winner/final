@@ -8,6 +8,7 @@ export default class GitHubApi {
                 if (response.ok) {
                     return response.json();
                 } else {
+                    console.log(response)
                     return Promise.reject(err)
                 }
             })

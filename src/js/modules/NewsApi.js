@@ -14,6 +14,10 @@ export default class NewsApi {
                 }
             })
             .catch((err) => {
+                document.querySelector('.preloader').classList.remove('preloader_state_enabled');
+                document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
+                document.querySelector('.body').classList.remove('body_preloader');
+                document.querySelector('.preloader__error').classList.remove('preloader_error-network');
                 return Promise.reject(err)
             })
     }
