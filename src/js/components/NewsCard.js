@@ -38,9 +38,9 @@ export default class NEWSCard {
         return template;
     }
     startCreate(data, position) {
-        console.log(data, position)
+
         if (data !== 0) {
-            // console.log(data, 'ошибка')
+
 
             const template = ` <div class=" card card_place_main index${position}">
                 <div class="main__text-box">

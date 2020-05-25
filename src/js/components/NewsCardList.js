@@ -1,7 +1,7 @@
 import {
     newsCardList,
     newsCard,
-    URL_ARRAY
+    //URL_ARRAY
 } from '../../index.js';
 import {
     INPUT_FORMA,

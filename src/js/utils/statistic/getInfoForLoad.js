@@ -15,7 +15,6 @@ export let getInfoForLoad = function (dayss, globalobject) {
 
 
     let marker = [];
-    //console.log(marker)
     let objectforload = [];
     globalobject.forEach(function (element, i) {
         if (dayss.getDate() ==
@@ -30,8 +29,6 @@ export let getInfoForLoad = function (dayss, globalobject) {
 
         objectforload.push(globalobject[element])
     });
-
-    // console.log(objectforload)
     return objectforload;
 
 }

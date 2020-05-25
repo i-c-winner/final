@@ -81,7 +81,6 @@ INPUT_FORMA.addEventListener('submit', function () {
 
             })
             .catch((res) => {
-                console.log(res)
                 document.querySelector('.preloader').classList.remove('preloader_state_enabled');
                 // document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 // document.querySelector('.body').classList.remove('body_preloader');
@@ -123,7 +122,7 @@ document.querySelector('.cards').addEventListener("click", (event) => {
         }
     });
 })
-console.log(URL_ARRAY)
+
 JSON.parse(localStorage.getItem("NewsArray")).forEach(element => {
     let temporaryArray = JSON.parse(localStorage.getItem(
         localStorage.getItem('NewsName'))).articles[element['index']];
