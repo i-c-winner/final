@@ -5,14 +5,11 @@ import {
 } from '../../index.js';
 import {
     INPUT_FORMA,
-<<<<<<< HEAD
-=======
 
 } from '../constans/constans.js'
 
 import {
     URL_ARRAY
->>>>>>> javascript
 } from '../constans/constans.js'
 
 export default class NewsCardList {
@@ -33,17 +30,10 @@ export default class NewsCardList {
 
     renderCard(parent, child) {
 
-<<<<<<< HEAD
-        let URL_ARRAY = [];
-        child.forEach(element => {
-
-            parent.removeChild(element)
-=======
         child.forEach(element => {
             parent.removeChild(element);
             document.querySelector('.buttom_place_main').classList.remove('buttom_state_disabled');
 
->>>>>>> javascript
         });
 
     }

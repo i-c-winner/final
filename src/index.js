@@ -25,19 +25,12 @@ import {
 import {
     PATH_NEWS,
     PATH_GIT,
-<<<<<<< HEAD
-    URL_NUMBER,
-    URL_INDEX,
-} from './js/constans/constans.js';
-export const URL_ARRAY = [];
-=======
     URL_ARRAY,
     NEWS_COUNT,
 
 } from './js/constans/constans.js';
 
 
->>>>>>> javascript
 import NewsApi from './js/modules/NEWSApi.js';
 export const newsApi = new NewsApi();
 import SearchInput from './js/components/SearchInput.js';
@@ -83,11 +76,7 @@ INPUT_FORMA.addEventListener('submit', function () {
                 document.querySelector('.body').classList.remove('preloader_error-network')
                 document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 localStorage.setItem(INPUT_FORMA.news.value, JSON.stringify(res));
-<<<<<<< HEAD
-                localStorage.setItem('NewsName', INPUT_FORMA.news.value)
-=======
                 localStorage.setItem('NewsName', INPUT_FORMA.news.value);
->>>>>>> javascript
                 newsCardList.pushCard(INPUT_FORMA.news.value, 0);
 
             })
@@ -126,17 +115,6 @@ INPUT_FORMA.addEventListener('input', function (event) {
 
 })
 document.querySelector('.cards').addEventListener("click", (event) => {
-<<<<<<< HEAD
-    console.log(JSON.parse(localStorage.getItem('NUMBER_POSITION')))
-    URL_ARRAY.forEach(element => {
-        if (element.index === this.classList.contains(URL_INDEX)) {
-            window.open(element.index)
-
-        }
-
-    });
-})
-=======
     URL_ARRAY.forEach(element => {
         const marker = 'index' + element['index'];
         let a = element['url'];
@@ -151,4 +129,3 @@ JSON.parse(localStorage.getItem("NewsArray")).forEach(element => {
         localStorage.getItem('NewsName'))).articles[element['index']];
     newsCardList.startPushCard(temporaryArray, element['index']);
 });
->>>>>>> javascript
