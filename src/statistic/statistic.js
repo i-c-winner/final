@@ -1,27 +1,28 @@
 import "../style.css";
 import {
     //NEWS,
-    DAYS_WEEK,
-    DAY_LAST_WEEK,
-    DAY_WEEK,
-    SEARCH_IN_TITLE,
+    // DAYS_WEEK,
+    // DAY_LAST_WEEK,
+    // DAY_WEEK,
+    // SEARCH_IN_TITLE,
 
-    SEARCH_IN_TEXT,
-    NEWS_DATE,
-    NEWS_TITLE,
-    NEWS_NAME,
-    NEWS_DESCRIPTION,
-    NEWS_WEEK_DAYS_NUMBER,
-    NEWS_WEEK_DAYS,
-    OBJECT_FOR_LOAD,
+    // SEARCH_IN_TEXT,
+    // NEWS_DATE,
+    // NEWS_TITLE,
+    // NEWS_NAME,
+    // NEWS_DESCRIPTION,
+    // NEWS_WEEK_DAYS_NUMBER,
+    // NEWS_WEEK_DAYS,
+    // OBJECT_FOR_LOAD,
     //SEARCH,
 } from '../js/constans/constans.js';
 debugger;
 import {
-    newsArray,
-    //     INPUT_FORMA
+    //INPUT_FORMA,
+    //newsArray,
+
 } from "../index.js"
-// console.log(INPUT_FORMA)
+
 
 
 document.querySelector('.header-middle__title_value').replaceWith(
@@ -34,11 +35,8 @@ import {
 } from '../js/utils/statistic/getInfoForLoad.js';
 
 import StatisticCardList from '../js/components/StatisticCardList.js';
-
-
-import StatisticCard from '../js/components/StatisticCard.js'
-
-import separatorAndCount from '../js/utils/statistic/separatorAndCount.js'
+import StatisticCard from '../js/components/StatisticCard.js';
+import separatorAndCount from '../js/utils/statistic/separatorAndCount.js';
 
 //Получаем массивы значений из новостей
 const TEMPORARY_NEWS = (Object.values(newsArray)[2]);
@@ -117,15 +115,10 @@ for (let element in DAY_LAST_WEEK) {
                 separatorAndCount(element.description, SEARCH);
         } catch {
             COUNT = COUNT;
-
         }
     });
 
-
-
     try {
-
-
         countrelactiv = Math.round(COUNT * (GLOBAL_COUNT / 100));
         STATISTIC_CARD_LIST.push(element, DAY_LAST_WEEK[element].getDate(),
             temporaryArrayForThisBlock[2].daysWeek,

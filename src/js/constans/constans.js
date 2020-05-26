@@ -8,7 +8,7 @@ export const PATH_NEWS =
 export let DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 export const coefficientNews = 1; // поправка на сдвиг номера новостей
 export const SEARCH = localStorage.getItem('NewsName')
-//export const INPUT_FORMA = document.forms.Search; //форма поиска
+
 
 
 //export const SEARCH_ARRAY = (JSON.parse(localStorage.getItem(localStorage.key(1))).articles);

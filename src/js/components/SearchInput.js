@@ -16,7 +16,7 @@ from '../../index.js'
 
 export default class SearchInput {
     validation(field) {
-        console.log(INPUT_FORMA)
+
         let isValidation = null;
         if (
             //console.log(localStorage.getItem('NewsName'))
