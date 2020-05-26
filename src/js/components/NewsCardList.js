@@ -1,10 +1,15 @@
 import {
     newsCardList,
     newsCard,
+    newsPosition,
 } from '../../index.js';
 import {
     INPUT_FORMA,
-    URL_ARRAY,
+    coefficientNews
+} from '../constans/constans.js'
+
+import {
+    URL_ARRAY
 } from '../constans/constans.js'
 
 export default class NewsCardList {
@@ -13,22 +18,36 @@ export default class NewsCardList {
     }
 
     pushCard(localStorageParam, position) {
+        let indexForThisBlock = 0;
         for (let i = 0; i < 3; i += 1) {
+            indexForThisBlock = position + i;
             this.container.insertAdjacentHTML("beforeEnd",
-                newsCard.create((JSON.parse(localStorage.getItem(localStorageParam))).articles[position + i]));
+                newsCard.create((JSON.parse(localStorage.getItem(localStorageParam))).articles[
+                    indexForThisBlock], indexForThisBlock));
+
+            localStorage.setItem('NUMBER_POSITION', (indexForThisBlock + coefficientNews));
+
         };
 
-        localStorage.setItem('NUMBER_POSITION', ((JSON.parse(localStorage.getItem('NUMBER_POSITION')) + 3)));
+
 
     }
 
     renderCard(parent, child) {
+
         child.forEach(element => {
-            URL_ARRAY = [];
-            parent.removeChild(element)
+            parent.removeChild(element);
+            document.querySelector('.buttom_place_main').classList.remove('buttom_state_disabled');
+
         });
+
     }
 
+    startPushCard(localStorageParam, position) {
+        this.container.insertAdjacentHTML("beforeEnd",
+            newsCard.startCreate(localStorageParam, position))
+
+    }
 
 
 }

@@ -1,5 +1,5 @@
 import {
-    GLOBAL_OBJECT,
+
     OBJECT_FOR_LOAD
 } from '../../constans/constans.js'
 
@@ -11,23 +11,16 @@ import {
  */
 
 export let getInfoForLoad = function (dayss, globalobject) {
-
-
-
-    let marker = [];
-    //console.log(marker)
+    let temporaryArrayForThisBlock = [];
     let objectforload = [];
     globalobject.forEach(function (element, i) {
         if (dayss.getDate() ==
             (new Date(element.date).getDate())) {
-
-            marker.push(i);
+            temporaryArrayForThisBlock.push(i);
         }
 
     });
-
-    marker.forEach(function (element, i) {
-
+    temporaryArrayForThisBlock.forEach(function (element, i) {
         objectforload.push(globalobject[element])
     });
 

@@ -10,7 +10,7 @@ export default class CommitCardList {
     pushCard(node, array) {
 
         node.insertAdjacentHTML("beforeEnd", COMMITCARD.createCard(array));
-        //debugger;
+
 
     };
 }

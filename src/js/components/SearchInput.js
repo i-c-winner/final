@@ -1,29 +1,45 @@
+import {
+    URL_ARRAY,
+    //INPUT_FORMA
+} from "../constans/constans";
+
+import {
+    INPUT_FORMA
+} from '../../index.js'
+
+
+
+import {
+    newsPosition
+}
+from '../../index.js'
+
 export default class SearchInput {
-
-
     validation(field) {
-        let marker = null;
-        if ((JSON.parse(localStorage.getItem('NUMBER_POSITION') < 2))) {
-            if ((!field.validity.tooShort || !field.validity.valueMissing)) {
-                marker = true;
+        console.log(INPUT_FORMA)
+        let isValidation = null;
+        if (
+            //console.log(localStorage.getItem('NewsName'))
+            (URL_ARRAY.length === 0) || (INPUT_FORMA.news.value !== (localStorage.getItem('NewsName')))
+        ) {
+            if (field.value.length > 4) {
+                isValidation = true;
             } else {
-                marker = false;
+                isValidation = false;
             }
         } else {
-            marker = false;
+            isValidation = false;
         }
-        return marker;
-
+        return isValidation;
     }
 
     inputValidation(field) {
-        let marker = null;
+        let isInputValidation = null;
         if ((!field.validity.tooShort)) {
-            marker = true;
+            isInputValidation = true;
         } else {
-            marker = false;
+            isInputValidation = false;
         }
-        return marker;
-
+        return isInputValidation;
     }
 }

@@ -29,7 +29,10 @@ GITHUBAPI.getGitInfo()
     })
     .then(function () {
         flkty.append(cellElems)
-    });
+    })
+    .catch((err) => {
+        console.log(err)
+    })
 
 
 const flkty = new Flickity('.main-carousel', {
