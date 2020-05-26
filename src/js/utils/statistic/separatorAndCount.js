@@ -1,15 +1,13 @@
 export default function separatorAndCount(string, word) {
     let count = null;
-
-
-    let marker = []
+    let temporaryArrayForThisBlock = []
     try {
-        marker = string.split(" ")
+        temporaryArrayForThisBlock = string.split(" ")
     } catch {
 
-        marker = [];
+        temporaryArrayForThisBlock = [];
     }
-    marker.forEach(element => {
+    temporaryArrayForThisBlock.forEach(element => {
         if (element.toLowerCase() == word.toLowerCase()) {
             count = count + 1;
         }

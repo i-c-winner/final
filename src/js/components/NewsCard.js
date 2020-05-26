@@ -2,7 +2,7 @@ import {
     INPUT_FORMA,
     URL_ARRAY,
     URL_NUMBER,
-    urlIndex,
+    //urlIndex,
 } from '../constans/constans.js'
 
 export default class NEWSCard {
@@ -38,7 +38,6 @@ export default class NEWSCard {
         return template;
     }
     startCreate(data, position) {
-        console.log(data, position)
         if (data !== 0) {
             // console.log(data, 'ошибка')
 

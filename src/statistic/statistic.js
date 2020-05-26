@@ -1,10 +1,11 @@
 import "../style.css";
 import {
-    NEWS,
+    //NEWS,
     DAYS_WEEK,
     DAY_LAST_WEEK,
     DAY_WEEK,
     SEARCH_IN_TITLE,
+
     SEARCH_IN_TEXT,
     NEWS_DATE,
     NEWS_TITLE,
@@ -12,14 +13,17 @@ import {
     NEWS_DESCRIPTION,
     NEWS_WEEK_DAYS_NUMBER,
     NEWS_WEEK_DAYS,
-    GLOBAL_OBJECT,
     OBJECT_FOR_LOAD,
-    SEARCH,
-
-
-
+    //SEARCH,
 } from '../js/constans/constans.js';
-document.querySelector('.header-middle__title_value').replaceWith(localStorage.getItem("NewsName"));
+debugger;
+import {
+    newsArray
+} from "../index.js"
+
+
+document.querySelector('.header-middle__title_value').replaceWith(
+    localStorage.getItem("NewsName"));
 
 let GLOBAL_COUNT = null;
 let COUNT = null;
@@ -35,7 +39,7 @@ import StatisticCard from '../js/components/StatisticCard.js'
 import separatorAndCount from '../js/utils/statistic/separatorAndCount.js'
 
 //Получаем массивы значений из новостей
-const TEMPORARY_NEWS = (Object.values(NEWS)[2]);
+const TEMPORARY_NEWS = (Object.values(newsArray)[2]);
 TEMPORARY_NEWS.forEach(element => {
     NEWS_DATE.push(element.publishedAt);
     NEWS_TITLE.push(element.title);
@@ -60,14 +64,14 @@ NEWS_WEEK_DAYS_NUMBER.forEach((element) => {
 //собираем глобальный объект с нужной информаццией
 for (let i = 0; i <= 99; i++) {
 
-    const marker = {
+    const dataForDay = {
         daysWeek: NEWS_WEEK_DAYS[i],
         date: NEWS_DATE[i],
         name: NEWS_NAME[i],
         title: NEWS_TITLE[i],
         description: NEWS_DESCRIPTION[i]
     }
-    GLOBAL_OBJECT.push(marker)
+    GLOBAL_OBJECT.push(dataForDay)
 
 
 }
@@ -97,13 +101,14 @@ const STATISTIC_CARD_LIST = new StatisticCardList(document.querySelector('.stati
 
 for (let element in DAY_LAST_WEEK) {
     COUNT = 0;
-    let marker = [];
+    let temporaryArrayForThisBlock = [];
 
-    marker = getInfoForLoad(DAY_LAST_WEEK[element], GLOBAL_OBJECT);
+    temporaryArrayForThisBlock =
+        getInfoForLoad(DAY_LAST_WEEK[element], GLOBAL_OBJECT);
 
 
     let countrelactiv = null;
-    marker.forEach((element) => {
+    temporaryArrayForThisBlock.forEach((element) => {
 
         try { //если в какой то день нет новостей
             COUNT = COUNT + separatorAndCount(element.title, SEARCH) +
@@ -117,10 +122,11 @@ for (let element in DAY_LAST_WEEK) {
 
 
     try {
-        let a = marker[3];
+        //let a = marker[3];
 
         countrelactiv = Math.round(COUNT * (GLOBAL_COUNT / 100));
-        STATISTIC_CARD_LIST.push(element, DAY_LAST_WEEK[element].getDate(), marker[2].daysWeek,
+        STATISTIC_CARD_LIST.push(element, DAY_LAST_WEEK[element].getDate(),
+            temporaryArrayForThisBlock[2].daysWeek,
             countrelactiv);
     } catch {
 

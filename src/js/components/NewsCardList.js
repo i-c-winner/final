@@ -1,6 +1,7 @@
 import {
     newsCardList,
     newsCard,
+    newsPosition,
 } from '../../index.js';
 import {
     INPUT_FORMA,
@@ -17,13 +18,17 @@ export default class NewsCardList {
     }
 
     pushCard(localStorageParam, position) {
+        let indexForThisBlock = 0;
         for (let i = 0; i < 3; i += 1) {
-            let marker = position + i;
+            indexForThisBlock = position + i;
             this.container.insertAdjacentHTML("beforeEnd",
-                newsCard.create((JSON.parse(localStorage.getItem(localStorageParam))).articles[marker], marker));
+                newsCard.create((JSON.parse(localStorage.getItem(localStorageParam))).articles[
+                    indexForThisBlock], indexForThisBlock));
+            localStorage.setItem('NUMBER_POSITION', indexForThisBlock);
+
         };
 
-        localStorage.setItem('NUMBER_POSITION', ((JSON.parse(localStorage.getItem('NUMBER_POSITION')) + 3)));
+
 
     }
 
