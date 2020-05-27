@@ -43,6 +43,7 @@ export const NEWS_WEEK_DAYS = [];
 export const GLOBAL_OBJECT = [];
 export const OBJECT_FOR_LOAD = [];
 export const URL_ARRAY = [];
+//export let inputFieldFlag = 1;
 
 // function functionReturnUrl() {
 //     if (typeof JSON.parse.localStorage.getItem('NewsArray') === undefined) {
