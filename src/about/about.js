@@ -16,7 +16,6 @@ const commitCardList = new CommitCardList()
 
 gitHubApi.getGitInfo()
     .then((res) => {
-        s
         res.forEach(element => {
             arrayWithCommits.push(commitCard.commitsObject(element));
         })
