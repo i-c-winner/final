@@ -23,8 +23,6 @@ export const getInfoForLoad = function (dayss, globalobject) {
     temporaryArrayForThisBlock.forEach(function (element, i) {
         objectforload.push(globalobject[element])
     });
-
-    // console.log(objectforload)
     return objectforload;
 
 }

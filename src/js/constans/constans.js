@@ -9,7 +9,7 @@ export const DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
 export const COEFFICIENT_NEWS = 1; // поправка 
 //на сдвиг при формаировании карточек
 export const QUANTITY_CARDS = 3;
-const MSECOND_IN_DAY //кол-во милисекундв в сутках
+const MSECOND_IN_DAY = 8.64e+7; //кол-во милисекундв в сутках
 
 
 export const search = localStorage.getItem('NewsName');
