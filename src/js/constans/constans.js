@@ -5,7 +5,7 @@ export const GIT_PATH = 'https://api.github.com/repos/i-c-winner/final/commits';
 export const PATH_NEWS =
     'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?language=ru&apiKey=68de62cc45bb4e77a24cd68e991d1c38&pageSize=100&q='
 
-export let DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
+export const DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 export const COEFFICIENT_NEWS = 1; // поправка 
 //на сдвиг при формаировании карточек
 export const QUANTITY_CARDS = 3;
@@ -40,5 +40,4 @@ export const newsWeekDaysNumber = [];
 export const newsWeekDays = [];
 export const globalObject = [];
 export const objectForLoad = [];
-export const urlArray = [];
-export let urlIndex = 0;
+export const arrayUrls = [];

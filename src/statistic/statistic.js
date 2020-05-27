@@ -28,8 +28,8 @@ import {
 document.querySelector('.header-middle__title_value').replaceWith(
     localStorage.getItem("NewsName"));
 
-let GLOBAL_COUNT = null;
-let COUNT = null;
+let globalCount = null;
+let count = null;
 import {
     getInfoForLoad
 } from '../js/utils/statistic/getInfoForLoad.js';
@@ -39,9 +39,9 @@ import StatisticCard from '../js/components/StatisticCard.js';
 import separatorAndCount from '../js/utils/statistic/separatorAndCount.js';
 
 //Получаем массивы значений из новостей
-const TEMPORARY_NEWS = (Object.values(JSON.parse(
+const temporaryNews = (Object.values(JSON.parse(
     localStorage.getItem(localStorage.getItem('NewsName'))))[2]);
-TEMPORARY_NEWS.forEach(element => {
+temporaryNews.forEach(element => {
     newsDate.push(element.publishedAt);
     newsTitle.push(element.title);
     newsName.push(element.source.name);
@@ -78,33 +78,31 @@ for (let i = 0; i <= 99; i++) {
 }
 
 
-let GLOBAL_COUNT_IN_DESCRIPTION = 0;
-let COUNT_IN_DESCRIPTION = 0;
-let GLOBAL_COUNT_IN_TITLE = 0;
-let COUNT_IN_TITLE = 0;
+let globalCountInDescription = 0;
+let countInDescription = 0;
+let globalCountInTitle = 0;
+let countInTitle = 0;
 globalObject.forEach(element => {
-    COUNT_IN_DESCRIPTION = separatorAndCount(element.description, search);
-    COUNT_IN_TITLE = separatorAndCount(element.title, search);
+    countInDescription = separatorAndCount(element.description, search);
+    countInTitle = separatorAndCount(element.title, search);
 
-    GLOBAL_COUNT = GLOBAL_COUNT + COUNT_IN_TITLE +
-        COUNT_IN_DESCRIPTION;
+    globalCount = globalCount + countInTitle +
+        countInDescription;
 
-    GLOBAL_COUNT_IN_DESCRIPTION = GLOBAL_COUNT_IN_DESCRIPTION + COUNT_IN_DESCRIPTION;
-    GLOBAL_COUNT_IN_TITLE = GLOBAL_COUNT_IN_TITLE + COUNT_IN_TITLE;
+    globalCountInDescription = globalCountInDescription + countInDescription;
+    globalCountInTitle = globalCountInTitle + countInTitle;
 });
 
 
-const STATISTIC_CARD = new StatisticCard(getInfoForLoad(dayLastWeek.twoDayAgo, globalObject))
-const STATISTIC_CARD_LIST = new StatisticCardList(document.querySelector('.statistic-container'),
-    GLOBAL_COUNT)
+const statisticCard = new StatisticCard(getInfoForLoad(dayLastWeek.twoDayAgo, globalObject))
+const statisticCardList = new StatisticCardList(document.querySelector('.statistic-container'),
+    globalCount)
 
 //Загрузка статистики
 
 for (let element in dayLastWeek) {
-    COUNT = 0;
-    let temporaryArrayForThisBlock = [];
-
-    temporaryArrayForThisBlock =
+    count = 0;
+    const temporaryArrayForThisBlock =
         getInfoForLoad(dayLastWeek[element], globalObject);
 
 
@@ -112,16 +110,16 @@ for (let element in dayLastWeek) {
     temporaryArrayForThisBlock.forEach((element) => {
 
         try { //если в какой то день нет новостей
-            COUNT = COUNT + separatorAndCount(element.title, search) +
+            count = count + separatorAndCount(element.title, search) +
                 separatorAndCount(element.description, search);
         } catch {
-            COUNT = COUNT;
+            count = count;
         }
     });
 
     try {
-        countrelactiv = Math.round(COUNT * (GLOBAL_COUNT / 100));
-        STATISTIC_CARD_LIST.push(element, dayLastWeek[element].getDate(),
+        countrelactiv = Math.round(count * (globalCount / 100));
+        statisticCardList.push(element, dayLastWeek[element].getDate(),
             temporaryArrayForThisBlock[2].daysWeek,
             countrelactiv);
     } catch {
@@ -130,5 +128,5 @@ for (let element in dayLastWeek) {
 
 };
 
-document.querySelector('.statistic-info__intitle').replaceWith(GLOBAL_COUNT_IN_TITLE);
-document.querySelector('.statistic-info__intext').replaceWith(GLOBAL_COUNT_IN_DESCRIPTION);
+document.querySelector('.statistic-info__intitle').replaceWith(globalCountInTitle);
+document.querySelector('.statistic-info__intext').replaceWith(globalCountInDescription);

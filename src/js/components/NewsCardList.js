@@ -9,7 +9,7 @@ import {
 } from '../constans/constans.js'
 
 // import {
-//     urlArray
+//     arrayUrls
 // } from '../constans/constans.js'
 
 export default class NewsCardList {
@@ -17,7 +17,7 @@ export default class NewsCardList {
         this.container = container
     }
 
-    pushCard(localStorageParam, position) {
+    pushCard(localStorageParam, position, newsCard) {
         let indexForThisBlock = 0;
         for (let i = 0; i < 3; i += 1) {
             indexForThisBlock = position + i;
@@ -43,7 +43,7 @@ export default class NewsCardList {
 
     }
 
-    startPushCard(localStorageParam, position) {
+    startPushCard(localStorageParam, position, newsCard) {
         this.container.insertAdjacentHTML("beforeEnd",
             newsCard.startCreate(localStorageParam, position))
 

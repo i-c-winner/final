@@ -9,20 +9,21 @@ import GitHubApi from '../js/modules/GitHubApi.js';
 const gitHubApi = new GitHubApi(GIT_PATH)
 export const commitCard = new CommitCard();
 import CommitCardList from '../js/components/CommitCardList.js';
-let arrayWithCommit = [];
-let cellElems = [];
+const arrayWithCommits = [];
+const cellElems = [];
 const commitCardList = new CommitCardList()
 
 
 gitHubApi.getGitInfo()
     .then((res) => {
+        s
         res.forEach(element => {
-            arrayWithCommit.push(commitCard.commitsObject(element));
+            arrayWithCommits.push(commitCard.commitsObject(element));
         })
     })
     .then(() => {
-        arrayWithCommit.forEach((elem) => {
-            let cell = document.createElement('div');
+        arrayWithCommits.forEach((elem) => {
+            const cell = document.createElement('div');
             commitCardList.pushCard(cell, elem);
             cellElems.push(cell);
         })

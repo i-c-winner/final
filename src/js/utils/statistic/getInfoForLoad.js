@@ -10,9 +10,9 @@ import {
  * @return {массив конкретного дня недели} objectForLoad
  */
 
-export let getInfoForLoad = function (dayss, globalobject) {
-    let temporaryArrayForThisBlock = [];
-    let objectforload = [];
+export const getInfoForLoad = function (dayss, globalobject) {
+    const temporaryArrayForThisBlock = [];
+    const objectforload = [];
     globalobject.forEach(function (element, i) {
         if (dayss.getDate() ==
             (new Date(element.date).getDate())) {

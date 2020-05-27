@@ -2,41 +2,38 @@ import "./style.css";
 
 //даты
 
-export let today = new Date;
-export let weekDate = new Date(today - 6.048e8)
-export let nodayMonth = today.getMonth() + 1;
-export let todayDay = today.getDate();
-export let yearToday = today.getFullYear(); // почему то в таком же формате
+export const today = new Date;
+export const weekDate = new Date(today - 6.048e8)
+export const nodayMonth = today.getMonth() + 1;
+export const todayDay = today.getDate();
+export const yearToday = today.getFullYear(); // почему то в таком же формате
 //  возникает ошибка
-export let weekYear = weekDate.getFullYear();
-export let weekDay = weekDate.getDate();
-export let weekMonth = weekDate.getMonth() + 1;
+export const weekYear = weekDate.getFullYear();
+export const weekDay = weekDate.getDate();
+export const weekMonth = weekDate.getMonth() + 1;
 
 //переменные API
 import {
     PATH_NEWS,
     PATH_GIT,
-    urlArray,
+    arrayUrls,
     inputForma,
     QUANTITY_CARDS
 } from './js/constans/constans.js';
 
 let inputFieldFlag = true;
 //const newsPosition = JSON.parse(localStorage.getItem('NumberPosition'));
-
-const sliceNewsArray = JSON.parse(localStorage.getItem('NewsArray'));
-
 import NewsApi from './js/modules/NEWSApi.js';
-export const newsApi = new NewsApi();
+const newsApi = new NewsApi();
 import SearchInput from './js/components/SearchInput.js';
-export const searchInput = new SearchInput();
+const searchInput = new SearchInput();
 
 //формирование карточек новостей
 import NewsCard from './js/components/NewsCard.js';
 import NewsCardList from "./js/components/NewsCardList";
-export const newsCardList = new NewsCardList(document.querySelector('.cards'));
-export const cardsContainer = document.querySelector('.cards');
-export const newsCard = new NewsCard();
+const newsCardList = new NewsCardList(document.querySelector('.cards'));
+const cardsContainer = document.querySelector('.cards');
+const newsCard = new NewsCard();
 
 if (inputForma.news.value.length < 4) {
     document.querySelector('.buttom_place_header').classList.remove('buttom_state_activ');
@@ -59,7 +56,7 @@ document.forms.Search.addEventListener('submit', function () {
         document.querySelector('.preloader').classList.add('preloader_state_enabled');
         //обнуляем страницу
         localStorage.clear();
-        urlArray.length = 0;
+        arrayUrls.length = 0;
         document.querySelector('.body').classList.add('body_preloader');
         document.querySelector('.circle-preloader').classList.add('circle-preloader_state_disabled');
         newsCardList.renderCard(document.querySelector('.cards'),
@@ -73,7 +70,7 @@ document.forms.Search.addEventListener('submit', function () {
                 document.querySelector('.circle-preloader').classList.remove('circle-preloader_state_disabled');
                 localStorage.setItem(inputForma.news.value, JSON.stringify(res));
                 localStorage.setItem('NewsName', inputForma.news.value);
-                newsCardList.pushCard(inputForma.news.value, 0);
+                newsCardList.pushCard(inputForma.news.value, 0, newsCard);
 
             })
             .catch((res) => {
@@ -86,6 +83,7 @@ document.forms.Search.addEventListener('submit', function () {
 
 //слушатель кнопки "Ещё"
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
+    const sliceNewsArray = JSON.parse(localStorage.getItem('NewsArray'));
     const arrayLength = sliceNewsArray.length + QUANTITY_CARDS;
     const secondArrayLength = ((JSON.parse(localStorage.getItem(localStorage.getItem('NewsName')))).articles.length);
     if ((arrayLength) >=
@@ -96,7 +94,7 @@ document.querySelector('.buttom_place_main').addEventListener('click', function 
     inputFieldFlag = true;
     const newsPosition = JSON.parse(localStorage.getItem('NUMBER_POSITION'));
     newsCardList.pushCard(localStorage.getItem('NewsName'),
-        (newsPosition));
+        (newsPosition), newsCard);
 })
 
 inputForma.addEventListener('input', function (event) {
@@ -121,8 +119,8 @@ inputForma.addEventListener('click', function () {
 })
 
 document.querySelector('.cards').addEventListener("click", (event) => {
-    const urlArray = JSON.parse(localStorage.getItem('NewsArray'))
-    urlArray.forEach(element => {
+    const arrayUrls = JSON.parse(localStorage.getItem('NewsArray'))
+    arrayUrls.forEach(element => {
         if ((document.querySelector('.' + ('index' + element['index']))).contains(event.target)) {
             window.open(element['url']);
         }
@@ -130,7 +128,7 @@ document.querySelector('.cards').addEventListener("click", (event) => {
 })
 
 JSON.parse(localStorage.getItem("NewsArray")).forEach(element => {
-    let temporaryArray = JSON.parse(localStorage.getItem(
+    const temporaryArrayNews = JSON.parse(localStorage.getItem(
         localStorage.getItem('NewsName'))).articles[element['index']];
-    newsCardList.startPushCard(temporaryArray, element['index']);
+    newsCardList.startPushCard(temporaryArrayNews, element['index'], newsCard);
 });
