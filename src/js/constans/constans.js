@@ -9,6 +9,7 @@ export const DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
 export const COEFFICIENT_NEWS = 1; // поправка 
 //на сдвиг при формаировании карточек
 export const QUANTITY_CARDS = 3;
+const MSECOND_IN_DAY //кол-во милисекундв в сутках
 
 
 export const search = localStorage.getItem('NewsName');
@@ -16,12 +17,12 @@ export const newsArray = [];
 export const inputForma = document.forms.Search;
 export const dayLastWeek = {
     today: new Date(),
-    yestoday: new Date(new Date - 8.64e7),
-    twoDayAgo: new Date(new Date - 8.64e7 * 2),
-    tryDayAgo: new Date(new Date - 8.64e7 * 3),
-    forDayAgo: new Date(new Date - 8.64e7 * 4),
-    fiveDayAgo: new Date(new Date - 8.64e7 * 5),
-    sixDayAgo: new Date(new Date - 8.64e7 * 6),
+    yestoday: new Date(new Date - MSECOND_IN_DAY),
+    twoDayAgo: new Date(new Date - MSECOND_IN_DAY * 2),
+    tryDayAgo: new Date(new Date - MSECOND_IN_DAY * 3),
+    forDayAgo: new Date(new Date - MSECOND_IN_DAY * 4),
+    fiveDayAgo: new Date(new Date - MSECOND_IN_DAY * 5),
+    sixDayAgo: new Date(new Date - MSECOND_IN_DAY * 6),
 }
 const dayWeek = null;
 const searchInText = null;
