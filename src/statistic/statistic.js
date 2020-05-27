@@ -39,7 +39,8 @@ import StatisticCard from '../js/components/StatisticCard.js';
 import separatorAndCount from '../js/utils/statistic/separatorAndCount.js';
 
 //Получаем массивы значений из новостей
-const TEMPORARY_NEWS = (Object.values(newsArray)[2]);
+const TEMPORARY_NEWS = (Object.values(JSON.parse(
+    localStorage.getItem(localStorage.getItem('NewsName'))))[2]);
 TEMPORARY_NEWS.forEach(element => {
     NEWS_DATE.push(element.publishedAt);
     NEWS_TITLE.push(element.title);

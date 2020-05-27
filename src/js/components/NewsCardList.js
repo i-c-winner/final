@@ -8,9 +8,9 @@ import {
     coefficientNews
 } from '../constans/constans.js'
 
-import {
-    URL_ARRAY
-} from '../constans/constans.js'
+// import {
+//     URL_ARRAY
+// } from '../constans/constans.js'
 
 export default class NewsCardList {
     constructor(container) {

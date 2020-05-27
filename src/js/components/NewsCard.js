@@ -2,6 +2,7 @@ import {
     INPUT_FORMA,
     URL_ARRAY,
     URL_NUMBER,
+    newsArray,
     //urlIndex,
 } from '../constans/constans.js'
 
@@ -29,6 +30,12 @@ export default class NEWSCard {
                 </p>
 
             </div>`
+        let URL_ARRAY = [];
+
+        if (JSON.parse(localStorage.getItem('NewsArray'))) {
+            URL_ARRAY = JSON.parse(localStorage.getItem('NewsArray'));
+        }
+
         URL_ARRAY.push({
             title: data.title,
             url: data.url,

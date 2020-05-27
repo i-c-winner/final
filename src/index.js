@@ -100,7 +100,7 @@ if (typeof INPUT_FORMA !== undefined) {
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
 
     const newsPosition = JSON.parse(localStorage.getItem('NUMBER_POSITION'));
-    newsCardList.pushCard(INPUT_FORMA.news.value,
+    newsCardList.pushCard(localStorage.getItem('NewsName'),
         (newsPosition));
     if ((sliceNewsArray.length + 3) >=
         (news).articles.length) {

@@ -8,7 +8,8 @@ export const PATH_NEWS =
 export let DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 export const coefficientNews = 1; // поправка на сдвиг номера новостей
 export const SEARCH = localStorage.getItem('NewsName');
-export const newsArray = JSON.parse(localStorage.getItem(localStorage.getItem('NewsName')));
+//export const newsArray = JSON.parse(localStorage.getItem(localStorage.getItem('NewsName')));
+export const newsArray = [];
 export const INPUT_FORMA = document.forms.Search;
 
 
@@ -41,6 +42,13 @@ export const NEWS_WEEK_DAYS_NUMBER = [];
 export const NEWS_WEEK_DAYS = [];
 export const GLOBAL_OBJECT = [];
 export const OBJECT_FOR_LOAD = [];
+export const URL_ARRAY = [];
 
-export let URL_ARRAY = [];
+// function functionReturnUrl() {
+//     if (typeof JSON.parse.localStorage.getItem('NewsArray') === undefined) {
+//         URL_ARRAY = []
+//     } else {
+//         URL_ARRAY = JSON.parse.localStorage.getItem('NewsArray');
+//     }
+// }
 export let URL_INDEX = 0;
