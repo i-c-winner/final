@@ -1,6 +1,6 @@
 import {
-    INPUT_FORMA,
-    URL_ARRAY,
+    inputForma,
+    urlArray,
     URL_NUMBER,
     newsArray,
     //urlIndex,
@@ -30,18 +30,18 @@ export default class NEWSCard {
                 </p>
 
             </div>`
-        let URL_ARRAY = [];
+        let urlArray = [];
 
         if (JSON.parse(localStorage.getItem('NewsArray'))) {
-            URL_ARRAY = JSON.parse(localStorage.getItem('NewsArray'));
+            urlArray = JSON.parse(localStorage.getItem('NewsArray'));
         }
 
-        URL_ARRAY.push({
+        urlArray.push({
             title: data.title,
             url: data.url,
             index: position,
         });
-        localStorage.setItem('NewsArray', JSON.stringify(URL_ARRAY));
+        localStorage.setItem('NewsArray', JSON.stringify(urlArray));
         return template;
     }
     startCreate(data, position) {

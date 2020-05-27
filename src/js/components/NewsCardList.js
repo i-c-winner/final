@@ -4,12 +4,12 @@ import {
     newsPosition,
 } from '../../index.js';
 import {
-    INPUT_FORMA,
-    coefficientNews
+    inputForma,
+    COEFFICIENT_NEWS
 } from '../constans/constans.js'
 
 // import {
-//     URL_ARRAY
+//     urlArray
 // } from '../constans/constans.js'
 
 export default class NewsCardList {
@@ -25,7 +25,7 @@ export default class NewsCardList {
                 newsCard.create((JSON.parse(localStorage.getItem(localStorageParam))).articles[
                     indexForThisBlock], indexForThisBlock));
 
-            localStorage.setItem('NUMBER_POSITION', (indexForThisBlock + coefficientNews));
+            localStorage.setItem('NUMBER_POSITION', (indexForThisBlock + COEFFICIENT_NEWS));
 
         };
 

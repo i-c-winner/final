@@ -6,50 +6,39 @@ export const PATH_NEWS =
     'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?language=ru&apiKey=68de62cc45bb4e77a24cd68e991d1c38&pageSize=100&q='
 
 export let DAYS_WEEK = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
-export const coefficientNews = 1; // поправка на сдвиг номера новостей
-export const SEARCH = localStorage.getItem('NewsName');
-//export const newsArray = JSON.parse(localStorage.getItem(localStorage.getItem('NewsName')));
+export const COEFFICIENT_NEWS = 1; // поправка 
+//на сдвиг при формаировании карточек
+export const QUANTITY_CARDS = 3;
+
+
+export const search = localStorage.getItem('NewsName');
 export const newsArray = [];
-export const INPUT_FORMA = document.forms.Search;
-
-
-
-//export const SEARCH_ARRAY = (JSON.parse(localStorage.getItem(localStorage.key(1))).articles);
-
-export const DAY_LAST_WEEK = {
+export const inputForma = document.forms.Search;
+export const dayLastWeek = {
     today: new Date(),
     yestoday: new Date(new Date - 8.64e7),
-    twodayago: new Date(new Date - 8.64e7 * 2),
-    trydayago: new Date(new Date - 8.64e7 * 3),
-    fordayago: new Date(new Date - 8.64e7 * 4),
-    fivedayago: new Date(new Date - 8.64e7 * 5),
-    sixdayago: new Date(new Date - 8.64e7 * 6),
+    twoDayAgo: new Date(new Date - 8.64e7 * 2),
+    tryDayAgo: new Date(new Date - 8.64e7 * 3),
+    forDayAgo: new Date(new Date - 8.64e7 * 4),
+    fiveDayAgo: new Date(new Date - 8.64e7 * 5),
+    sixDayAgo: new Date(new Date - 8.64e7 * 6),
 }
-const DAY_WEEK = null;
-const SEARCH_IN_TEXT = null;
-const SEARCH_IN_TITLE = null;
+const dayWeek = null;
+const searchInText = null;
+const searchInTitle = null;
 export {
-    DAY_WEEK,
-    SEARCH_IN_TITLE,
-    SEARCH_IN_TEXT
+    dayWeek,
+    searchInTitle,
+    searchInText
 };
 
-export const NEWS_DATE = [];
-export const NEWS_TITLE = [];
-export const NEWS_NAME = [];
-export const NEWS_DESCRIPTION = [];
-export const NEWS_WEEK_DAYS_NUMBER = [];
-export const NEWS_WEEK_DAYS = [];
-export const GLOBAL_OBJECT = [];
-export const OBJECT_FOR_LOAD = [];
-export const URL_ARRAY = [];
-//export let inputFieldFlag = 1;
-
-// function functionReturnUrl() {
-//     if (typeof JSON.parse.localStorage.getItem('NewsArray') === undefined) {
-//         URL_ARRAY = []
-//     } else {
-//         URL_ARRAY = JSON.parse.localStorage.getItem('NewsArray');
-//     }
-// }
-export let URL_INDEX = 0;
+export const newsDate = [];
+export const newsTitle = [];
+export const newsName = [];
+export const newsDescription = [];
+export const newsWeekDaysNumber = [];
+export const newsWeekDays = [];
+export const globalObject = [];
+export const objectForLoad = [];
+export const urlArray = [];
+export let urlIndex = 0;

@@ -1,13 +1,13 @@
 import {
 
-    OBJECT_FOR_LOAD
+    objectForLoad
 } from '../../constans/constans.js'
 
 /**
  * 
  * @param {день последней недели} day 
  * @param {глобальный массив с данными} globalobject 
- * @return {массив конкретного дня недели} OBJECT_FOR_LOAD
+ * @return {массив конкретного дня недели} objectForLoad
  */
 
 export let getInfoForLoad = function (dayss, globalobject) {

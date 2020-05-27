@@ -1,5 +1,5 @@
 import {
-    COMMITCARD
+    commitCard
 } from '../../about/about.js'
 
 export default class CommitCardList {
@@ -9,7 +9,7 @@ export default class CommitCardList {
 
     pushCard(node, array) {
 
-        node.insertAdjacentHTML("beforeEnd", COMMITCARD.createCard(array));
+        node.insertAdjacentHTML("beforeEnd", commitCard.createCard(array));
 
 
     };

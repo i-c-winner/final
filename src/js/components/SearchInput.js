@@ -1,6 +1,6 @@
 import {
-    URL_ARRAY,
-    INPUT_FORMA
+    urlArray,
+    inputForma
 } from "../constans/constans";
 
 
@@ -18,7 +18,7 @@ export default class SearchInput {
         let isValidation = null;
         if (
             //console.log(localStorage.getItem('NewsName'))
-            (URL_ARRAY.length === 0) || (INPUT_FORMA.news.value !== (localStorage.getItem('NewsName')))
+            (urlArray.length === 0) || (inputForma.news.value !== (localStorage.getItem('NewsName')))
         ) {
             if (field.value.length > 4) {
                 isValidation = true;
