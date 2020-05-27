@@ -1,27 +1,27 @@
 import "../style.css";
 import {
-    //NEWS,
-    // DAYS_WEEK,
-    // DAY_LAST_WEEK,
-    // DAY_WEEK,
-    // SEARCH_IN_TITLE,
-
-    // SEARCH_IN_TEXT,
-    // NEWS_DATE,
-    // NEWS_TITLE,
-    // NEWS_NAME,
-    // NEWS_DESCRIPTION,
-    // NEWS_WEEK_DAYS_NUMBER,
-    // NEWS_WEEK_DAYS,
-    // OBJECT_FOR_LOAD,
-    //SEARCH,
+    NEWS,
+    DAYS_WEEK,
+    DAY_LAST_WEEK,
+    DAY_WEEK,
+    SEARCH_IN_TITLE,
+    GLOBAL_OBJECT,
+    SEARCH_IN_TEXT,
+    NEWS_DATE,
+    NEWS_TITLE,
+    NEWS_NAME,
+    NEWS_DESCRIPTION,
+    NEWS_WEEK_DAYS_NUMBER,
+    NEWS_WEEK_DAYS,
+    OBJECT_FOR_LOAD,
+    SEARCH,
 } from '../js/constans/constans.js';
-debugger;
-import {
-    //INPUT_FORMA,
-    //newsArray,
 
-} from "../index.js"
+import {
+    newsArray,
+    INPUT_FORMA,
+} from '../js/constans/constans.js'
+
 
 
 

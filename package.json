@@ -45,7 +45,14 @@
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "core-js": "3.4.1",
-    "flickity": "^2.2.1",
-    "swiper": "^5.4.0"
+    "flickity": "^2.2.1"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-c-winner/final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/i-c-winner/final/issues"
   }
 }

@@ -26,9 +26,10 @@ import {
     PATH_GIT,
     URL_ARRAY,
     NEWS_COUNT,
+    INPUT_FORMA
 
 } from './js/constans/constans.js';
-export const newsArray = JSON.parse(localStorage.getItem(localStorage.getItem('NewsName')));
+
 
 //const newsPosition = JSON.parse(localStorage.getItem('NumberPosition'));
 
@@ -39,7 +40,6 @@ export const newsApi = new NewsApi();
 import SearchInput from './js/components/SearchInput.js';
 export const searchInput = new SearchInput();
 
-export const INPUT_FORMA = document.forms.Search; //форма поиска
 
 //localStorage.setItem('NUMBER_POSITION', 0);
 
@@ -59,7 +59,7 @@ export const newsCard = new NewsCard();
 
 if (typeof INPUT_FORMA !== undefined) {
 
-    INPUT_FORMA.addEventListener('submit', function () {
+    document.forms.Search.addEventListener('submit', function () {
         event.preventDefault();
         if (searchInput.validation(INPUT_FORMA.news)) {
             localStorage.setItem('NUMBER_POSITION', 0);

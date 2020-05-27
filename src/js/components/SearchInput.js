@@ -1,11 +1,9 @@
 import {
     URL_ARRAY,
-    //INPUT_FORMA
+    INPUT_FORMA
 } from "../constans/constans";
 
-import {
-    INPUT_FORMA
-} from '../../index.js'
+
 
 
 
