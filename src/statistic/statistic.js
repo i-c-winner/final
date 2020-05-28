@@ -2,56 +2,61 @@ import "../style.css";
 import {
     NEWS,
     DAYS_WEEK,
-    DAY_LAST_WEEK,
-    DAY_WEEK,
-    SEARCH_IN_TITLE,
-    SEARCH_IN_TEXT,
-    NEWS_DATE,
-    NEWS_TITLE,
-    NEWS_NAME,
-    NEWS_DESCRIPTION,
-    NEWS_WEEK_DAYS_NUMBER,
-    NEWS_WEEK_DAYS,
-    GLOBAL_OBJECT,
-    OBJECT_FOR_LOAD,
-    SEARCH,
-
-
-
+    dayLastWeek,
+    dayWeek,
+    searchInTitle,
+    globalObject,
+    searchInText,
+    newsDate,
+    newsTitle,
+    newsName,
+    newsDescription,
+    newsWeekDaysNumber,
+    newsWeekDays,
+    objectForLoad,
+    search,
 } from '../js/constans/constans.js';
-document.querySelector('.header-middle__title_value').replaceWith(localStorage.getItem("NewsName"));
 
-let GLOBAL_COUNT = null;
-let COUNT = null;
+import {
+    newsArray,
+    inputForma,
+} from '../js/constans/constans.js'
+
+
+
+
+document.querySelector('.header-middle__title_value').replaceWith(
+    localStorage.getItem("NewsName"));
+
+let globalCount = null;
+let count = null;
 import {
     getInfoForLoad
 } from '../js/utils/statistic/getInfoForLoad.js';
 
 import StatisticCardList from '../js/components/StatisticCardList.js';
-
-
-import StatisticCard from '../js/components/StatisticCard.js'
-
-import separatorAndCount from '../js/utils/statistic/separatorAndCount.js'
+import StatisticCard from '../js/components/StatisticCard.js';
+import separatorAndCount from '../js/utils/statistic/separatorAndCount.js';
 
 //Получаем массивы значений из новостей
-const TEMPORARY_NEWS = (Object.values(NEWS)[2]);
-TEMPORARY_NEWS.forEach(element => {
-    NEWS_DATE.push(element.publishedAt);
-    NEWS_TITLE.push(element.title);
-    NEWS_NAME.push(element.source.name);
-    NEWS_DESCRIPTION.push(element.description);
+const temporaryNews = (Object.values(JSON.parse(
+    localStorage.getItem(localStorage.getItem('NewsName'))))[2]);
+temporaryNews.forEach(element => {
+    newsDate.push(element.publishedAt);
+    newsTitle.push(element.title);
+    newsName.push(element.source.name);
+    newsDescription.push(element.description);
 });
 
-NEWS_DATE.forEach(element => {
-    NEWS_WEEK_DAYS_NUMBER.push(new Date(element).getDay())
+newsDate.forEach(element => {
+    newsWeekDaysNumber.push(new Date(element).getDay())
 });
 
 //Возвращаем массив дней недели- (Пн там или Ср)
-NEWS_WEEK_DAYS_NUMBER.forEach((element) => {
+newsWeekDaysNumber.forEach((element) => {
     for (let i = 0; i < 7; i += 1) {
         if (element === i) {
-            NEWS_WEEK_DAYS.push(DAYS_WEEK[i])
+            newsWeekDays.push(DAYS_WEEK[i])
         }
 
     }
@@ -60,67 +65,62 @@ NEWS_WEEK_DAYS_NUMBER.forEach((element) => {
 //собираем глобальный объект с нужной информаццией
 for (let i = 0; i <= 99; i++) {
 
-    const marker = {
-        daysWeek: NEWS_WEEK_DAYS[i],
-        date: NEWS_DATE[i],
-        name: NEWS_NAME[i],
-        title: NEWS_TITLE[i],
-        description: NEWS_DESCRIPTION[i]
+    const dataForDay = {
+        daysWeek: newsWeekDays[i],
+        date: newsDate[i],
+        name: newsName[i],
+        title: newsTitle[i],
+        description: newsDescription[i]
     }
-    GLOBAL_OBJECT.push(marker)
+    globalObject.push(dataForDay)
 
 
 }
 
 
-let GLOBAL_COUNT_IN_DESCRIPTION = 0;
-let COUNT_IN_DESCRIPTION = 0;
-let GLOBAL_COUNT_IN_TITLE = 0;
-let COUNT_IN_TITLE = 0;
-GLOBAL_OBJECT.forEach(element => {
-    COUNT_IN_DESCRIPTION = separatorAndCount(element.description, SEARCH);
-    COUNT_IN_TITLE = separatorAndCount(element.title, SEARCH);
+let globalCountInDescription = 0;
+let countInDescription = 0;
+let globalCountInTitle = 0;
+let countInTitle = 0;
+globalObject.forEach(element => {
+    countInDescription = separatorAndCount(element.description, search);
+    countInTitle = separatorAndCount(element.title, search);
 
-    GLOBAL_COUNT = GLOBAL_COUNT + COUNT_IN_TITLE +
-        COUNT_IN_DESCRIPTION;
+    globalCount = globalCount + countInTitle +
+        countInDescription;
 
-    GLOBAL_COUNT_IN_DESCRIPTION = GLOBAL_COUNT_IN_DESCRIPTION + COUNT_IN_DESCRIPTION;
-    GLOBAL_COUNT_IN_TITLE = GLOBAL_COUNT_IN_TITLE + COUNT_IN_TITLE;
+    globalCountInDescription = globalCountInDescription + countInDescription;
+    globalCountInTitle = globalCountInTitle + countInTitle;
 });
 
 
-const STATISTIC_CARD = new StatisticCard(getInfoForLoad(DAY_LAST_WEEK.twodayago, GLOBAL_OBJECT))
-const STATISTIC_CARD_LIST = new StatisticCardList(document.querySelector('.statistic-container'),
-    GLOBAL_COUNT)
+const statisticCard = new StatisticCard(getInfoForLoad(dayLastWeek.twoDayAgo, globalObject))
+const statisticCardList = new StatisticCardList(document.querySelector('.statistic-container'),
+    globalCount)
 
 //Загрузка статистики
 
-for (let element in DAY_LAST_WEEK) {
-    COUNT = 0;
-    let marker = [];
-
-    marker = getInfoForLoad(DAY_LAST_WEEK[element], GLOBAL_OBJECT);
+for (let element in dayLastWeek) {
+    count = 0;
+    const temporaryArrayForThisBlock =
+        getInfoForLoad(dayLastWeek[element], globalObject);
 
 
     let countrelactiv = null;
-    marker.forEach((element) => {
+    temporaryArrayForThisBlock.forEach((element) => {
 
         try { //если в какой то день нет новостей
-            COUNT = COUNT + separatorAndCount(element.title, SEARCH) +
-                separatorAndCount(element.description, SEARCH);
+            count = count + separatorAndCount(element.title, search) +
+                separatorAndCount(element.description, search);
         } catch {
-            COUNT = COUNT;
-
+            count = count;
         }
     });
 
-
-
     try {
-        let a = marker[3];
-
-        countrelactiv = Math.round(COUNT * (GLOBAL_COUNT / 100));
-        STATISTIC_CARD_LIST.push(element, DAY_LAST_WEEK[element].getDate(), marker[2].daysWeek,
+        countrelactiv = Math.round(count * (globalCount / 100));
+        statisticCardList.push(element, dayLastWeek[element].getDate(),
+            temporaryArrayForThisBlock[2].daysWeek,
             countrelactiv);
     } catch {
 
@@ -128,5 +128,5 @@ for (let element in DAY_LAST_WEEK) {
 
 };
 
-document.querySelector('.statistic-info__intitle').replaceWith(GLOBAL_COUNT_IN_TITLE);
-document.querySelector('.statistic-info__intext').replaceWith(GLOBAL_COUNT_IN_DESCRIPTION);
+document.querySelector('.statistic-info__intitle').replaceWith(globalCountInTitle);
+document.querySelector('.statistic-info__intext').replaceWith(globalCountInDescription);

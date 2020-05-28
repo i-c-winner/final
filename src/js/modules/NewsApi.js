@@ -2,10 +2,10 @@ export default class NewsApi {
 
 
     getNews(path, request,
-        TODAY_DAY, TODAY_MONTH, YEAR_TODAY, WEEK_DAY, WEEK_MONTH, WEEK_YEAR) {
-        return fetch(path + request + '&from=' + WEEK_YEAR + '-' + WEEK_MONTH +
-                '-' + WEEK_DAY + '&to=' + YEAR_TODAY + '-' + TODAY_MONTH +
-                '-' + TODAY_DAY)
+        todayDay, todayMonth, yearToday, weekDay, weekMonth, weekYear) {
+        return fetch(path + request + '&from=' + weekYear + '-' + weekMonth +
+                '-' + weekDay + '&to=' + yearToday + '-' + todayMonth +
+                '-' + todayDay)
             .then(function (response) {
                 if (response.ok) {
                     return response.json();

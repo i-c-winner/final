@@ -1,30 +1,35 @@
 import {
     newsCardList,
     newsCard,
-    //URL_ARRAY
+    newsPosition,
 } from '../../index.js';
 import {
-    INPUT_FORMA,
-
+    inputForma,
+    COEFFICIENT_NEWS
 } from '../constans/constans.js'
 
-import {
-    URL_ARRAY
-} from '../constans/constans.js'
+// import {
+//     arrayUrls
+// } from '../constans/constans.js'
 
 export default class NewsCardList {
     constructor(container) {
         this.container = container
     }
 
-    pushCard(localStorageParam, position) {
+    pushCard(localStorageParam, position, newsCard) {
+        let indexForThisBlock = 0;
         for (let i = 0; i < 3; i += 1) {
-            let marker = position + i;
+            indexForThisBlock = position + i;
             this.container.insertAdjacentHTML("beforeEnd",
-                newsCard.create((JSON.parse(localStorage.getItem(localStorageParam))).articles[marker], marker));
+                newsCard.create((JSON.parse(localStorage.getItem(localStorageParam))).articles[
+                    indexForThisBlock], indexForThisBlock));
+
+            localStorage.setItem('NUMBER_POSITION', (indexForThisBlock + COEFFICIENT_NEWS));
+
         };
 
-        localStorage.setItem('NUMBER_POSITION', ((JSON.parse(localStorage.getItem('NUMBER_POSITION')) + 3)));
+
 
     }
 
@@ -38,7 +43,7 @@ export default class NewsCardList {
 
     }
 
-    startPushCard(localStorageParam, position) {
+    startPushCard(localStorageParam, position, newsCard) {
         this.container.insertAdjacentHTML("beforeEnd",
             newsCard.startCreate(localStorageParam, position))
 

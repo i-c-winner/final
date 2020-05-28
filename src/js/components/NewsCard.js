@@ -1,8 +1,8 @@
 import {
-    INPUT_FORMA,
-    URL_ARRAY,
+    inputForma,
+    arrayUrls,
     URL_NUMBER,
-    urlIndex,
+    newsArray,
 } from '../constans/constans.js'
 
 export default class NEWSCard {
@@ -29,18 +29,22 @@ export default class NEWSCard {
                 </p>
 
             </div>`
-        URL_ARRAY.push({
+        let arrayUrls = [];
+
+        if (JSON.parse(localStorage.getItem('NewsArray'))) {
+            arrayUrls = JSON.parse(localStorage.getItem('NewsArray'));
+        }
+
+        arrayUrls.push({
             title: data.title,
             url: data.url,
             index: position,
         });
-        localStorage.setItem('NewsArray', JSON.stringify(URL_ARRAY));
+        localStorage.setItem('NewsArray', JSON.stringify(arrayUrls));
         return template;
     }
     startCreate(data, position) {
-
         if (data !== 0) {
-
 
             const template = ` <div class=" card card_place_main index${position}">
                 <div class="main__text-box">

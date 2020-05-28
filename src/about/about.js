@@ -6,24 +6,24 @@ import {
     GIT_PATH
 } from '../js/constans/constans.js';
 import GitHubApi from '../js/modules/GitHubApi.js';
-const GITHUBAPI = new GitHubApi(GIT_PATH)
-export const COMMITCARD = new CommitCard();
+const gitHubApi = new GitHubApi(GIT_PATH)
+export const commitCard = new CommitCard();
 import CommitCardList from '../js/components/CommitCardList.js';
-let arrayWithCommit = [];
-let cellElems = [];
-const COMMITCARDLIST = new CommitCardList()
+const arrayWithCommits = [];
+const cellElems = [];
+const commitCardList = new CommitCardList()
 
 
-GITHUBAPI.getGitInfo()
+gitHubApi.getGitInfo()
     .then((res) => {
         res.forEach(element => {
-            arrayWithCommit.push(COMMITCARD.commitsObject(element));
+            arrayWithCommits.push(commitCard.commitsObject(element));
         })
     })
     .then(() => {
-        arrayWithCommit.forEach((elem) => {
-            let cell = document.createElement('div');
-            COMMITCARDLIST.pushCard(cell, elem);
+        arrayWithCommits.forEach((elem) => {
+            const cell = document.createElement('div');
+            commitCardList.pushCard(cell, elem);
             cellElems.push(cell);
         })
     })

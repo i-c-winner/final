@@ -24,7 +24,6 @@ export default class StatisticCard {
         return this.objectforload[0].daysWeek
     }
     date() {
-        let marker = this.objectforload[0].date
-        return marker.slice(8, 10);
+        return this.objectforload[0].date.slice(8, 10);
     }
 }
