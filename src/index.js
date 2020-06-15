@@ -65,7 +65,6 @@ document.forms.Search.addEventListener('submit', function () {
         arrayUrls.length = 0;
         document.querySelector('.body').classList.add('body_preloader');
         document.querySelector('.circle-preloader').classList.add('circle-preloader_state_disabled');
-        debugger;
         newsCardList.renderCard(document.querySelector('.cards'),
             document.querySelectorAll('.card'));
 
