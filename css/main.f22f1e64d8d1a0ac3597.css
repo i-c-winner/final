@@ -865,7 +865,7 @@ https://flickity.metafizzy.co
         opacity: .1;
         position: absolute;
         top: 58px;
-     
+
     }
 }
 
@@ -878,8 +878,8 @@ https://flickity.metafizzy.co
         opacity: .1;
         position: absolute;
         top: 65px;
-    
-}
+
+    }
 }
 
 
@@ -887,15 +887,15 @@ https://flickity.metafizzy.co
 @media screen and (min-width:1101px) {
     .top-line {
         width: 100%;
+        max-width: 1440px;
         height: 1px;
         background-color: white;
         opacity: .1;
         position: absolute;
         top: 79px;
-    
+
     }
 }
-
 .author-box {
     display:flex;
     justify-content: space-between;
@@ -1747,21 +1747,24 @@ margin-bottom: 0px;
     }
 
 
+.author__image {
+    border-radius: 50%;
 
+}
 
 @media screen and (max-width:650px) {
     .author__image {
-    width: 272px;   
-    height: 272px;     
+        width: 272px;
+        height: 272px;
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .author__image {
-     
-        min-width: 232px;   
-       height: 232px;     
+
+        min-width: 232px;
+        height: 232px;
         margin: 65px 35px 0px 30px;
     }
 }
@@ -1771,11 +1774,10 @@ margin-bottom: 0px;
 
 @media screen and (min-width:1001px) {
     .author__image {
-       
+        min-width: 450px;
+        height: 450px;
     }
 }
-
-
 @media screen and (max-width:650px) {
     .author {
     padding:39px 24px 9px 29px;
@@ -1803,9 +1805,16 @@ margin-bottom: 0px;
 }
 
 
+#buttom_state_none-activ {
+    cursor: default;
+    background-color: white;
+    color: inherit;
+
+}
 .buttom_state_disabled.buttom {
     display: none;
 }
+
 @media screen and (max-width:650px) {
     .buttom_place_github {
         line-height: 56px;
@@ -1941,10 +1950,6 @@ margin-bottom: 0px;
 
     }
 }
-
-.buttom_place_main:hover {
-    background-color: #e8e8e9;
-}
 .buttom_place_header {
 
     font-family: Roboto, 'Sans Serif', Arial;
@@ -2004,6 +2009,8 @@ margin-bottom: 0px;
 }
 .buttom:hover {
   cursor: pointer;
+  background-color: #2f71e5;
+  color: white
 }
 
 
@@ -2116,6 +2123,12 @@ margin-bottom: 0px;
         letter-spacing: -1.8px;
     }
 }
+.main-top__subtitle_disabled {
+    display: none;
+}
+#main-top__subtitle_none-active {
+    cursor: default;
+}
 @media screen and (max-width:650px) {
     .main-top__subtitle {
         font-family: Roboto, 'Sans Serif', Arial;
@@ -2125,11 +2138,9 @@ margin-bottom: 0px;
         line-height: 24px;
         color: #1A1B22;
         text-decoration: none;
-        display: block;
         text-align: initial;
     }
 }
-
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .main-top__subtitle {
@@ -2140,16 +2151,12 @@ margin-bottom: 0px;
         line-height: 24px;
         color: #1A1B22;
         text-decoration: none;
-        display: block;
         text-align: initial;
         margin-right: 17px;
         margin-top: 48px;
         margin-bottom: 31px;
     }
 }
-
-
-
 
 @media screen and (min-width:1101px) {
     .main-top__subtitle {
@@ -2160,7 +2167,6 @@ margin-bottom: 0px;
         line-height: 24px;
         color: #1A1B22;
         text-decoration: none;
-        display: block;
         text-align: initial;
         margin-right: 121px;
         margin-top: 96px;
@@ -3466,14 +3472,12 @@ margin-bottom: 0px;
 }
 
 
-
-
 @media screen and (max-width:650px) {
     .card__image_main {
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    margin-bottom: 9px;
-     
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        margin-bottom: 9px;
+
     }
 }
 
@@ -3481,8 +3485,9 @@ margin-bottom: 0px;
 @media screen and (min-width:651px) and (max-width:1100px) {
     .card__image_main {
         border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    margin-bottom: 0px;
+        width: 100%;
+        margin-bottom: 0px;
+
     }
 }
 
@@ -3496,8 +3501,6 @@ margin-bottom: 0px;
         margin-bottom: 0px;
     }
 }
-
-
 
 @media screen and (max-width:650px) {
     .card__text-title_main {
