@@ -39,15 +39,18 @@ import StatisticCard from '../js/components/StatisticCard.js';
 import separatorAndCount from '../js/utils/statistic/separatorAndCount.js';
 
 //Получаем массивы значений из новостей
-const temporaryNews = (Object.values(JSON.parse(
-    localStorage.getItem(localStorage.getItem('NewsName'))))[2]);
-temporaryNews.forEach(element => {
-    newsDate.push(element.publishedAt);
-    newsTitle.push(element.title);
-    newsName.push(element.source.name);
-    newsDescription.push(element.description);
-});
+if ((JSON.parse(
+        localStorage.getItem(localStorage.getItem('NewsName'))))) {
+    const temporaryNews = (Object.values(JSON.parse(
+        localStorage.getItem(localStorage.getItem('NewsName'))))[2])
 
+    temporaryNews.forEach(element => {
+        newsDate.push(element.publishedAt);
+        newsTitle.push(element.title);
+        newsName.push(element.source.name);
+        newsDescription.push(element.description);
+    });
+};
 newsDate.forEach(element => {
     newsWeekDaysNumber.push(new Date(element).getDay())
 });

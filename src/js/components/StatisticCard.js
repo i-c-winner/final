@@ -1,4 +1,3 @@
-import seaparatorAndCount from '../utils/statistic/separatorAndCount.js'
 import separatorAndCount from '../utils/statistic/separatorAndCount.js';
 
 export default class StatisticCard {

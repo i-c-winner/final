@@ -18,8 +18,12 @@ import {
     PATH_GIT,
     arrayUrls,
     inputForma,
-    QUANTITY_CARDS
+    QUANTITY_CARDS,
+    proverka,
 } from './js/constans/constans.js';
+
+import moveMouse from './js/utils/moveMouse.js';
+
 
 let inputFieldFlag = true;
 //const newsPosition = JSON.parse(localStorage.getItem('NumberPosition'));
@@ -29,7 +33,9 @@ import SearchInput from './js/components/SearchInput.js';
 const searchInput = new SearchInput();
 
 //формирование карточек новостей
-import NewsCard from './js/components/NewsCard.js';
+import {
+    NewsCard
+} from './js/components/NewsCard.js';
 import NewsCardList from "./js/components/NewsCardList";
 const newsCardList = new NewsCardList(document.querySelector('.cards'));
 const cardsContainer = document.querySelector('.cards');
@@ -59,6 +65,7 @@ document.forms.Search.addEventListener('submit', function () {
         arrayUrls.length = 0;
         document.querySelector('.body').classList.add('body_preloader');
         document.querySelector('.circle-preloader').classList.add('circle-preloader_state_disabled');
+        debugger;
         newsCardList.renderCard(document.querySelector('.cards'),
             document.querySelectorAll('.card'));
 
@@ -71,7 +78,7 @@ document.forms.Search.addEventListener('submit', function () {
                 localStorage.setItem(inputForma.news.value, JSON.stringify(res));
                 localStorage.setItem('NewsName', inputForma.news.value);
                 newsCardList.pushCard(inputForma.news.value, 0, newsCard);
-
+                document.querySelector('.main-top__subtitle').classList.remove('main-top__subtitle_disabled');
             })
             .catch((res) => {
                 console.log(res)
@@ -82,6 +89,24 @@ document.forms.Search.addEventListener('submit', function () {
 
 
 //слушатель кнопки "Ещё"
+document.querySelector('.buttom_place_main').addEventListener('mouseout', function (event) {
+    moveMouse('', '.buttom_place_main');
+
+});
+document.querySelector('.buttom_place_main').addEventListener('mouseover', function (event) {
+    moveMouse('buttom_state_none-activ', '.buttom_place_main');
+})
+
+
+if ((!JSON.parse(localStorage.getItem("NewsArray")))) {
+
+    document.querySelector('.main-top__subtitle').classList.add('main-top__subtitle_disabled');
+} else {
+    document.querySelector('.main-top__subtitle').classList.remove('main-top__subtitle_disabled');
+}
+
+
+
 document.querySelector('.buttom_place_main').addEventListener('click', function (event) {
     const sliceNewsArray = JSON.parse(localStorage.getItem('NewsArray'));
     const arrayLength = sliceNewsArray.length + QUANTITY_CARDS;
@@ -126,8 +151,11 @@ document.querySelector('.cards').addEventListener("click", (event) => {
     });
 })
 
-JSON.parse(localStorage.getItem("NewsArray")).forEach(element => {
-    const temporaryArrayNews = JSON.parse(localStorage.getItem(
-        localStorage.getItem('NewsName'))).articles[element['index']];
-    newsCardList.startPushCard(temporaryArrayNews, element['index'], newsCard);
-});
+
+if (JSON.parse(localStorage.getItem("NewsArray"))) {
+    JSON.parse(localStorage.getItem("NewsArray")).forEach(element => {
+        const temporaryArrayNews = JSON.parse(localStorage.getItem(
+            localStorage.getItem('NewsName'))).articles[element['index']];
+        newsCardList.startPushCard(temporaryArrayNews, element['index'], newsCard);
+    });
+}

@@ -5,7 +5,7 @@ import {
     newsArray,
 } from '../constans/constans.js'
 
-export default class NEWSCard {
+export class NewsCard {
 
 
     create(data, position) {

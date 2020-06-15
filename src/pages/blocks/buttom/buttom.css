@@ -1,4 +1,4 @@
-@import url('./_state/_disabled/buttom_state_disabled.css');
+@import url('./_state/buttom_state.css');
 @import url('./_place/buttom_place_github.css');
 @import url('./_place/buttom_place_main.css');
 @import url('./_place/buttom_place_header.css');
@@ -6,6 +6,8 @@
 
 .buttom:hover {
   cursor: pointer;
+  background-color: #2f71e5;
+  color: white
 }
 
 

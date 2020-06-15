@@ -10,6 +10,7 @@ export const COEFFICIENT_NEWS = 1; // поправка
 //на сдвиг при формаировании карточек
 export const QUANTITY_CARDS = 3;
 const MSECOND_IN_DAY = 8.64e+7; //кол-во милисекундв в сутках
+export let proverka = 'проверим';
 
 
 export const search = localStorage.getItem('NewsName');

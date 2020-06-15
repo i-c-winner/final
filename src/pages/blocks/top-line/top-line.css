@@ -8,7 +8,7 @@
         opacity: .1;
         position: absolute;
         top: 58px;
-     
+
     }
 }
 
@@ -21,8 +21,8 @@
         opacity: .1;
         position: absolute;
         top: 65px;
-    
-}
+
+    }
 }
 
 
@@ -30,11 +30,12 @@
 @media screen and (min-width:1101px) {
     .top-line {
         width: 100%;
+        max-width: 1440px;
         height: 1px;
         background-color: white;
         opacity: .1;
         position: absolute;
         top: 79px;
-    
+
     }
 }

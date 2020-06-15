@@ -1,18 +1,21 @@
+.author__image {
+    border-radius: 50%;
 
+}
 
 @media screen and (max-width:650px) {
     .author__image {
-    width: 272px;   
-    height: 272px;     
+        width: 272px;
+        height: 272px;
     }
 }
 
 
 @media screen and (min-width:651px) and (max-width:1100px) {
     .author__image {
-     
-        min-width: 232px;   
-       height: 232px;     
+
+        min-width: 232px;
+        height: 232px;
         margin: 65px 35px 0px 30px;
     }
 }
@@ -22,7 +25,7 @@
 
 @media screen and (min-width:1001px) {
     .author__image {
-       
+        min-width: 450px;
+        height: 450px;
     }
 }
-
