@@ -1,5 +1,6 @@
 .header-bottom__search:focus {
     box-shadow: 5px 5px 5px #000 inset;
+    outline: none;
 }
 
 

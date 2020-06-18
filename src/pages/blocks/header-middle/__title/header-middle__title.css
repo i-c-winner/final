@@ -1,48 +1,77 @@
-@import url('./_value/header-middle__title_value.css');
-@import url('./_author-page/header-middle__title_author-page.css');
-@import url('./_white/header-middle__title_white.css');
-@import url('./_black/header-middle__title_black.css');
+@import url("./_value/header-middle__title_value.css");
+@import url("./_author-page/header-middle__title_author-page.css");
+@import url("./_white/header-middle__title_white.css");
+@import url("./_black/header-middle__title_black.css");
 
+@keyframes title-transform {
+  0% {
+    transform: translate(9px);
+  }
 
-@media screen and (max-width:650px) {
-    .header-middle__title {
-        margin: 15px 0px 0px;
-        margin-top: 13px;
-        font-family: 'Roboto Slab', 'Sans Serif', Arial;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 37px;
-        line-height: 39px;
+  15% {
+    transform: translate(-9px);
+  }
 
-    }
+  30% {
+    transform: translate(6px);
+  }
+
+  45% {
+    transform: translate(-6px);
+  }
+
+  60% {
+    transform: translate(3px);
+  }
+  75% {
+    transform: translate(-3px);
+  }
+  90% {
+    transform: translate(1px);
+  }
+  100% {
+    transform: translate(0px);
+  }
 }
 
-
-@media screen and (min-width:651px) and (max-width:1100px) {
-    .header-middle__title {
-        font-family: 'Roboto Slab', 'Sans Serif', Arial;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 37px;
-        line-height: 40px;
-        width: 220px;
-        margin-bottom: 0px;
-        margin-top: 16px;
-    }
+.header-middle__title:hover {
+  animation: title-transform 1s alternate backwards;
 }
 
+@media screen and (max-width: 650px) {
+  .header-middle__title {
+    margin: 15px 0px 0px;
+    margin-top: 13px;
+    font-family: "Roboto Slab", "Sans Serif", Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 39px;
+  }
+}
 
+@media screen and (min-width: 651px) and (max-width: 1100px) {
+  .header-middle__title {
+    font-family: "Roboto Slab", "Sans Serif", Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 40px;
+    width: 220px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+  }
+}
 
-
-@media screen and (min-width:1101px) {
-    .header-middle__title {
-        font-family: 'Roboto Slab', 'Sans Serif', Arial;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 60px;
-        line-height: 64px;
-        width: 364px;
-        margin-bottom: 0px;
-        margin-top: 51px;
-    }
+@media screen and (min-width: 1101px) {
+  .header-middle__title {
+    font-family: "Roboto Slab", "Sans Serif", Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 64px;
+    width: 364px;
+    margin-bottom: 0px;
+    margin-top: 51px;
+  }
 }
