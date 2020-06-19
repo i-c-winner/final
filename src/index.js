@@ -26,7 +26,7 @@ import moveMouse from "./js/utils/moveMouse.js";
 let inputFieldFlag = false;
 
 //const newsPosition = JSON.parse(localStorage.getItem('NumberPosition'));
-import NewsApi from "./js/modules/NEWSApi.js";
+import NewsApi from "./js/modules/NewsApi.js";
 const newsApi = new NewsApi();
 import SearchInput from "./js/components/SearchInput.js";
 const searchInput = new SearchInput();

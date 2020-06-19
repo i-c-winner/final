@@ -46,7 +46,6 @@
     "babel-polyfill": "6.26.0",
     "core-js": "3.4.1",
     "flickity": "^2.2.1"
-
   },
   "repository": {
     "type": "git",
